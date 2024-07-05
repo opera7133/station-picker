@@ -418,6 +418,17 @@ const kantoRailways = {
       },
     ],
   },
+  "kashima-rinkai": {
+    id: "kashima-rinkai",
+    name: "鹿島臨海鉄道大洗鹿島線",
+    railway: [
+      {
+        name: "大洗鹿島線",
+        id: "kashima-rinkai",
+        icon: "kashima-rinkai/oarai",
+      },
+    ],
+  },
 };
 
 const flattenKantoRailways = Object.values(kantoRailways).flatMap((railway) => {
@@ -655,6 +666,7 @@ const kantoScripts = [
   "ryutetsu/ryutetsu",
   "tx/tx",
   "kantetsu/kantetsu",
+  "kashima-rinkai/kashima-rinkai",
 ];
 
 for (const script of kantoScripts) {
