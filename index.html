@@ -158,6 +158,21 @@
               />
             </summary>
           </details>
+          <details id="keio">
+            <summary class="relative py-4 text-lg cursor-pointer">
+              <img
+                src="assets/keio/ko.svg"
+                alt="京王電鉄"
+                class="inline ml-2 w-8 h-8"
+              />
+              <span class="ml-2">京王電鉄</span>
+              <input
+                type="checkbox"
+                class="absolute top-1/2 -translate-y-1/2 right-0 mr-4"
+                id="keio-toggle"
+              />
+            </summary>
+          </details>
           <details id="rinkai">
             <summary class="relative py-4 text-lg cursor-pointer">
               <img
@@ -425,6 +440,16 @@
       ></iframe>
       <p id="result-station" class="py-4 text-4xl">駅</p>
       <p id="result-railway" class="py-4 text-xl">線</p>
+      <label for="result-tweet" class="block py-2 text-lg text-left"
+        >共有テキスト</label
+      >
+      <textarea
+        id="result-tweet"
+        class="block mx-auto px-4 py-2 bg-gray-100 text-black rounded-md w-full"
+        rows="4"
+        placeholder="共有テキスト"
+        readonly
+      ></textarea>
       <button
         class="block mx-auto mt-8 px-4 py-2 bg-black text-white rounded-md w-full hover:opacity-80 duration-100"
         id="tweet"
