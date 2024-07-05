@@ -1,23 +1,20 @@
-const ryugasakiLineStations = {
-  "ryugasaki-line": [
-    { 
+const kantetsuStations = {
+  "kantetsu-ryugasaki": [
+    {
       name: "佐貫",
       id: "sanuki",
     },
     {
       name: "入地",
-      id: "irichi",
+      id: "ireji",
     },
     {
       name: "竜ヶ崎",
       id: "ryugasaki",
     },
   ],
-};
-generateRailwayStations("ryugasaki", ryugasakiLineStations);
-const josoLineStations = {
-  "kanto-joso": [
-    { 
+  "kantetsu-joso": [
+    {
       name: "取手",
       id: "toride",
     },
@@ -27,7 +24,7 @@ const josoLineStations = {
     },
     {
       name: "新取手",
-      id: "shintoride",
+      id: "shin-toride",
     },
     {
       name: "ゆめみ野",
@@ -35,7 +32,7 @@ const josoLineStations = {
     },
     {
       name: "稲戸井",
-      id: "inadodai",
+      id: "inatoi",
     },
     {
       name: "戸頭",
@@ -43,7 +40,7 @@ const josoLineStations = {
     },
     {
       name: "南守谷",
-      id: "minamimoriya",
+      id: "minami-moriya",
     },
     {
       name: "守谷",
@@ -51,7 +48,7 @@ const josoLineStations = {
     },
     {
       name: "新守谷",
-      id: "shinmoriya",
+      id: "shin-moriya",
     },
     {
       name: "小絹",
@@ -59,15 +56,15 @@ const josoLineStations = {
     },
     {
       name: "水海道",
-      id: "mizukaido",
+      id: "mitsukaido",
     },
     {
       name: "北水海道",
-      id: "kitamizukaido",
+      id: "kita-mitsukaido",
     },
     {
       name: "中妻",
-      id: "nakatsuma",
+      id: "nakazuma",
     },
     {
       name: "三妻",
@@ -75,7 +72,7 @@ const josoLineStations = {
     },
     {
       name: "南石下",
-      id: "minamiishige",
+      id: "minami-ishige",
     },
     {
       name: "石下",
@@ -99,7 +96,7 @@ const josoLineStations = {
     },
     {
       name: "騰波ノ江",
-      id: "tonami",
+      id: "tobanoe",
     },
     {
       name: "黒子",
@@ -115,4 +112,5 @@ const josoLineStations = {
     },
   ],
 };
-generateRailwayStations("kanto", josoLineStations);
+
+generateRailwayStations("kantetsu", kantetsuStations);

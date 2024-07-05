@@ -402,6 +402,22 @@ const kantoRailways = {
       },
     ],
   },
+  kantetsu: {
+    id: "kantetsu",
+    name: "関東鉄道",
+    railway: [
+      {
+        name: "常総線",
+        id: "joso",
+        icon: "kantetsu/kantetsu",
+      },
+      {
+        name: "竜ヶ崎線",
+        id: "ryugasaki",
+        icon: "kantetsu/kantetsu",
+      },
+    ],
+  },
 };
 
 const flattenKantoRailways = Object.values(kantoRailways).flatMap((railway) => {
@@ -624,6 +640,7 @@ const kantoScripts = [
   "tobu/saitama",
   "keisei/ks",
   "toei/toei",
+  "toei/nt",
   "rinkai/rinkai",
   "tokyo-monorail/tokyo-monorail",
   "yurikamome/yurikamome",
@@ -637,6 +654,7 @@ const kantoScripts = [
   "choshi/choshi",
   "ryutetsu/ryutetsu",
   "tx/tx",
+  "kantetsu/kantetsu",
 ];
 
 for (const script of kantoScripts) {
