@@ -54,6 +54,21 @@ const kantoRailways = {
         icon: "jr-east/jm",
       },
       {
+        name: "鶴見線",
+        id: "tsurumi",
+        icon: "jr-east/ji",
+      },
+      {
+        name: "鶴見線（大川支線）",
+        id: "tsurumi-okawa",
+        icon: "jr-east/ji",
+      },
+      {
+        name: "鶴見線（海芝浦支線）",
+        id: "tsurumi-umi-shibaura",
+        icon: "jr-east/ji",
+      },
+      {
         name: "八高線",
         id: "hachiko",
         icon: "jr-east/hachiko",
@@ -664,6 +679,7 @@ const generateRailwayStations = (railway, railwayStations) => {
 const kantoScripts = [
   "jr-east/tokyo",
   "jr-east/chiba",
+  "jr-east/kanagawa",
   "tokyo-metro/tokyo-metro",
   "tobu/chiba",
   "tobu/saitama",
