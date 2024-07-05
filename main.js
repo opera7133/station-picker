@@ -187,6 +187,28 @@ const kantoRailways = {
       },
     ],
   },
+  nt: {
+    id: "nt",
+    name: "日暮里・舎人ライナー",
+    railway: [
+      {
+        name: "日暮里・舎人ライナー",
+        id: "nt",
+        icon: "nt/nt",
+      },
+    ],
+  },
+  "tokyo-sakura": {
+    id: "tokyo-sakura",
+    name: "東京さくらトラム",
+    railway: [
+      {
+        name: "東京さくらトラム",
+        id: "tokyo-sakura",
+        icon: "tokyo-sakura/sa",
+      },
+    ],
+  },
   rinkai: {
     id: "rinkai",
     name: "りんかい線",
@@ -487,25 +509,22 @@ Object.keys(kantoRailways).forEach((key) => {
   }
 });
 
-const kantoToggle = document.getElementById("kanto-toggle");
-kantoToggle.addEventListener("click", () => {
-  const kanto = document.getElementById("kanto");
-
-  const checkboxes = kanto.querySelectorAll("input[type=checkbox]");
-  checkboxes.forEach((checkbox) => {
-    checkbox.checked = kantoToggle.checked;
+const setToggle = (railway) => {
+  const toggle = document.getElementById(railway + "-toggle");
+  toggle.addEventListener("click", () => {
+    const checkboxes = document.querySelectorAll(
+      `#${railway} input[type='checkbox']`
+    );
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = toggle.checked;
+    });
   });
-});
+};
 
-const chibaToggle = document.getElementById("chiba-toggle");
-chibaToggle.addEventListener("click", () => {
-  const chiba = document.getElementById("chiba");
-
-  const checkboxes = chiba.querySelectorAll("input[type=checkbox]");
-  checkboxes.forEach((checkbox) => {
-    checkbox.checked = chibaToggle.checked;
-  });
-});
+setToggle("kanto");
+setToggle("chiba");
+setToggle("tokyo");
+setToggle("ibaraki");
 
 const stationForm = document.getElementById("stations");
 stationForm.addEventListener("submit", (event) => {
@@ -602,18 +621,6 @@ document.getElementById("retry").addEventListener("click", () => {
   document.getElementById("result").classList.add("hidden");
 });
 
-const setToggle = (railway) => {
-  const toggle = document.getElementById(railway + "-toggle");
-  toggle.addEventListener("click", () => {
-    const checkboxes = document.querySelectorAll(
-      `#${railway} input[type='checkbox']`
-    );
-    checkboxes.forEach((checkbox) => {
-      checkbox.checked = toggle.checked;
-    });
-  });
-};
-
 const generateStations = (railway, stations) => {
   const stationElement = document.getElementById(railway);
   let stationElements = "";
@@ -663,6 +670,7 @@ const kantoScripts = [
   "keisei/ks",
   "toei/toei",
   "toei/nt",
+  "toei/sakura",
   "rinkai/rinkai",
   "tokyo-monorail/tokyo-monorail",
   "yurikamome/yurikamome",
