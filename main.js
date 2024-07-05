@@ -72,7 +72,7 @@ stationForm.addEventListener("submit", (event) => {
   ).src = `https://maps.google.co.jp/maps?output=embed&q=${railwayName}%20${stationName}`;
   document.getElementById(
     "result-tweet"
-  ).value = `今日の駅は${railwayName}の『${stationName}』です！\nhttps://dl.wmsci.com/station/`;
+  ).value = `今日の駅は${railwayName}の『${stationName}』です！\n#StationPicker\nhttps://dl.wmsci.com/station/`;
   document.getElementById("result").classList.remove("hidden");
   document
     .getElementById("tweet")
@@ -81,7 +81,7 @@ stationForm.addEventListener("submit", (event) => {
 
 function tweet(railway, station) {
   window.open(
-    `https://x.com/intent/tweet?text=今日の駅は${railway}の『${station}』です！&url=https://dl.wmsci.com/station/`
+    `https://x.com/intent/tweet?text=今日の駅は${railway}の『${station}』です！&hashtags=StationPicker&url=https://dl.wmsci.com/station/`
   );
 }
 
@@ -123,7 +123,7 @@ document.getElementById("retry-same").addEventListener("click", () => {
   ).src = `https://maps.google.co.jp/maps?output=embed&q=${railwayName}%20${stationName}`;
   document.getElementById(
     "result-tweet"
-  ).value = `今日の駅は${railwayName}の『${stationName}』です！\nhttps://dl.wmsci.com/station/`;
+  ).value = `今日の駅は${railwayName}の『${stationName}』です！\n#StationPicker\nhttps://dl.wmsci.com/station/`;
   document
     .getElementById("tweet")
     .addEventListener("click", () => tweet(railwayName, stationName));
