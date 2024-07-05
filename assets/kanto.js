@@ -181,6 +181,72 @@ const kantoRailways = {
       },
     ],
   },
+  seibu: {
+    id: "seibu",
+    name: "西武鉄道",
+    railway: [
+      {
+        name: "池袋線",
+        id: "ikebukuro",
+        icon: "seibu/si",
+      },
+      {
+        name: "西武秩父線",
+        id: "chichibu",
+        icon: "seibu/si",
+      },
+      {
+        name: "西武有楽町線",
+        id: "yurakucho",
+        icon: "seibu/si",
+      },
+      {
+        name: "豊島線",
+        id: "toshima",
+        icon: "seibu/si",
+      },
+      {
+        name: "狭山線",
+        id: "sayama",
+        icon: "seibu/si",
+      },
+      {
+        name: "新宿線",
+        id: "shinjuku",
+        icon: "seibu/ss",
+      },
+      {
+        name: "拝島線",
+        id: "haijima",
+        icon: "seibu/ss",
+      },
+      {
+        name: "多摩湖線",
+        id: "tamako",
+        icon: "seibu/st",
+      },
+      {
+        name: "国分寺線",
+        id: "kokubunji",
+        icon: "seibu/sk",
+      },
+      {
+        name: "西武園線",
+        id: "seibuen",
+        icon: "seibu/sk",
+      },
+      {
+        name: "多摩川線",
+        id: "tamagawa",
+        icon: "seibu/sw",
+      },
+      {
+        name: "山口線（レオライナー）",
+        id: "yamaguchi",
+        icon: "seibu/sy",
+      },
+    ],
+  },
   toei: {
     id: "toei",
     name: "都営地下鉄",

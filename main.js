@@ -181,6 +181,7 @@ const kantoScripts = [
   "tokyo-metro/tokyo-metro",
   "tobu/chiba",
   "tobu/saitama",
+  "seibu/seibu",
   "keisei/ks",
   "toei/toei",
   "toei/nt",
