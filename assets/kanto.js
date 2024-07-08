@@ -9,14 +9,34 @@ const kantoRailways = {
         icon: "jr-east/jy",
       },
       {
-        name: "京浜東北線",
-        id: "keihin-tohoku",
+        name: "京浜東北・根岸線",
+        id: "keihin-tohoku-negishi",
         icon: "jr-east/jk",
+      },
+      {
+        name: "埼京線",
+        id: "saikyo",
+        icon: "jr-east/ja",
       },
       {
         name: "東海道線",
         id: "tokaido",
+        icon: "jr-east/jt",
+      },
+      {
+        name: "横須賀線",
+        id: "yokosuka",
         icon: "jr-east/jo",
+      },
+      {
+        name: "横浜線",
+        id: "yokohama",
+        icon: "jr-east/jh",
+      },
+      {
+        name: "南武線",
+        id: "nanbu",
+        icon: "jr-east/jn",
       },
       {
         name: "中央線快速",
@@ -54,6 +74,16 @@ const kantoRailways = {
         icon: "jr-east/jm",
       },
       {
+        name: "常磐線快速",
+        id: "joban-rapid",
+        icon: "jr-east/jj",
+      },
+      {
+        name: "常磐線各駅停車",
+        id: "joban-local",
+        icon: "jr-east/jl",
+      },
+      {
         name: "鶴見線",
         id: "tsurumi",
         icon: "jr-east/ji",
@@ -77,6 +107,11 @@ const kantoRailways = {
         name: "八高線",
         id: "hachiko",
         icon: "jr-east/hachiko",
+      },
+      {
+        name: "川越線",
+        id: "kawagoe",
+        icon: "jr-east/kawagoe",
       },
       {
         name: "総武本線",

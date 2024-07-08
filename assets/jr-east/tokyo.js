@@ -121,8 +121,196 @@ const jrTokyoStations = {
       id: "yurakucho",
     },
   ],
-  "jr-east-keihin-tohoku": [],
-  "jr-east-tokaido": [],
+  "jr-east-keihin-tohoku-negishi": [
+    {
+      name: "大船",
+      id: "ofuna",
+    },
+    {
+      name: "本郷台",
+      id: "hongo-dai",
+    },
+    {
+      name: "港南台",
+      id: "konandai",
+    },
+    {
+      name: "洋光台",
+      id: "yokodai",
+    },
+    {
+      name: "新杉田",
+      id: "shin-sugita",
+    },
+    {
+      name: "磯子",
+      id: "isogo",
+    },
+    {
+      name: "根岸",
+      id: "negishi",
+    },
+    {
+      name: "山手",
+      id: "yamate",
+    },
+    {
+      name: "石川町",
+      id: "ishikawacho",
+    },
+    {
+      name: "関内",
+      id: "kannai",
+    },
+    {
+      name: "桜木町",
+      id: "sakuragicho",
+    },
+    {
+      name: "横浜",
+      id: "yokohama",
+    },
+    {
+      name: "東神奈川",
+      id: "higashi-kanagawa",
+    },
+    {
+      name: "新子安",
+      id: "shin-koyasu",
+    },
+    {
+      name: "鶴見",
+      id: "tsurumi",
+    },
+    {
+      name: "川崎",
+      id: "kawasaki",
+    },
+    {
+      name: "蒲田",
+      id: "kamata",
+    },
+    {
+      name: "大森",
+      id: "omori",
+    },
+    {
+      name: "大井町",
+      id: "oimachi",
+    },
+    {
+      name: "品川",
+      id: "shinagawa",
+    },
+    {
+      name: "高輪ゲートウェイ",
+      id: "takanawa-gateway",
+    },
+    {
+      name: "田町",
+      id: "tamachi",
+    },
+    {
+      name: "浜松町",
+      id: "hamamatsucho",
+    },
+    {
+      name: "新橋",
+      id: "shinbashi",
+    },
+    {
+      name: "有楽町",
+      id: "yurakucho",
+    },
+    {
+      name: "東京",
+      id: "tokyo",
+    },
+    {
+      name: "神田",
+      id: "kanda",
+    },
+    {
+      name: "秋葉原",
+      id: "akihabara",
+    },
+    {
+      name: "御徒町",
+      id: "okachimachi",
+    },
+    {
+      name: "上野",
+      id: "ueno",
+    },
+    {
+      name: "鶯谷",
+      id: "uguisudani",
+    },
+    {
+      name: "日暮里",
+      id: "nippori",
+    },
+    {
+      name: "西日暮里",
+      id: "nishi-nippori",
+    },
+    {
+      name: "田端",
+      id: "tabata",
+    },
+    {
+      name: "上仲里",
+      id: "kami-nakazato",
+    },
+    {
+      name: "王子",
+      id: "oji",
+    },
+    {
+      name: "東十条",
+      id: "higashi-jujo",
+    },
+    {
+      name: "赤羽",
+      id: "akabane",
+    },
+    {
+      name: "川口",
+      id: "kawaguchi",
+    },
+    {
+      name: "西川口",
+      id: "nishi-kawaguchi",
+    },
+    {
+      name: "蕨",
+      id: "warabi",
+    },
+    {
+      name: "南浦和",
+      id: "minami-urawa",
+    },
+    {
+      name: "浦和",
+      id: "urawa",
+    },
+    {
+      name: "北浦和",
+      id: "kita-urawa",
+    },
+    {
+      name: "与野",
+      id: "yono",
+    },
+    {
+      name: "さいたま新都心",
+      id: "saitama-shintoshin",
+    },
+    {
+      name: "大宮",
+      id: "omiya",
+    },
+  ],
   "jr-east-itsukaichi": [
     {
       name: "拝島",
@@ -153,7 +341,108 @@ const jrTokyoStations = {
       id: "musashi-itsukaichi",
     },
   ],
-  "jr-east-oume": [],
+  "jr-east-oume": [
+    {
+      name: "立川",
+      id: "tachikawa",
+    },
+    {
+      name: "西立川",
+      id: "nishi-tachikawa",
+    },
+    {
+      name: "東中神",
+      id: "higashi-nakagami",
+    },
+    {
+      name: "中神",
+      id: "nakagami",
+    },
+    {
+      name: "昭島",
+      id: "akishima",
+    },
+    {
+      name: "拝島",
+      id: "haijima",
+    },
+    {
+      name: "牛浜",
+      id: "ushihama",
+    },
+    {
+      name: "福生",
+      id: "fussa",
+    },
+    {
+      name: "羽村",
+      id: "hamura",
+    },
+    {
+      name: "小作",
+      id: "ozaku",
+    },
+    {
+      name: "河辺",
+      id: "kabe",
+    },
+    {
+      name: "東青梅",
+      id: "higashi-ome",
+    },
+    {
+      name: "青梅",
+      id: "ome",
+    },
+    {
+      name: "宮ノ平",
+      id: "miyanohira",
+    },
+    {
+      name: "日向和田",
+      id: "hinatawada",
+    },
+    {
+      name: "石神前",
+      id: "ishigami-mae",
+    },
+    {
+      name: "二俣尾",
+      id: "futamatao",
+    },
+    {
+      name: "軍畑",
+      id: "ikusabata",
+    },
+    {
+      name: "沢井",
+      id: "sawai",
+    },
+    {
+      name: "御嶽",
+      id: "mitake",
+    },
+    {
+      name: "川井",
+      id: "kawai",
+    },
+    {
+      name: "古里",
+      id: "kori",
+    },
+    {
+      name: "鳩ノ巣",
+      id: "hatonosu",
+    },
+    {
+      name: "白丸",
+      id: "shiromaru",
+    },
+    {
+      name: "奥多摩",
+      id: "okutama",
+    },
+  ],
   "jr-east-chuo-rapid": [
     {
       name: "東京",
@@ -406,7 +695,6 @@ const jrTokyoStations = {
       id: "shiojiri",
     },
   ],
-  "jr-east-hachiko": [],
 };
 
 generateRailwayStations("jr-east", jrTokyoStations);

@@ -149,7 +149,7 @@ const generateRailwayStations = (railway, railwayStations) => {
   Object.keys(railwayStations).forEach((key) => {
     const stations = railwayStations[key];
     const stationElement = document.getElementById(key);
-    if (stations.length === 0 && stationElement) {
+    if ((stations.length === 0 || !stations) && stationElement) {
       stationElement.remove();
       return;
     }
@@ -177,6 +177,8 @@ const kantoScripts = [
   "kanto",
   "jr-east/tokyo",
   "jr-east/chiba",
+  "jr-east/saitama",
+  "jr-east/ibaraki",
   "jr-east/kanagawa",
   "tokyo-metro/tokyo-metro",
   "tobu/chiba",
