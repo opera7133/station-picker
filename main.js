@@ -281,5 +281,3 @@ for (const script of kantoScripts) {
   };
   document.body.appendChild(scriptElement);
 }
-
-document.getElementById("ver").textContent = `バージョン：v${appVersion}`;
