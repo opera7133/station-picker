@@ -16,6 +16,13 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@scgame_m" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/pwacompat"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="container max-w-2xl mx-auto py-12 px-4">
     <h1 class="text-5xl font-bold text-center py-4">Station Picker</h1>
@@ -67,7 +74,25 @@
       <a href="https://github.com/opera7133/station-picker" class="underline"
         >リポジトリ</a
       >
+      <p class="my-4" id="ver">バージョン：</p>
     </footer>
-    <script src="main.js?v=110"></script>
+    <script src="main.js?v=111"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js").then(
+            function (registration) {
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope
+              );
+            },
+            function (err) {
+              console.log("ServiceWorker registration failed: ", err);
+            }
+          );
+        });
+      }
+    </script>
   </body>
 </html>

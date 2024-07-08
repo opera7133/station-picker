@@ -1,3 +1,5 @@
+const appVersion = "1.0.0";
+
 const submitButton = `
 <button
         type="submit"
@@ -281,3 +283,5 @@ for (const script of kantoScripts) {
   };
   document.body.appendChild(scriptElement);
 }
+
+document.getElementById("ver").textContent = `バージョン：v${appVersion}`;
