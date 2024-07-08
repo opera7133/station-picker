@@ -16,10 +16,6 @@ const rinkaiStations = [
     id: "tokyo-teleport",
   },
   {
-    name: "北千住",
-    id: "kita-senju",
-  },
-  {
     name: "天王洲アイル",
     id: "tennozu-isle",
   },
