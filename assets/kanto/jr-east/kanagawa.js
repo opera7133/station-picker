@@ -299,7 +299,126 @@ const jrKanagawaStations = {
       id: "hachioji",
     },
   ],
-  "jr-east-nanbu": [],
+  "jr-east-nanbu": [
+    {
+      name: "川崎",
+      id: "kawasaki",
+    },
+    {
+      name: "尻手",
+      id: "shitte",
+    },
+    {
+      name: "矢向",
+      id: "yako",
+    },
+    {
+      name: "鹿島田",
+      id: "kashimada",
+    },
+    {
+      name: "武蔵小杉",
+      id: "musashi-kosugi",
+    },
+    {
+      name: "武蔵中原",
+      id: "musashi-nakahara",
+    },
+    {
+      name: "武蔵新城",
+      id: "musashi-shinjo",
+    },
+    {
+      name: "武蔵溝ノ口",
+      id: "musashi-mizonokuchi",
+    },
+    {
+      name: "津田山",
+      id: "tsudayama",
+    },
+    {
+      name: "久地",
+      id: "kuji",
+    },
+    {
+      name: "宿河原",
+      id: "shukugawara",
+    },
+    {
+      name: "登戸",
+      id: "noborito",
+    },
+    {
+      name: "中野島",
+      id: "nakanoshima",
+    },
+    {
+      name: "稲田堤",
+      id: "inadazutsumi",
+    },
+    {
+      name: "矢野口",
+      id: "yanokuchi",
+    },
+    {
+      name: "稲城長沼",
+      id: "inaginaganuma",
+    },
+    {
+      name: "南多摩",
+      id: "minami-tama",
+    },
+    {
+      name: "府中本町",
+      id: "fuchu-hommachi",
+    },
+    {
+      name: "分倍河原",
+      id: "bubaigawara",
+    },
+    {
+      name: "西府",
+      id: "nishifu",
+    },
+    {
+      name: "谷保",
+      id: "yaho",
+    },
+    {
+      name: "矢川",
+      id: "yagawa",
+    },
+    {
+      name: "西国立",
+      id: "nishi-kunitachi",
+    },
+    {
+      name: "立川",
+      id: "tachikawa",
+    },
+  ],
+  "jr-east-nanbu-hamakawasaki": [
+    {
+      name: "尻手",
+      id: "shitte",
+    },
+    {
+      name: "八丁畷",
+      id: "hatchonawate",
+    },
+    {
+      name: "川崎新町",
+      id: "kawasaki-shimmachi",
+    },
+    {
+      name: "小田栄",
+      id: "odasakae",
+    },
+    {
+      name: "浜川崎",
+      id: "hamakawasaki",
+    },
+  ],
 };
 
 generateRailwayStations("jr-east", jrKanagawaStations);

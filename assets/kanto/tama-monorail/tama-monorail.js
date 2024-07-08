@@ -17,7 +17,7 @@ const tamaMonorailStations = [
   },
   {
     name: "多摩動物公園",
-    id: "tama-dobutsukoen",
+    id: "tama-dobutsu-koen",
   },
   {
     name: "程久保",

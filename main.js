@@ -170,6 +170,7 @@ document.getElementById("retry").addEventListener("click", () => {
 const generatePrefecture = (prefecture, parent, top) => {
   const prefectureElement = document.getElementById(parent);
   prefectureElement.innerHTML += prefectureTemplate(prefecture, top);
+  setToggle(prefecture.id);
 };
 
 const generateRailwayCompany = (railwayCompany, parent) => {
@@ -203,7 +204,6 @@ const generateStations = (railway, stations) => {
   });
   stationElements += "</div>";
   stationElement.innerHTML += stationElements;
-  setToggle(railway);
 };
 
 const generateRailwayStations = (railway, railwayStations) => {

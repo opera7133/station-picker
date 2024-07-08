@@ -43,6 +43,11 @@ const kantoRailways = {
           icon: "assets/kanto/jr-east/jn.svg",
         },
         {
+          name: "南武支線",
+          id: "nanbu-hamakawasaki",
+          icon: "assets/kanto/jr-east/jn.svg",
+        },
+        {
           name: "中央線快速",
           id: "chuo-rapid",
           icon: "assets/kanto/jr-east/jc.svg",
@@ -302,6 +307,61 @@ const kantoRailways = {
           name: "東上線",
           id: "tojo",
           icon: "assets/kanto/tobu/tj.svg",
+        },
+        {
+          name: "越生線",
+          id: "ogose",
+          icon: "assets/kanto/tobu/tj.svg",
+        },
+        {
+          name: "スカイツリーライン",
+          id: "skytree",
+          icon: "assets/kanto/tobu/ts.svg",
+        },
+        {
+          name: "亀戸線",
+          id: "kameido",
+          icon: "assets/kanto/tobu/ts.svg",
+        },
+        {
+          name: "大師線",
+          id: "daishi",
+          icon: "assets/kanto/tobu/ts.svg",
+        },
+        {
+          name: "伊勢崎線",
+          id: "isesaki",
+          icon: "assets/kanto/tobu/ti.svg",
+        },
+        {
+          name: "佐野線",
+          id: "sano",
+          icon: "assets/kanto/tobu/ti.svg",
+        },
+        {
+          name: "小泉線",
+          id: "koizumi",
+          icon: "assets/kanto/tobu/ti.svg",
+        },
+        {
+          name: "桐生線",
+          id: "kiryu",
+          icon: "assets/kanto/tobu/ti.svg",
+        },
+        {
+          name: "日光線",
+          id: "nikko",
+          icon: "assets/kanto/tobu/tn.svg",
+        },
+        {
+          name: "宇都宮線",
+          id: "utsunomiya",
+          icon: "assets/kanto/tobu/tn.svg",
+        },
+        {
+          name: "鬼怒川線",
+          id: "kinugawa",
+          icon: "assets/kanto/tobu/tn.svg",
         },
       ],
     },
@@ -744,7 +804,6 @@ for (const prefecture of kantoRailwaysList) {
     generateRailwayCompany(railway, prefecture.id);
     generateRailway(railway);
   });
-  setToggle(prefecture.id);
 }
 
 document.getElementById("stations").innerHTML += submitButton;
@@ -758,6 +817,9 @@ const kantoScripts = [
   "tokyo-metro/tokyo-metro",
   "tobu/chiba",
   "tobu/saitama",
+  "tobu/tochigi",
+  "tobu/gunma",
+  "tobu/tokyo",
   "seibu/seibu",
   "keisei/ks",
   "tx/tx",
@@ -785,3 +847,7 @@ const kantoScripts = [
 ];
 
 generateScripts(kantoScripts, "kanto/");
+
+for (const prefecture of kantoRailwaysList) {
+  setToggle(prefecture.id);
+}
