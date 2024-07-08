@@ -753,6 +753,42 @@ const kanagawaRailways = {
         },
       ],
     },
+    enoshima: {
+      id: "enoshima",
+      name: "江ノ島電鉄",
+      icon: "assets/kanto/enoshima/en.svg",
+      railway: [
+        {
+          name: "江ノ島電鉄線",
+          id: "enoshima",
+          icon: "assets/kanto/enoshima/en.svg",
+        },
+      ],
+    },
+    "kanazawa-seaside": {
+      id: "kanazawa-seaside",
+      name: "金沢シーサイドライン",
+      icon: "assets/kanto/kanazawa-seaside/seaside.svg",
+      railway: [
+        {
+          name: "金沢シーサイドライン",
+          id: "kanazawa-seaside",
+          icon: "assets/kanto/kanazawa-seaside/seaside.svg",
+        },
+      ],
+    },
+    "izu-hakone-id": {
+      id: "izu-hakone-id",
+      name: "伊豆箱根鉄道大雄山線",
+      icon: "assets/kanto/izu-hakone/id.svg",
+      railway: [
+        {
+          name: "大雄山線",
+          id: "izu-hakone-id",
+          icon: "assets/kanto/izu-hakone/id.svg",
+        },
+      ],
+    },
   },
 };
 
@@ -892,6 +928,18 @@ const saitamaRailways = {
         },
       ],
     },
+    chichibu: {
+      id: "chichibu",
+      name: "秩父鉄道秩父本線",
+      icon: "assets/kanto/chichibu/chichibu.svg",
+      railway: [
+        {
+          name: "秩父鉄道秩父本線",
+          id: "chichibu",
+          icon: "assets/kanto/chichibu/chichibu.svg",
+        },
+      ],
+    },
   },
 };
 
@@ -1027,6 +1075,9 @@ const kantoScripts = [
   "yokohama-metro/yokohama-metro",
   "minatomirai/minatomirai",
   "shonan-monorail/shonan",
+  "enoshima/en",
+  "kanazawa-seaside/seaside",
+  "izu-hakone/izu-hakone",
   "hokso/hs",
   "cm/cm",
   "yu-kari/yu-kari",
@@ -1037,6 +1088,7 @@ const kantoScripts = [
   "ryutetsu/ryutetsu",
   "sr/sr",
   "ns/ns",
+  "chichibu/chichibu",
   "kantetsu/kantetsu",
   "kashima-rinkai/kashima-rinkai",
   "hitachinaka/hitachinaka",

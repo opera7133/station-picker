@@ -82,18 +82,7 @@ stationForm.addEventListener("submit", (event) => {
       railway: checkbox.parentElement.parentElement.parentElement.id,
     });
   });
-  let stationNamesArray = Array.from(stationNames);
-  for (const station of stationNamesArray) {
-    const sameStation = stationNamesArray.find(
-      (s) => s.name === station.name && s.railway !== station.railway
-    );
-    if (sameStation) {
-      const index = stationNamesArray.findIndex(
-        (s) => s.name === station.name && s.railway === station.railway
-      );
-      stationNamesArray.splice(index, 1);
-    }
-  }
+  const stationNamesArray = Array.from(stationNames);
   const random = Math.floor(Math.random() * stationNamesArray.length);
   const stationName = stationNamesArray[random].name + "駅";
   const railwayName = flattenKantoRailways.find(
@@ -133,18 +122,7 @@ document.getElementById("retry-same").addEventListener("click", () => {
       railway: checkbox.parentElement.parentElement.parentElement.id,
     });
   });
-  let stationNamesArray = Array.from(stationNames);
-  for (const station of stationNamesArray) {
-    const sameStation = stationNamesArray.find(
-      (s) => s.name === station.name && s.railway !== station.railway
-    );
-    if (sameStation) {
-      const index = stationNamesArray.findIndex(
-        (s) => s.name === station.name && s.railway === station.railway
-      );
-      stationNamesArray.splice(index, 1);
-    }
-  }
+  const stationNamesArray = Array.from(stationNames);
   const random = Math.floor(Math.random() * stationNamesArray.length);
   const stationName = stationNamesArray[random].name + "駅";
   const railwayName = flattenKantoRailways.find(
