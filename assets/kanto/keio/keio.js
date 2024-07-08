@@ -319,4 +319,4 @@ const keioStations = {
   ],
 };
 
-generateRailwayStations("keio", keioStations);
+generateRailwayStations(keioStations, "keio", "tokyo");

@@ -80,4 +80,4 @@ const txStations = [
     id: "tsukuba",
   },
 ];
-generateStations("tx", txStations);
+generateStations(txStations, "tx", "kanto");

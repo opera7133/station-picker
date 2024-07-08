@@ -419,6 +419,80 @@ const jrKanagawaStations = {
       id: "hamakawasaki",
     },
   ],
+  "jr-east-sagami": [
+    {
+      name: "茅ヶ崎",
+      id: "chigasaki",
+    },
+    {
+      name: "北茅ヶ崎",
+      id: "kita-chigasaki",
+    },
+    {
+      name: "香川",
+      id: "kagawa",
+    },
+    {
+      name: "寒川",
+      id: "samukawa",
+    },
+    {
+      name: "宮山",
+      id: "miyayama",
+    },
+    {
+      name: "倉見",
+      id: "kurami",
+    },
+    {
+      name: "門沢橋",
+      id: "kadosawabashi",
+    },
+    {
+      name: "社家",
+      id: "shake",
+    },
+    {
+      name: "厚木",
+      id: "atsugi",
+    },
+    {
+      name: "海老名",
+      id: "ebina",
+    },
+    {
+      name: "入谷",
+      id: "iriya",
+    },
+    {
+      name: "相武台下",
+      id: "sobudaishita",
+    },
+    {
+      name: "下溝",
+      id: "shimomizo",
+    },
+    {
+      name: "原当麻",
+      id: "harataima",
+    },
+    {
+      name: "番田",
+      id: "banda",
+    },
+    {
+      name: "上溝",
+      id: "kamimizo",
+    },
+    {
+      name: "南橋本",
+      id: "minami-hashimoto",
+    },
+    {
+      name: "橋本",
+      id: "hashimoto",
+    },
+  ],
 };
 
-generateRailwayStations("jr-east", jrKanagawaStations);
+generateRailwayStations(jrKanagawaStations, "jr-east", "kanto");

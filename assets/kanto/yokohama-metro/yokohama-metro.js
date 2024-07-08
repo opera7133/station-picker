@@ -173,4 +173,4 @@ const yokohamaMetroStations = {
   ],
 };
 
-generateRailwayStations("yokohama-metro", yokohamaMetroStations);
+generateRailwayStations(yokohamaMetroStations, "yokohama-metro", "kanagawa");

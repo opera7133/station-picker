@@ -761,4 +761,4 @@ const tokyoMetroStations = {
   ],
 };
 
-generateRailwayStations("tokyo-metro", tokyoMetroStations);
+generateRailwayStations(tokyoMetroStations, "tokyo-metro", "kanto");

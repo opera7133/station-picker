@@ -20,8 +20,8 @@ const prefectureTemplate = (prefecture, top = false) => `<details class="${
           </summary>
         </details>`;
 
-const railwayCompanyTemplate = (railwayCompany) => `
-  <details id="${railwayCompany.id}">
+const railwayCompanyTemplate = (railwayCompany, prefecture) => `
+  <details id="${prefecture}-${railwayCompany.id}">
             <summary class="relative py-4 text-lg cursor-pointer">
               <img
                 src="${railwayCompany.icon}"
@@ -32,7 +32,7 @@ const railwayCompanyTemplate = (railwayCompany) => `
               <input
                 type="checkbox"
                 class="absolute top-1/2 -translate-y-1/2 right-0 mr-4"
-                id="${railwayCompany.id}-toggle"
+                id="${prefecture}-${railwayCompany.id}-toggle"
               />
             </summary>
           </details>`;
@@ -153,24 +153,32 @@ const generatePrefecture = (prefecture, parent, top) => {
 
 const generateRailwayCompany = (railwayCompany, parent) => {
   const railwayCompanyElement = document.getElementById(parent);
-  railwayCompanyElement.innerHTML += railwayCompanyTemplate(railwayCompany);
+  railwayCompanyElement.innerHTML += railwayCompanyTemplate(
+    railwayCompany,
+    parent
+  );
 };
 
-const generateRailway = (railway) => {
+const generateRailway = (railway, prefecture) => {
   if (railway.railway.length !== 1) {
-    const railwayElement = document.getElementById(railway.id);
+    const railwayElement = document.getElementById(
+      `${prefecture}-${railway.id}`
+    );
     let railwayElements = "";
     railwayElements += '<div class="ml-4 text-lg">';
     railway.railway.forEach((station) => {
-      railwayElements += railwayTemplate(station, railway.id);
+      railwayElements += railwayTemplate(
+        station,
+        `${prefecture}-${railway.id}`
+      );
     });
     railwayElements += "</div>";
     railwayElement.innerHTML += railwayElements;
   }
 };
 
-const generateStations = (railway, stations) => {
-  const stationElement = document.getElementById(railway);
+const generateStations = (stations, railway, prefecture) => {
+  const stationElement = document.getElementById(`${prefecture}-${railway}`);
   let stationElements = "";
   stationElements += '<div class="ml-4 text-lg">';
   stations.forEach((station) => {
@@ -178,13 +186,13 @@ const generateStations = (railway, stations) => {
   });
   stationElements += "</div>";
   stationElement.innerHTML += stationElements;
-  setToggle(railway);
+  setToggle(`${prefecture}-${railway}`);
 };
 
-const generateRailwayStations = (railway, railwayStations) => {
+const generateRailwayStations = (railwayStations, railway, prefecture) => {
   Object.keys(railwayStations).forEach((key) => {
     const stations = railwayStations[key];
-    const stationElement = document.getElementById(key);
+    const stationElement = document.getElementById(`${prefecture}-${key}`);
     if ((stations.length === 0 || !stations) && stationElement) {
       stationElement.remove();
       return;
@@ -196,17 +204,19 @@ const generateRailwayStations = (railway, railwayStations) => {
     });
     stationElements += "</div>";
     stationElement.innerHTML += stationElements;
-    const stationToggle = document.getElementById(`${key}-toggle`);
+    const stationToggle = document.getElementById(
+      `${prefecture}-${key}-toggle`
+    );
     stationToggle.addEventListener("click", (event) => {
       const checkboxes = document.querySelectorAll(
-        `#${key} input[type="checkbox"]`
+        `#${prefecture}-${key} input[type="checkbox"]`
       );
       checkboxes.forEach((checkbox) => {
         checkbox.checked = event.target.checked;
       });
     });
   });
-  setToggle(railway);
+  setToggle(`${prefecture}-${railway}`);
 };
 
 const generateScripts = (scripts, base = "") => {

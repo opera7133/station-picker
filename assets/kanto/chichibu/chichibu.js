@@ -149,4 +149,4 @@ const chichibuStations = [
   },
 ];
 
-generateStations("chichibu", chichibuStations);
+generateStations(chichibuStations, "chichibu", "saitama");

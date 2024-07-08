@@ -61,4 +61,4 @@ const oaraiKashimaLineStations = [
   },
 ];
 
-generateStations("kashima-rinkai", oaraiKashimaLineStations);
+generateStations(oaraiKashimaLineStations, "kashima-rinkai", "ibaraki");

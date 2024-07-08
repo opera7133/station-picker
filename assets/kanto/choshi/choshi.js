@@ -40,4 +40,4 @@ const choshiStations = [
     id: "tokawa",
   },
 ];
-generateStations("cd", choshiStations);
+generateStations(choshiStations, "cd", "chiba");

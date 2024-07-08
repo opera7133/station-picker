@@ -113,4 +113,4 @@ const kantetsuStations = {
   ],
 };
 
-generateRailwayStations("kantetsu", kantetsuStations);
+generateRailwayStations(kantetsuStations, "kantetsu", "ibaraki");

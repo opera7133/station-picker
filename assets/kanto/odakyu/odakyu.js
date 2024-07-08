@@ -287,4 +287,4 @@ const odakyuStations = {
   ],
 };
 
-generateRailwayStations("odakyu", odakyuStations);
+generateRailwayStations(odakyuStations, "odakyu", "kanto");

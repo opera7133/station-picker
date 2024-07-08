@@ -99,6 +99,93 @@ const jrIbarakiStations = {
       id: "toride",
     },
   ],
+  "jr-east-joban": [],
+  "jr-east-mito": [
+    {
+      name: "小山",
+      id: "oyama",
+    },
+    {
+      name: "小田林",
+      id: "otabayashi",
+    },
+    {
+      name: "結城",
+      id: "yuki",
+    },
+    {
+      name: "東結城",
+      id: "higashi-yuki",
+    },
+    {
+      name: "川島",
+      id: "kawashima",
+    },
+    {
+      name: "玉戸",
+      id: "tamado",
+    },
+    {
+      name: "下館",
+      id: "shimodate",
+    },
+    {
+      name: "新治",
+      id: "niihari",
+    },
+    {
+      name: "大和",
+      id: "yamato",
+    },
+    {
+      name: "岩瀬",
+      id: "iwase",
+    },
+    {
+      name: "羽黒",
+      id: "haguro",
+    },
+    {
+      name: "福原",
+      id: "fukuhara",
+    },
+    {
+      name: "稲田",
+      id: "inada",
+    },
+    {
+      name: "笠間",
+      id: "kasama",
+    },
+    {
+      name: "宍戸",
+      id: "shishido",
+    },
+    {
+      name: "友部",
+      id: "tomobe",
+    },
+    {
+      name: "内原",
+      id: "uchihara",
+    },
+    {
+      name: "赤塚",
+      id: "akatsuka",
+    },
+    {
+      name: "偕楽園",
+      id: "kairakuen",
+    },
+    {
+      name: "水戸",
+      id: "mito",
+    },
+    {
+      name: "勝田",
+      id: "katsuta",
+    },
+  ],
 };
 
-generateRailwayStations("jr-east", jrIbarakiStations);
+generateRailwayStations(jrIbarakiStations, "jr-east", "kanto");

@@ -1,4 +1,4 @@
-const isuHakoneIdStations = [
+const izuHakoneIdStations = [
   {
     name: "小田原",
     id: "odawara",
@@ -45,4 +45,4 @@ const isuHakoneIdStations = [
   },
 ];
 
-generateStations("izu-hakone-id", isuHakoneIdStations);
+generateStations(izuHakoneIdStations, "izu-hakone-id", "kanagawa");

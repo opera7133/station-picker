@@ -72,4 +72,4 @@ const kominatoRailwayLineStations = [
     id: "kazusa-nakano",
   },
 ];
-generateStations("km", kominatoRailwayLineStations);
+generateStations(kominatoRailwayLineStations, "km", "chiba");

@@ -56,4 +56,4 @@ const isumiLineStations = [
     id: "kazusa-nakano",
   },
 ];
-generateStations("is", isumiLineStations);
+generateStations(isumiLineStations, "is", "chiba");

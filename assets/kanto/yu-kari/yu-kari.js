@@ -24,4 +24,4 @@ const yukariStations = [
     id: "ino",
   },
 ];
-generateStations("yu-kari", yukariStations);
+generateStations(yukariStations, "yu-kari", "chiba");

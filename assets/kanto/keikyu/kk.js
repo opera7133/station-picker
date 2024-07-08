@@ -319,4 +319,4 @@ const keikyuStations = {
   ],
 };
 
-generateRailwayStations("kk", keikyuStations);
+generateRailwayStations(keikyuStations, "kk", "kanto");

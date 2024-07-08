@@ -89,4 +89,4 @@ const chibaUrbanMonorailStations = {
   ],
 };
 
-generateRailwayStations("cm", chibaUrbanMonorailStations);
+generateRailwayStations(chibaUrbanMonorailStations, "cm", "chiba");

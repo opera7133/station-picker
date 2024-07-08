@@ -233,4 +233,4 @@ const tobuTochigiStations = {
   ],
 };
 
-generateRailwayStations("tb", tobuTochigiStations);
+generateRailwayStations(tobuTochigiStations, "tb", "kanto");

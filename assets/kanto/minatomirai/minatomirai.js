@@ -25,4 +25,4 @@ const minatomiraiStations = [
   },
 ];
 
-generateStations("minatomirai", minatomiraiStations);
+generateStations(minatomiraiStations, "minatomirai", "kanagawa");

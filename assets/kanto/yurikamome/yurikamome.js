@@ -64,4 +64,4 @@ const yurikamomeStations = [
     id: "toyosu",
   },
 ];
-generateStations("yurikamome", yurikamomeStations);
+generateStations(yurikamomeStations, "yurikamome", "tokyo");

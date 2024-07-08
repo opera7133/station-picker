@@ -417,4 +417,4 @@ const tobuSaitamaStations = {
   ],
 };
 
-generateRailwayStations("tb", tobuSaitamaStations);
+generateRailwayStations(tobuSaitamaStations, "tb", "kanto");

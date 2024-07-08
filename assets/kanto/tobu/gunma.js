@@ -73,4 +73,4 @@ const tobuGunmaStations = {
   ],
 };
 
-generateRailwayStations("tb", tobuGunmaStations);
+generateRailwayStations(tobuGunmaStations, "tb", "kanto");

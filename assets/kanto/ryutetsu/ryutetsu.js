@@ -25,4 +25,4 @@ const ryutetsuStations = [
   },
 ];
 
-generateStations("ryutetsu", ryutetsuStations);
+generateStations(ryutetsuStations, "ryutetsu", "chiba");

@@ -33,4 +33,4 @@ const shonanMonorailStations = [
   },
 ];
 
-generateStations("shonan-monorail", shonanMonorailStations);
+generateStations(shonanMonorailStations, "shonan-monorail", "kanagawa");

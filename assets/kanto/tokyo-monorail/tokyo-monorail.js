@@ -44,4 +44,4 @@ const tokyoMonorailStations = [
     id: "haneda-airport-terminal-2",
   },
 ];
-generateStations("tokyo-monorail", tokyoMonorailStations);
+generateStations(tokyoMonorailStations, "tokyo-monorail", "tokyo");

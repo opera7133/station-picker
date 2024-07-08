@@ -28,6 +28,11 @@ const kantoRailways = {
           icon: "assets/kanto/jr-east/jt.svg",
         },
         {
+          name: "伊東線",
+          id: "ito",
+          icon: "assets/kanto/jr-east/jt.svg",
+        },
+        {
           name: "横須賀線",
           id: "yokosuka",
           icon: "assets/kanto/jr-east/jo.svg",
@@ -110,7 +115,12 @@ const kantoRailways = {
         {
           name: "中央本線",
           id: "chuo-honsen",
-          icon: "assets/kanto/jr-east/chuo-honsen.svg",
+          icon: "assets/kanto/jr-east/co.svg",
+        },
+        {
+          name: "常磐線",
+          id: "joban",
+          icon: "assets/kanto/jr-east/joban.svg",
         },
         {
           name: "八高線",
@@ -121,6 +131,16 @@ const kantoRailways = {
           name: "川越線",
           id: "kawagoe",
           icon: "assets/kanto/jr-east/kawagoe.svg",
+        },
+        {
+          name: "相模線",
+          id: "sagami",
+          icon: "assets/kanto/jr-east/sagami.svg",
+        },
+        {
+          name: "水戸線",
+          id: "mito",
+          icon: "assets/kanto/jr-east/mito.svg",
         },
         {
           name: "総武本線",
@@ -1039,7 +1059,7 @@ for (const prefecture of kantoRailwaysList) {
   Object.keys(prefecture.railways).forEach((key) => {
     const railway = prefecture.railways[key];
     generateRailwayCompany(railway, prefecture.id);
-    generateRailway(railway);
+    generateRailway(railway, prefecture.id);
   });
 }
 
@@ -1051,6 +1071,7 @@ const kantoScripts = [
   "jr-east/saitama",
   "jr-east/ibaraki",
   "jr-east/kanagawa",
+  "jr-east/other",
   "tokyo-metro/tokyo-metro",
   "tobu/chiba",
   "tobu/saitama",

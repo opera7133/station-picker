@@ -121,4 +121,4 @@ const tokyoSakuraTramStations = [
   },
 ];
 
-generateStations("tokyo-sakura", tokyoSakuraTramStations);
+generateStations(tokyoSakuraTramStations, "tokyo-sakura", "tokyo");

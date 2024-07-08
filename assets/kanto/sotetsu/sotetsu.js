@@ -123,4 +123,4 @@ const sotetsuStations = {
   ],
 };
 
-generateRailwayStations("so", sotetsuStations);
+generateRailwayStations(sotetsuStations, "so", "kanagawa");

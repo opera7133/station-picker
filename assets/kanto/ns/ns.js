@@ -53,4 +53,4 @@ const newShuttleStations = [
   },
 ];
 
-generateStations("ns", newShuttleStations);
+generateStations(newShuttleStations, "ns", "saitama");

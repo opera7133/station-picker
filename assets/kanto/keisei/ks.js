@@ -439,4 +439,4 @@ const keiseiStations = {
   ],
 };
 
-generateRailwayStations("ks", keiseiStations);
+generateRailwayStations(keiseiStations, "ks", "kanto");

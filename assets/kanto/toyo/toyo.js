@@ -36,4 +36,4 @@ const toyoStations = [
     id: "toyo-katsutadai",
   },
 ];
-generateStations("tr", toyoStations);
+generateStations(toyoStations, "tr", "chiba");

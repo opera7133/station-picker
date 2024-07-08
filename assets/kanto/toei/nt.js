@@ -53,4 +53,4 @@ const nipporiToneriStations = [
   },
 ];
 
-generateStations("nt", nipporiToneriStations);
+generateStations(nipporiToneriStations, "nt", "tokyo");

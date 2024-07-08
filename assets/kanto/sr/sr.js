@@ -33,4 +33,4 @@ const saitamaStadiumStations = [
   },
 ];
 
-generateStations("sr", saitamaStadiumStations);
+generateStations(saitamaStadiumStations, "sr", "saitama");

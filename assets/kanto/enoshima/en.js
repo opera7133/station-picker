@@ -57,4 +57,4 @@ const enoshimaStations = [
   },
 ];
 
-generateStations("enoshima", enoshimaStations);
+generateStations(enoshimaStations, "enoshima", "kanagawa");

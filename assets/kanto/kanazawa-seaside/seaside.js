@@ -53,4 +53,4 @@ const kanazawaSeasideStations = [
   },
 ];
 
-generateStations("kanazawa-seaside", kanazawaSeasideStations);
+generateStations(kanazawaSeasideStations, "kanazawa-seaside", "kanagawa");

@@ -223,4 +223,4 @@ const jrSaitamaStations = {
   ],
 };
 
-generateRailwayStations("jr-east", jrSaitamaStations);
+generateRailwayStations(jrSaitamaStations, "jr-east", "kanto");

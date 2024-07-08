@@ -923,4 +923,4 @@ const jrChibaStations = {
   ],
 };
 
-generateRailwayStations("jr-east", jrChibaStations);
+generateRailwayStations(jrChibaStations, "jr-east", "kanto");

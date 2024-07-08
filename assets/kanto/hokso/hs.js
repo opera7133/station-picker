@@ -60,4 +60,4 @@ const hokusoLineStations = [
     id: "inba-nihon-idai",
   },
 ];
-generateStations("hs", hokusoLineStations);
+generateStations(hokusoLineStations, "hs", "chiba");

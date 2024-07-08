@@ -33,4 +33,4 @@ const tobuTokyoStations = {
   ],
 };
 
-generateRailwayStations("tb", tobuTokyoStations);
+generateRailwayStations(tobuTokyoStations, "tb", "kanto");

@@ -36,4 +36,4 @@ const rinkaiStations = [
     id: "osaki",
   },
 ];
-generateStations("rinkai", rinkaiStations);
+generateStations(rinkaiStations, "rinkai", "tokyo");

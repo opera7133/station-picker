@@ -433,4 +433,4 @@ const toeiStations = {
   ],
 };
 
-generateRailwayStations("toei", toeiStations);
+generateRailwayStations(toeiStations, "toei", "tokyo");

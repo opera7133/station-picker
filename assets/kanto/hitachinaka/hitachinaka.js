@@ -37,4 +37,4 @@ const hitachinakaStations = [
   },
 ];
 
-generateStations("hitachinaka", hitachinakaStations);
+generateStations(hitachinakaStations, "hitachinaka", "ibaraki");

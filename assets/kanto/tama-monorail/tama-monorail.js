@@ -77,4 +77,4 @@ const tamaMonorailStations = [
   },
 ];
 
-generateStations("tama-monorail", tamaMonorailStations);
+generateStations(tamaMonorailStations, "tama-monorail", "tokyo");

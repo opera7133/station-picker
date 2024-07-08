@@ -697,4 +697,4 @@ const jrTokyoStations = {
   ],
 };
 
-generateRailwayStations("jr-east", jrTokyoStations);
+generateRailwayStations(jrTokyoStations, "jr-east", "kanto");

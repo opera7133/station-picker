@@ -433,4 +433,4 @@ const seibuStations = {
   ],
 };
 
-generateRailwayStations("seibu", seibuStations);
+generateRailwayStations(seibuStations, "seibu", "kanto");
