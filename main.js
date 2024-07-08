@@ -175,7 +175,8 @@ const generatePrefecture = (prefecture, parent, top) => {
 
 const generateRailwayCompany = (railwayCompany, parent) => {
   const railwayCompanyElement = document.getElementById(parent);
-  const landscape = railwayCompany.id === "tx";
+  const landscape =
+    railwayCompany.id === "tx" || railwayCompany.id === "shonan-monorail";
   railwayCompanyElement.innerHTML += railwayCompanyTemplate(
     railwayCompany,
     landscape

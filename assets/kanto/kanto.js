@@ -634,6 +634,25 @@ const tokyoRailways = {
   },
 };
 
+const kanagawaRailways = {
+  id: "kanagawa",
+  name: "神奈川県",
+  railways: {
+    "shonan-monorail": {
+      id: "shonan-monorail",
+      name: "湘南モノレール",
+      icon: "assets/kanto/shonan-monorail/shonan.svg",
+      railway: [
+        {
+          name: "湘南モノレール江の島線",
+          id: "shonan-monorail",
+          icon: "assets/kanto/shonan-monorail/shonan.svg",
+        },
+      ],
+    },
+  },
+};
+
 const chibaRailways = {
   id: "chiba",
   name: "千葉県",
@@ -824,6 +843,7 @@ const ibarakiRailways = {
 const kantoRailwaysList = [
   kantoRailways,
   tokyoRailways,
+  kanagawaRailways,
   chibaRailways,
   saitamaRailways,
   ibarakiRailways,
@@ -899,6 +919,7 @@ const kantoScripts = [
   "tokyo-monorail/tokyo-monorail",
   "yurikamome/yurikamome",
   "tama-monorail/tama-monorail",
+  "shonan-monorail/shonan",
   "hokso/hs",
   "cm/cm",
   "yu-kari/yu-kari",
