@@ -575,6 +575,17 @@ const kantoRailways = {
       },
     ],
   },
+  sr: {
+    id: "sr",
+    name: "埼玉高速鉄道線",
+    railway: [
+      {
+        name: "埼玉高速鉄道線",
+        id: "sr",
+        icon: "sr/sr",
+      },
+    ],
+  },
   tx: {
     id: "tx",
     name: "つくばエクスプレス",
