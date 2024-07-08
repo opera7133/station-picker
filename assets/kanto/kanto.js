@@ -839,12 +839,24 @@ return railway list
 const flattenKantoRailways = kantoRailwaysList.reduce((acc, prefecture) => {
   const railwayList = Object.keys(prefecture.railways).map((key) => {
     const railway = prefecture.railways[key];
-    return {
-      id: railway.id,
-      name: railway.name,
-    };
+    if (railway.railway.length === 1) {
+      return [
+        {
+          id: railway.id,
+          name: railway.name,
+        },
+      ];
+    } else {
+      return railway.railway.map((station) => {
+        return {
+          id: `${railway.id}-${station.id}`,
+          name: `${railway.name}-${station.name}`,
+        };
+      });
+    }
   });
-  return [...Array.from(acc), ...railwayList];
+  const railwayListFlatten = railwayList.flat();
+  return [...Array.from(acc), ...railwayListFlatten];
 }, []);
 
 for (const prefecture of kantoRailwaysList) {
