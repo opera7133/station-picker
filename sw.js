@@ -1,4 +1,4 @@
-const CACHE_NAME = "station-picker-" + appVersion;
+const CACHE_NAME = "station-picker-1.0.0";
 const urlsToCache = [...kantoScripts.map((script) => `/assets/${script}.js`)];
 
 self.addEventListener("install", function (event) {
