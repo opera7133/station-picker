@@ -365,6 +365,60 @@ const kantoRailways = {
         },
       ],
     },
+    odakyu: {
+      id: "odakyu",
+      name: "小田急電鉄",
+      icon: "assets/kanto/odakyu/odakyu.svg",
+      railway: [
+        {
+          name: "小田原線",
+          id: "odawara",
+          icon: "assets/kanto/odakyu/oh.svg",
+        },
+        {
+          name: "江ノ島線",
+          id: "enoshima",
+          icon: "assets/kanto/odakyu/oe.svg",
+        },
+        {
+          name: "多摩線",
+          id: "tama",
+          icon: "assets/kanto/odakyu/ot.svg",
+        },
+      ],
+    },
+    kk: {
+      id: "kk",
+      name: "京浜急行電鉄",
+      icon: "assets/kanto/keikyu/kk.svg",
+      railway: [
+        {
+          name: "本線",
+          id: "honsen",
+          icon: "assets/kanto/keikyu/kk.svg",
+        },
+        {
+          name: "空港線",
+          id: "airport",
+          icon: "assets/kanto/keikyu/kk.svg",
+        },
+        {
+          name: "大師線",
+          id: "daishi",
+          icon: "assets/kanto/keikyu/kk.svg",
+        },
+        {
+          name: "逗子線",
+          id: "zushi",
+          icon: "assets/kanto/keikyu/kk.svg",
+        },
+        {
+          name: "久里浜線",
+          id: "kurihama",
+          icon: "assets/kanto/keikyu/kk.svg",
+        },
+      ],
+    },
     ks: {
       id: "ks",
       name: "京成電鉄",
@@ -820,6 +874,8 @@ const kantoScripts = [
   "tobu/tochigi",
   "tobu/gunma",
   "tobu/tokyo",
+  "odakyu/odakyu",
+  "keikyu/kk",
   "seibu/seibu",
   "keisei/ks",
   "tx/tx",
