@@ -1,7 +1,46 @@
+const submitButton = `
+<button
+        type="submit"
+        class="block mx-auto mt-8 px-4 py-2 bg-black text-white rounded-md w-full hover:opacity-80 duration-100"
+        id="submit"
+      >
+        抽選
+      </button>`;
+
+const prefectureTemplate = (prefecture, top = false) => `<details class="${
+  top ? "border border-gray-200 rounded-md py-4 px-8" : "py-4"
+}" id="${prefecture.id}">
+          <summary class="relative text-xl py-2 cursor-pointer">
+            <span class="ml-2">${prefecture.name}</span>
+            <input
+              type="checkbox"
+              class="absolute top-1/2 -translate-y-1/2 right-0 mr-4"
+              id="${prefecture.id}-toggle"
+            />
+          </summary>
+        </details>`;
+
+const railwayCompanyTemplate = (railwayCompany, landscape = fase) => `
+  <details id="${railwayCompany.id}">
+            <summary class="relative py-4 text-lg cursor-pointer">
+              <img
+                src="${railwayCompany.icon}"
+                alt="${railwayCompany.name}"
+                class="inline ml-2 w-8 ${landscape ? "h-4" : "h-8"}"
+              />
+              <span class="ml-2">${railwayCompany.name}</span>
+              <input
+                type="checkbox"
+                class="absolute top-1/2 -translate-y-1/2 right-0 mr-4"
+                id="${railwayCompany.id}-toggle"
+              />
+            </summary>
+          </details>`;
+
 const railwayTemplate = (railway, key) => `
   <details class="ml-4" id="${key}-${railway.id}">
           <summary class="relative py-4 text-lg cursor-pointer">
-            <img src="assets/${railway.icon}.svg" alt="${railway.name}" class="inline ml-2 w-8 h-8">
+            <img src="${railway.icon}" alt="${railway.name}" class="inline ml-2 w-8 h-8">
             <span class="ml-2">${railway.name}</span>
             <input type="checkbox" class="absolute top-1/2 -translate-y-1/2 right-0 mr-4" id="${key}-${railway.id}-toggle">
           </summary>
@@ -26,11 +65,6 @@ const setToggle = (railway) => {
     });
   });
 };
-
-setToggle("kanto");
-setToggle("chiba");
-setToggle("tokyo");
-setToggle("ibaraki");
 
 const stationForm = document.getElementById("stations");
 stationForm.addEventListener("submit", (event) => {
@@ -133,6 +167,33 @@ document.getElementById("retry").addEventListener("click", () => {
   document.getElementById("result").classList.add("hidden");
 });
 
+const generatePrefecture = (prefecture, parent, top) => {
+  const prefectureElement = document.getElementById(parent);
+  prefectureElement.innerHTML += prefectureTemplate(prefecture, top);
+};
+
+const generateRailwayCompany = (railwayCompany, parent) => {
+  const railwayCompanyElement = document.getElementById(parent);
+  const landscape = railwayCompany.id === "tx";
+  railwayCompanyElement.innerHTML += railwayCompanyTemplate(
+    railwayCompany,
+    landscape
+  );
+};
+
+const generateRailway = (railway) => {
+  if (railway.railway.length !== 1) {
+    const railwayElement = document.getElementById(railway.id);
+    let railwayElements = "";
+    railwayElements += '<div class="ml-4 text-lg">';
+    railway.railway.forEach((station) => {
+      railwayElements += railwayTemplate(station, railway.id);
+    });
+    railwayElements += "</div>";
+    railwayElement.innerHTML += railwayElements;
+  }
+};
+
 const generateStations = (railway, stations) => {
   const stationElement = document.getElementById(railway);
   let stationElements = "";
@@ -203,6 +264,7 @@ const kantoScripts = [
   "choshi/choshi",
   "ryutetsu/ryutetsu",
   "sr/sr",
+  "ns/ns",
   "kantetsu/kantetsu",
   "kashima-rinkai/kashima-rinkai",
   "hitachinaka/hitachinaka",
