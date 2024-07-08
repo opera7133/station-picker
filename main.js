@@ -20,13 +20,13 @@ const prefectureTemplate = (prefecture, top = false) => `<details class="${
           </summary>
         </details>`;
 
-const railwayCompanyTemplate = (railwayCompany, landscape = fase) => `
+const railwayCompanyTemplate = (railwayCompany) => `
   <details id="${railwayCompany.id}">
             <summary class="relative py-4 text-lg cursor-pointer">
               <img
                 src="${railwayCompany.icon}"
                 alt="${railwayCompany.name}"
-                class="inline ml-2 w-8 ${landscape ? "h-4" : "h-8"}"
+                class="inline ml-2 w-8 object-contain h-8"
               />
               <span class="ml-2">${railwayCompany.name}</span>
               <input
@@ -40,7 +40,7 @@ const railwayCompanyTemplate = (railwayCompany, landscape = fase) => `
 const railwayTemplate = (railway, key) => `
   <details class="ml-4" id="${key}-${railway.id}">
           <summary class="relative py-4 text-lg cursor-pointer">
-            <img src="${railway.icon}" alt="${railway.name}" class="inline ml-2 w-8 h-8">
+            <img src="${railway.icon}" alt="${railway.name}" class="inline object-contain ml-2 w-8 h-8">
             <span class="ml-2">${railway.name}</span>
             <input type="checkbox" class="absolute top-1/2 -translate-y-1/2 right-0 mr-4" id="${key}-${railway.id}-toggle">
           </summary>
@@ -175,12 +175,7 @@ const generatePrefecture = (prefecture, parent, top) => {
 
 const generateRailwayCompany = (railwayCompany, parent) => {
   const railwayCompanyElement = document.getElementById(parent);
-  const landscape =
-    railwayCompany.id === "tx" || railwayCompany.id === "shonan-monorail";
-  railwayCompanyElement.innerHTML += railwayCompanyTemplate(
-    railwayCompany,
-    landscape
-  );
+  railwayCompanyElement.innerHTML += railwayCompanyTemplate(railwayCompany);
 };
 
 const generateRailway = (railway) => {
@@ -205,6 +200,7 @@ const generateStations = (railway, stations) => {
   });
   stationElements += "</div>";
   stationElement.innerHTML += stationElements;
+  setToggle(railway);
 };
 
 const generateRailwayStations = (railway, railwayStations) => {

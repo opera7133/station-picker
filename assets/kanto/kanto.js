@@ -387,6 +387,58 @@ const kantoRailways = {
         },
       ],
     },
+    tokyu: {
+      id: "tokyu",
+      name: "東急電鉄",
+      icon: "assets/kanto/tokyu/tokyu.svg",
+      railway: [
+        {
+          name: "東横線",
+          id: "toyoko",
+          icon: "assets/kanto/tokyu/ty.svg",
+        },
+        {
+          name: "目黒線",
+          id: "meguro",
+          icon: "assets/kanto/tokyu/mg.svg",
+        },
+        {
+          name: "東急新横浜線",
+          id: "shin-yokohama",
+          icon: "assets/kanto/tokyu/sh.svg",
+        },
+        {
+          name: "田園都市線",
+          id: "denentoshi",
+          icon: "assets/kanto/tokyu/dt.svg",
+        },
+        {
+          name: "大井町線",
+          id: "oimachi",
+          icon: "assets/kanto/tokyu/om.svg",
+        },
+        {
+          name: "池上線",
+          id: "ikegami",
+          icon: "assets/kanto/tokyu/ik.svg",
+        },
+        {
+          name: "東急多摩川線",
+          id: "tamagawa",
+          icon: "assets/kanto/tokyu/tm.svg",
+        },
+        {
+          name: "こどもの国線",
+          id: "kodomonokuni",
+          icon: "assets/kanto/tokyu/kd.svg",
+        },
+        {
+          name: "世田谷線",
+          id: "setagaya",
+          icon: "assets/kanto/tokyu/sg.svg",
+        },
+      ],
+    },
     kk: {
       id: "kk",
       name: "京浜急行電鉄",
@@ -638,6 +690,57 @@ const kanagawaRailways = {
   id: "kanagawa",
   name: "神奈川県",
   railways: {
+    so: {
+      id: "so",
+      name: "相模鉄道",
+      icon: "assets/kanto/sotetsu/sotetsu.svg",
+      railway: [
+        {
+          name: "本線",
+          id: "honsen",
+          icon: "assets/kanto/sotetsu/so.svg",
+        },
+        {
+          name: "いずみ野線",
+          id: "izumino",
+          icon: "assets/kanto/sotetsu/so.svg",
+        },
+        {
+          name: "新横浜線",
+          id: "shin-yokohama",
+          icon: "assets/kanto/sotetsu/so.svg",
+        },
+      ],
+    },
+    "yokohama-metro": {
+      id: "yokohama-metro",
+      name: "横浜市営地下鉄",
+      icon: "assets/kanto/yokohama-metro/yokohama-metro.svg",
+      railway: [
+        {
+          name: "ブルーライン",
+          id: "blue",
+          icon: "assets/kanto/yokohama-metro/b.svg",
+        },
+        {
+          name: "グリーンライン",
+          id: "green",
+          icon: "assets/kanto/yokohama-metro/g.svg",
+        },
+      ],
+    },
+    minatomirai: {
+      id: "minatomirai",
+      name: "みなとみらい線",
+      icon: "assets/kanto/minatomirai/mm.svg",
+      railway: [
+        {
+          name: "みなとみらい線",
+          id: "minatomirai",
+          icon: "assets/kanto/minatomirai/mm.svg",
+        },
+      ],
+    },
     "shonan-monorail": {
       id: "shonan-monorail",
       name: "湘南モノレール",
@@ -907,6 +1010,7 @@ const kantoScripts = [
   "tobu/gunma",
   "tobu/tokyo",
   "odakyu/odakyu",
+  "tokyu/tokyu",
   "keikyu/kk",
   "seibu/seibu",
   "keisei/ks",
@@ -919,6 +1023,9 @@ const kantoScripts = [
   "tokyo-monorail/tokyo-monorail",
   "yurikamome/yurikamome",
   "tama-monorail/tama-monorail",
+  "sotetsu/sotetsu",
+  "yokohama-metro/yokohama-metro",
+  "minatomirai/minatomirai",
   "shonan-monorail/shonan",
   "hokso/hs",
   "cm/cm",
