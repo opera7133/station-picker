@@ -125,9 +125,7 @@ document.getElementById("retry-same").addEventListener("click", () => {
   const stationNamesArray = Array.from(stationNames);
   const random = Math.floor(Math.random() * stationNamesArray.length);
   const stationName = stationNamesArray[random].name + "駅";
-  const railwayName = flattenKantoRailways.find(
-    (railway) => railway.id === stationNamesArray[random].railway
-  ).name;
+  const railwayName = flattenKantoRailways.find((railway) => stationNamesArray[random].railway).name;
   document.getElementById("result-station").textContent = stationName;
   document.getElementById("result-railway").textContent = railwayName;
   document.getElementById(
