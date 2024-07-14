@@ -1033,14 +1033,14 @@ const flattenKantoRailways = kantoRailwaysList.reduce((acc, prefecture) => {
     if (railway.railway.length === 1) {
       return [
         {
-          id: railway.id,
+          id: `${prefecture.id}-${railway.id}`,
           name: railway.name,
         },
       ];
     } else {
       return railway.railway.map((station) => {
         return {
-          id: `${railway.id}-${station.id}`,
+          id: `${prefecture.id}-${railway.id}-${station.id}`,
           name: `${railway.name}-${station.name}`,
         };
       });
