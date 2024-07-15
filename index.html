@@ -16,12 +16,24 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@scgame_m" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <script defer src="https://analytics.ja1ykl.com/script.js" data-website-id="333de21d-8c6f-4f23-bc67-ce322e19a350"></script>
+    <script
+      defer
+      src="https://analytics.ja1ykl.com/script.js"
+      data-website-id="333de21d-8c6f-4f23-bc67-ce322e19a350"
+    ></script>
   </head>
   <body class="container max-w-2xl mx-auto py-12 px-4">
     <h1 class="text-5xl font-bold text-center py-4">Station Picker</h1>
     <p class="text-center py-4 text-xl">目的のない旅に出かける</p>
-    <form class="my-8" id="stations"></form>
+    <form class="my-8 flex flex-col gap-3 w-full" id="stations"></form>
+    <button
+      type="submit"
+      form="stations"
+      class="block mx-auto mt-8 px-4 py-2 bg-black text-white rounded-md w-full hover:opacity-80 duration-100"
+      id="submit"
+    >
+      抽選
+    </button>
     <div
       id="result"
       class="text-center border border-gray-200 rounded-md py-4 px-8 hidden"

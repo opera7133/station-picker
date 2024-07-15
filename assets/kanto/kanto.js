@@ -1063,7 +1063,6 @@ for (const prefecture of kantoRailwaysList) {
   });
 }
 
-document.getElementById("stations").innerHTML += submitButton;
 
 const kantoScripts = [
   "jr-east/tokyo",

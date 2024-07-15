@@ -1,12 +1,3 @@
-const submitButton = `
-<button
-        type="submit"
-        class="block mx-auto mt-8 px-4 py-2 bg-black text-white rounded-md w-full hover:opacity-80 duration-100"
-        id="submit"
-      >
-        抽選
-      </button>`;
-
 const prefectureTemplate = (prefecture, top = false) => `<details class="${
   top ? "border border-gray-200 rounded-md py-4 px-8" : "py-4"
 }" id="${prefecture.id}">
@@ -66,9 +57,7 @@ const setToggle = (railway) => {
   });
 };
 
-const stationForm = document.getElementById("stations");
-stationForm.addEventListener("submit", (event) => {
-  event.preventDefault();
+const getRandomStation = () => {
   const checkboxes = document.querySelectorAll("input[type=checkbox]:checked");
   if (checkboxes.length === 0) {
     alert("駅を選択してください");
@@ -82,10 +71,11 @@ stationForm.addEventListener("submit", (event) => {
       railway: checkbox.parentElement.parentElement.parentElement.id,
     });
   });
+  const allFlattenRailways = [...flattenKantoRailways, ...flattenChubuRailways];
   const stationNamesArray = Array.from(stationNames);
   const random = Math.floor(Math.random() * stationNamesArray.length);
   const stationName = stationNamesArray[random].name + "駅";
-  const railwayName = flattenKantoRailways.find(
+  const railwayName = allFlattenRailways.find(
     (railway) => railway.id === stationNamesArray[random].railway
   ).name;
   document.getElementById("result-station").textContent = stationName;
@@ -100,6 +90,12 @@ stationForm.addEventListener("submit", (event) => {
   document
     .getElementById("tweet")
     .addEventListener("click", () => tweet(railwayName, stationName));
+};
+
+const stationForm = document.getElementById("stations");
+stationForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  getRandomStation();
 });
 
 function tweet(railway, station) {
@@ -109,34 +105,7 @@ function tweet(railway, station) {
 }
 
 document.getElementById("retry-same").addEventListener("click", () => {
-  const checkboxes = document.querySelectorAll("input[type=checkbox]:checked");
-  if (checkboxes.length === 0) {
-    alert("駅を選択してください");
-    return;
-  }
-  const stationNames = new Set();
-  checkboxes.forEach((checkbox) => {
-    if (checkbox.id.includes("toggle")) return;
-    stationNames.add({
-      name: checkbox.parentElement.querySelector("label").textContent,
-      railway: checkbox.parentElement.parentElement.parentElement.id,
-    });
-  });
-  const stationNamesArray = Array.from(stationNames);
-  const random = Math.floor(Math.random() * stationNamesArray.length);
-  const stationName = stationNamesArray[random].name + "駅";
-  const railwayName = flattenKantoRailways.find((railway) => stationNamesArray[random].railway).name;
-  document.getElementById("result-station").textContent = stationName;
-  document.getElementById("result-railway").textContent = railwayName;
-  document.getElementById(
-    "result-map"
-  ).src = `https://maps.google.co.jp/maps?output=embed&q=${railwayName}%20${stationName}`;
-  document.getElementById(
-    "result-tweet"
-  ).value = `今日の駅は${railwayName}の『${stationName}』です！\n#StationPicker\nhttps://dl.wmsci.com/station/`;
-  document
-    .getElementById("tweet")
-    .addEventListener("click", () => tweet(railwayName, stationName));
+  getRandomStation();
 });
 
 document.getElementById("retry").addEventListener("click", () => {
@@ -218,7 +187,7 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
 };
 
 const generateScripts = (scripts, base = "") => {
-  for (const script of scripts) {
+  scripts.forEach((script) => {
     const scriptElement = document.createElement("script");
     scriptElement.src = `assets/${base}${script}.js`;
     scriptElement.onload = () => {
@@ -228,12 +197,12 @@ const generateScripts = (scripts, base = "") => {
       }
     };
     document.body.appendChild(scriptElement);
-  }
+  });
 };
 
-const mainScripts = ["kanto/kanto"];
+const mainScripts = ["kanto/kanto", "chubu/chubu"];
 generateScripts(mainScripts);
 
-const appVersion = "1.0.0";
+const appVersion = "1.1.0";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;

@@ -44,13 +44,50 @@ const chubuRailways = {
         },
         {
           name: "太多線",
-          id: "taketoyo",
+          id: "taita",
           icon: "assets/chubu/jr-central/ci.svg",
         },
+      ],
+    },
+    "jr-west": {
+      id: "jr-west",
+      name: "JR西日本",
+      icon: "assets/chubu/jr-west/jr.svg",
+      railway: [
         {
-          name: "関西本線",
-          id: "kansai",
-          icon: "assets/chubu/jr-central/cj.svg",
+          name: "小浜線",
+          id: "obama",
+          icon: "assets/chubu/jr-west/west.svg",
+        },
+        {
+          name: "越美北線",
+          id: "etsumi-north",
+          icon: "assets/chubu/jr-west/west.svg",
+        },
+        {
+          name: "七尾線",
+          id: "nanao",
+          icon: "assets/chubu/jr-west/west.svg",
+        },
+        {
+          name: "城端線",
+          id: "johana",
+          icon: "assets/chubu/jr-west/west.svg",
+        },
+        {
+          name: "氷見線",
+          id: "himi",
+          icon: "assets/chubu/jr-west/west.svg",
+        },
+        {
+          name: "高山本線",
+          id: "takayama",
+          icon: "assets/chubu/jr-west/west.svg",
+        },
+        {
+          name: "大糸線",
+          id: "oito",
+          icon: "assets/chubu/jr-west/west.svg",
         },
       ],
     },
@@ -59,6 +96,36 @@ const chubuRailways = {
       name: "JR東日本",
       icon: "assets/chubu/jr-east/jr.svg",
       railway: [
+        {
+          name: "篠ノ井線",
+          id: "shinonoi",
+          icon: "assets/chubu/jr-east/shinonoi.svg",
+        },
+        {
+          name: "信越本線",
+          id: "shinetsu",
+          icon: "assets/chubu/jr-east/shinetsu.svg",
+        },
+        {
+          name: "白新線",
+          id: "hakushin",
+          icon: "assets/chubu/jr-east/hakushin.svg",
+        },
+        {
+          name: "越後線",
+          id: "echigo",
+          icon: "assets/chubu/jr-east/echigo.svg",
+        },
+        {
+          name: "弥彦線",
+          id: "yahiko",
+          icon: "assets/chubu/jr-east/yahiko.svg",
+        },
+        {
+          name: "飯山線",
+          id: "iiyama",
+          icon: "assets/chubu/jr-east/iiyama.svg",
+        },
         {
           name: "上越線",
           id: "joetsu",
@@ -69,12 +136,334 @@ const chubuRailways = {
           id: "koumi",
           icon: "assets/chubu/jr-east/koumi.svg",
         },
+        {
+          name: "大糸線",
+          id: "oito",
+          icon: "assets/chubu/jr-east/oito.svg",
+        },
+      ],
+    },
+    meitetsu: {
+      id: "meitetsu",
+      name: "名古屋鉄道",
+      icon: "assets/chubu/meitetsu/meitetsu.svg",
+      railway: [
+        {
+          name: "名古屋本線",
+          id: "nagoya",
+          icon: "assets/chubu/meitetsu/nh.svg",
+        },
+        {
+          name: "豊川線",
+          id: "toyokawa",
+          icon: "assets/chubu/meitetsu/tk.svg",
+        },
+        {
+          name: "西尾線",
+          id: "nishio",
+          icon: "assets/chubu/meitetsu/gn.svg",
+        },
+        {
+          name: "蒲郡線",
+          id: "gamagori",
+          icon: "assets/chubu/meitetsu/gn.svg",
+        },
+        {
+          name: "三河線（海線）",
+          id: "mikawa-umi",
+          icon: "assets/chubu/meitetsu/mu.svg",
+        },
+        {
+          name: "三河線（山線）",
+          id: "mikawa-yama",
+          icon: "assets/chubu/meitetsu/my.svg",
+        },
+        {
+          name: "豊田線",
+          id: "toyota",
+          icon: "assets/chubu/meitetsu/tt.svg",
+        },
+        {
+          name: "常滑線",
+          id: "tokoname",
+          icon: "assets/chubu/meitetsu/ta.svg",
+        },
+        {
+          name: "空港線",
+          id: "airport",
+          icon: "assets/chubu/meitetsu/ta.svg",
+        },
+        {
+          name: "築港線",
+          id: "chikkou",
+          icon: "assets/chubu/meitetsu/ch.svg",
+        },
+        {
+          name: "河和線",
+          id: "kowa",
+          icon: "assets/chubu/meitetsu/kc.svg",
+        },
+        {
+          name: "知多新線",
+          id: "chita-new",
+          icon: "assets/chubu/meitetsu/kc.svg",
+        },
+        {
+          name: "瀬戸線",
+          id: "seto",
+          icon: "assets/chubu/meitetsu/st.svg",
+        },
+        {
+          name: "津島線",
+          id: "tsushima",
+          icon: "assets/chubu/meitetsu/tb.svg",
+        },
+        {
+          name: "尾西線",
+          id: "bisai",
+          icon: "assets/chubu/meitetsu/bs.svg",
+        },
+        {
+          name: "犬山線",
+          id: "inuyama",
+          icon: "assets/chubu/meitetsu/iy.svg",
+        },
+        {
+          name: "各務原",
+          id: "kakamigahara",
+          icon: "assets/chubu/meitetsu/kg.svg",
+        },
+        {
+          name: "広見線",
+          id: "hiromi",
+          icon: "assets/chubu/meitetsu/hm.svg",
+        },
+        {
+          name: "小牧線",
+          id: "komaki",
+          icon: "assets/chubu/meitetsu/km.svg",
+        },
+        {
+          name: "竹鼻線",
+          id: "takehana",
+          icon: "assets/chubu/meitetsu/th.svg",
+        },
+        {
+          name: "羽島線",
+          id: "hashima",
+          icon: "assets/chubu/meitetsu/th.svg",
+        },
       ],
     },
   },
 };
 
-const chubuRailwaysList = [chubuRailways];
+const shizuokaRailways = {
+  id: "shizuoka",
+  name: "静岡",
+  railways: {
+    shizutetsu: {
+      id: "shizutetsu",
+      name: "静岡鉄道静岡清水線",
+      icon: "assets/chubu/shizutetsu/shizutetsu.svg",
+      railway: [
+        {
+          name: "静岡鉄道静岡清水線",
+          id: "shizutetsu",
+          icon: "assets/chubu/shizutetsu/shizutetsu.svg",
+        },
+      ],
+    },
+    enshu: {
+      id: "enshu",
+      name: "遠州鉄道鉄道線",
+      icon: "assets/chubu/enshu/enshu.svg",
+      railway: [
+        {
+          name: "遠州鉄道線",
+          id: "enshu",
+          icon: "assets/chubu/enshu/enshu.svg",
+        },
+      ],
+    },
+    gakunan: {
+      id: "gakunan",
+      name: "岳南電車岳南鉄道線",
+      icon: "assets/chubu/gakunan/gakunan.svg",
+      railway: [
+        {
+          name: "岳南電車岳南鉄道線",
+          id: "gakunan",
+          icon: "assets/chubu/gakunan/gakunan.svg",
+        },
+      ],
+    },
+    "izu-hakone": {
+      id: "izu-hakone",
+      name: "伊豆箱根鉄道駿豆線",
+      icon: "assets/chubu/izu-hakone/is.svg",
+      railway: [
+        {
+          name: "伊豆箱根鉄道駿豆線",
+          id: "izu-hakone",
+          icon: "assets/chubu/izu-hakone/is.svg",
+        },
+      ],
+    },
+    izukyu: {
+      id: "izukyu",
+      name: "伊豆急行線",
+      icon: "assets/chubu/izukyu/izukyu.svg",
+      railway: [
+        {
+          name: "伊豆急行線",
+          id: "izukyu",
+          icon: "assets/chubu/izukyu/izukyu.svg",
+        },
+      ],
+    },
+    tenhama: {
+      id: "tenhama",
+      name: "天竜浜名湖線",
+      icon: "assets/chubu/tenhama/tenhama.svg",
+      railway: [
+        {
+          name: "天竜浜名湖線",
+          id: "tenhama",
+          icon: "assets/chubu/tenhama/tenhama.svg",
+        },
+      ],
+    },
+    oigawa: {
+      id: "oigawa",
+      name: "大井川鐵道",
+      icon: "assets/chubu/oigawa/oigawa.svg",
+      railway: [
+        {
+          name: "大井川本線",
+          id: "oigawa",
+          icon: "assets/chubu/oigawa/oigawa.svg",
+        },
+        {
+          name: "井川線",
+          id: "ikawa",
+          icon: "assets/chubu/oigawa/oigawa.svg",
+        },
+      ],
+    },
+  },
+};
+
+const aichiRailways = {
+  id: "aichi",
+  name: "愛知",
+  railways: {
+    "nagoya-metro": {
+      id: "nagoya-metro",
+      name: "名古屋市交通局",
+      icon: "assets/chubu/nagoya-metro/metro.svg",
+      railway: [
+        {
+          name: "東山線",
+          id: "higashiyama",
+          icon: "assets/chubu/nagoya-metro/h.svg",
+        },
+        {
+          name: "名城線",
+          id: "meijo",
+          icon: "assets/chubu/nagoya-metro/m.svg",
+        },
+        {
+          name: "名港線",
+          id: "meiko",
+          icon: "assets/chubu/nagoya-metro/e.svg",
+        },
+        {
+          name: "鶴舞線",
+          id: "tsurumai",
+          icon: "assets/chubu/nagoya-metro/t.svg",
+        },
+        {
+          name: "桜通線",
+          id: "sakuradori",
+          icon: "assets/chubu/nagoya-metro/s.svg",
+        },
+        {
+          name: "上飯田線",
+          id: "kamiiida",
+          icon: "assets/chubu/nagoya-metro/k.svg",
+        },
+      ],
+    },
+    "aichi-kanjo": {
+      id: "aichi-kanjo",
+      name: "愛知環状鉄道線",
+      icon: "assets/chubu/aichi-kanjo/aichi-kanjo.svg",
+      railway: [
+        {
+          name: "愛知環状鉄道線",
+          id: "aichi-kanjo",
+          icon: "assets/chubu/aichi-kanjo/aichi-kanjo.svg",
+        },
+      ],
+    },
+    "nagoya-rinkai": {
+      id: "nagoya-rinkai",
+      name: "あおなみ線",
+      icon: "assets/chubu/nagoya-rinkai/aonami.svg",
+      railway: [
+        {
+          name: "あおなみ線",
+          id: "aonami",
+          icon: "assets/chubu/nagoya-rinkai/aonami.svg",
+        },
+      ],
+    },
+    tkj: {
+      id: "tkj",
+      name: "東海交通事業城北線",
+      icon: "assets/chubu/tkj/tkj.svg",
+      railway: [
+        {
+          name: "東海交通事業城北線",
+          id: "tkj",
+          icon: "assets/chubu/tkj/tkj.svg",
+        },
+      ],
+    },
+    linimo: {
+      id: "linimo",
+      name: "愛知高速交通東部丘陵線",
+      icon: "assets/chubu/linimo/linimo.svg",
+      railway: [
+        {
+          name: "愛知高速交通東部丘陵線",
+          id: "linimo",
+          icon: "assets/chubu/linimo/linimo.svg",
+        },
+      ],
+    },
+    toyotetsu: {
+      id: "toyotetsu",
+      name: "豊橋鉄道",
+      icon: "assets/chubu/toyotetsu/toyotetsu.svg",
+      railway: [
+        {
+          name: "渥美線",
+          id: "atsumi",
+          icon: "assets/chubu/toyotetsu/toyotetsu.svg",
+        },
+        {
+          name: "東田本線",
+          id: "azumada",
+          icon: "assets/chubu/toyotetsu/toyotetsu.svg",
+        },
+      ],
+    },
+  },
+};
+
+const chubuRailwaysList = [chubuRailways, shizuokaRailways, aichiRailways];
 
 const flattenChubuRailways = chubuRailwaysList.reduce((acc, prefecture) => {
   const railwayList = Object.keys(prefecture.railways).map((key) => {
@@ -82,14 +471,14 @@ const flattenChubuRailways = chubuRailwaysList.reduce((acc, prefecture) => {
     if (railway.railway.length === 1) {
       return [
         {
-          id: railway.id,
+          id: `${prefecture.id}-${railway.id}`,
           name: railway.name,
         },
       ];
     } else {
       return railway.railway.map((station) => {
         return {
-          id: `${railway.id}-${station.id}`,
+          id: `${prefecture.id}-${railway.id}-${station.id}`,
           name: `${railway.name}-${station.name}`,
         };
       });
@@ -112,9 +501,27 @@ for (const prefecture of chubuRailwaysList) {
   });
 }
 
-document.getElementById("stations").innerHTML += submitButton;
-
-const chubuScripts = [];
+const chubuScripts = [
+  "jr-central/aichi",
+  "jr-central/shizuoka",
+  "jr-central/gifu",
+  "jr-central/other",
+  "jr-west/toyama",
+  "jr-west/niigata",
+  "meitetsu/aichi",
+  "meitetsu/gifu",
+  "shizutetsu/shizutetsu",
+  "enshu/enshu",
+  "gakunan/gakunan",
+  "izu-hakone/izu-hakone",
+  "izukyu/izukyu",
+  "tenhama/tenhama",
+  "oigawa/oigawa",
+  "aichi-kanjo/aichi-kanjo",
+  "nagoya-rinkai/aonami",
+  "tkj/tkj",
+  "linimo/linimo",
+];
 
 generateScripts(chubuScripts, "chubu/");
 

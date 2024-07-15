@@ -1,0 +1,44 @@
+name: 路線追加提案
+description: Station Pickerに追加してほしい路線野提案
+title: '路線追加: '
+body:
+  - type: dropdown
+    id: region
+    attributes:
+      label: 地区区分
+      description: |
+        路線の属する地域区分を書いてください。地域区分は八地方区分とします。
+        https://ja.wikipedia.org/wiki/日本の地域#主な地域ブロック
+      options:
+        - 北海道
+        - 東北
+        - 関東
+        - 中部
+        - 近畿
+        - 中国
+        - 四国
+        - 九州
+    validations:
+      required: true
+  - type: input
+    id: company
+    attributes:
+      label: 運営会社
+      description: 追加してほしい路線の運営会社を書いてください。
+    validations:
+      required: true
+  - type: input
+    id: line
+    attributes:
+      label: 路線名
+      description: |
+        追加してほしい路線名を書いてください。
+        路線が複数ある場合、別のIssueに分けて作成してください。
+    validations:
+      required: true
+  - type: textarea
+    id: footnote
+    attributes:
+      label: 補足
+      description: |
+        その他補足事項があれば書いてください。
