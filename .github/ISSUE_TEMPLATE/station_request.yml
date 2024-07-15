@@ -1,5 +1,5 @@
 name: 路線追加提案
-description: Station Pickerに追加してほしい路線野提案
+description: Station Pickerに追加してほしい路線の提案
 title: '路線追加: '
 body:
   - type: dropdown
