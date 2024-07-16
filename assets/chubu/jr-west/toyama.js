@@ -1,4 +1,62 @@
 const jrWestToyamaStations = {
+  "jr-west-johana": [
+    {
+      name: "高岡",
+      id: "takaoka",
+    },
+    {
+      name: "新高岡",
+      id: "shin-takaoka",
+    },
+    {
+      name: "二塚",
+      id: "futatsuka",
+    },
+    {
+      name: "林",
+      id: "hayashi",
+    },
+    {
+      name: "戸出",
+      id: "toide",
+    },
+    {
+      name: "油田",
+      id: "aburaden",
+    },
+    {
+      name: "砺波",
+      id: "tonami",
+    },
+    {
+      name: "東野尻",
+      id: "higashi-nojiri",
+    },
+    {
+      name: "高儀",
+      id: "takagi",
+    },
+    {
+      name: "福野",
+      id: "fukuno",
+    },
+    {
+      name: "東石黒",
+      id: "higashi-ishiguro",
+    },
+    {
+      name: "福光",
+      id: "fukumitsu",
+    },
+    {
+      name: "越中山田",
+      id: "etchu-yamada",
+    },
+    {
+      name: "城端",
+      id: "johana",
+    },
+  ],
   "jr-west-himi": [
     {
       name: "高岡",

@@ -229,7 +229,7 @@ const chubuRailways = {
           icon: "assets/chubu/meitetsu/iy.svg",
         },
         {
-          name: "各務原",
+          name: "各務原線",
           id: "kakamigahara",
           icon: "assets/chubu/meitetsu/kg.svg",
         },
@@ -252,6 +252,191 @@ const chubuRailways = {
           name: "羽島線",
           id: "hashima",
           icon: "assets/chubu/meitetsu/th.svg",
+        },
+      ],
+    },
+  },
+};
+
+const niigataRailways = {
+  id: "niigata",
+  name: "新潟",
+  railways: {
+    tokimeki: {
+      id: "tokimeki",
+      name: "えちごトキめき鉄道",
+      icon: "assets/chubu/echigo-tokimeki/tokimeki.svg",
+      railway: [
+        {
+          name: "日本海ひすいライン",
+          id: "nihonkai",
+          icon: "assets/chubu/echigo-tokimeki/tokimeki.svg",
+        },
+        {
+          name: "妙高はねうまライン",
+          id: "myoko",
+          icon: "assets/chubu/echigo-tokimeki/tokimeki.svg",
+        },
+      ],
+    },
+  },
+};
+
+const toyamaRailways = {
+  id: "toyama",
+  name: "富山",
+  railways: {
+    ainokaze: {
+      id: "ainokaze",
+      name: "あいの風とやま鉄道線",
+      icon: "assets/chubu/ainokaze/ainokaze.svg",
+      railway: [
+        {
+          name: "あいの風とやま鉄道線",
+          id: "ainokaze",
+          icon: "assets/chubu/ainokaze/ainokaze.svg",
+        },
+      ],
+    },
+    chitetsu: {
+      id: "chitetsu",
+      name: "富山地方鉄道",
+      icon: "assets/chubu/chitetsu/chitetsu.svg",
+      railway: [
+        {
+          name: "本線",
+          id: "honsen",
+          icon: "assets/chubu/chitetsu/chitetsu.svg",
+        },
+        {
+          name: "富山軌道線",
+          id: "toyama-kido",
+          icon: "assets/chubu/chitetsu/chitetsu.svg",
+        },
+        {
+          name: "立山線",
+          id: "tateyama",
+          icon: "assets/chubu/chitetsu/chitetsu.svg",
+        },
+        {
+          name: "不二越線",
+          id: "fujikoshi",
+          icon: "assets/chubu/chitetsu/chitetsu.svg",
+        },
+        {
+          name: "上滝線",
+          id: "kamidaki",
+          icon: "assets/chubu/chitetsu/chitetsu.svg",
+        },
+        {
+          name: "富山港線",
+          id: "toyamako",
+          icon: "assets/chubu/chitetsu/chitetsu.svg",
+        },
+      ],
+    },
+    manyo: {
+      id: "manyo",
+      name: "万葉線",
+      icon: "assets/chubu/manyo/manyo.jpg",
+      railway: [
+        {
+          name: "万葉線",
+          id: "manyo",
+          icon: "assets/chubu/manyo/manyo.jpg",
+        },
+      ],
+    },
+  },
+};
+
+const ishikawaRailways = {
+  id: "ishikawa",
+  name: "石川",
+  railways: {
+    "ir-ishikawa": {
+      id: "ir-ishikawa",
+      name: "IRいしかわ鉄道線",
+      icon: "assets/chubu/ir-ishikawa/ir.svg",
+      railway: [
+        {
+          name: "IRいしかわ鉄道線",
+          id: "ir-ishikawa",
+          icon: "assets/chubu/ir-ishikawa/ir.svg",
+        },
+      ],
+    },
+  },
+};
+
+const fukuiRailways = {
+  id: "fukui",
+  name: "福井",
+  railways: {
+    hapiline: {
+      id: "hapiline",
+      name: "ハピラインふくい線",
+      icon: "assets/chubu/hapiline/hapiline.svg",
+      railway: [
+        {
+          name: "ハピラインふくい線",
+          id: "hapiline",
+          icon: "assets/chubu/hapiline/hapiline.svg",
+        },
+      ],
+    },
+    echizen: {
+      id: "echizen",
+      name: "えちぜん鉄道",
+      icon: "assets/chubu/echizen/echizen.svg",
+      railway: [
+        {
+          name: "勝山永平寺線",
+          id: "katsuyama",
+          icon: "assets/chubu/echizen/echizen.svg",
+        },
+        {
+          name: "三国芦原線",
+          id: "awara",
+          icon: "assets/chubu/echizen/echizen.svg",
+        },
+      ],
+    },
+  },
+};
+
+const naganoRailways = {
+  id: "nagano",
+  name: "長野",
+  railways: {
+    alpico: {
+      id: "alpico",
+      name: "アルピコ交通上高地線",
+      icon: "assets/chubu/alpico/alpico.svg",
+      railway: [
+        {
+          name: "アルピコ交通上高地線",
+          id: "alpico",
+          icon: "assets/chubu/alpico/alpico.svg",
+        },
+      ],
+    },
+  },
+};
+
+const gifuRailways = {
+  id: "gifu",
+  name: "岐阜",
+  railways: {
+    aketetsu: {
+      id: "aketetsu",
+      name: "明知鉄道線",
+      icon: "assets/chubu/aketetsu/aketetsu.svg",
+      railway: [
+        {
+          name: "明知鉄道線",
+          id: "aketetsu",
+          icon: "assets/chubu/aketetsu/aketetsu.svg",
         },
       ],
     },
@@ -463,7 +648,17 @@ const aichiRailways = {
   },
 };
 
-const chubuRailwaysList = [chubuRailways, shizuokaRailways, aichiRailways];
+const chubuRailwaysList = [
+  chubuRailways,
+  niigataRailways,
+  toyamaRailways,
+  ishikawaRailways,
+  fukuiRailways,
+  naganoRailways,
+  gifuRailways,
+  shizuokaRailways,
+  aichiRailways,
+];
 
 const flattenChubuRailways = chubuRailwaysList.reduce((acc, prefecture) => {
   const railwayList = Object.keys(prefecture.railways).map((key) => {
@@ -505,11 +700,25 @@ const chubuScripts = [
   "jr-central/aichi",
   "jr-central/shizuoka",
   "jr-central/gifu",
+  "jr-central/yamanashi",
   "jr-central/other",
   "jr-west/toyama",
   "jr-west/niigata",
+  "jr-west/ishikawa",
+  "jr-west/fukui",
+  "jr-east/niigata",
+  "jr-east/nagano",
   "meitetsu/aichi",
   "meitetsu/gifu",
+  "echigo-tokimeki/tokimeki",
+  "ainokaze/ainokaze",
+  "chitetsu/chitetsu",
+  "manyo/manyo",
+  "ir-ishikawa/ir",
+  "hapiline/hapiline",
+  "echizen/echizen",
+  "alpico/alpico",
+  "aketetsu/aketetsu",
   "shizutetsu/shizutetsu",
   "enshu/enshu",
   "gakunan/gakunan",
@@ -517,10 +726,12 @@ const chubuScripts = [
   "izukyu/izukyu",
   "tenhama/tenhama",
   "oigawa/oigawa",
+  "nagoya-metro/nagoya-metro",
   "aichi-kanjo/aichi-kanjo",
   "nagoya-rinkai/aonami",
   "tkj/tkj",
   "linimo/linimo",
+  "toyotetsu/toyotetsu",
 ];
 
 generateScripts(chubuScripts, "chubu/");

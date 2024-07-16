@@ -1,4 +1,4 @@
-const jrSaitamaStations = {
+const jrEastSaitamaStations = {
   "jr-east-kawagoe": [
     {
       name: "大宮",
@@ -223,4 +223,4 @@ const jrSaitamaStations = {
   ],
 };
 
-generateRailwayStations(jrSaitamaStations, "jr-east", "kanto");
+generateRailwayStations(jrEastSaitamaStations, "jr-east", "kanto");

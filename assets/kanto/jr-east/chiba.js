@@ -1,4 +1,4 @@
-const jrChibaStations = {
+const jrEastChibaStations = {
   "jr-east-uchibo": [
     {
       name: "蘇我",
@@ -548,7 +548,7 @@ const jrChibaStations = {
     },
     {
       name: "越中島",
-      id: "echujima",
+      id: "etchujima",
     },
     {
       name: "潮見",
@@ -923,4 +923,4 @@ const jrChibaStations = {
   ],
 };
 
-generateRailwayStations(jrChibaStations, "jr-east", "kanto");
+generateRailwayStations(jrEastChibaStations, "jr-east", "kanto");

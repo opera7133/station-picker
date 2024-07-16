@@ -1,4 +1,4 @@
-const jrIbarakiStations = {
+const jrEastIbarakiStations = {
   "jr-east-joban-rapid": [
     {
       name: "上野",
@@ -188,4 +188,4 @@ const jrIbarakiStations = {
   ],
 };
 
-generateRailwayStations(jrIbarakiStations, "jr-east", "kanto");
+generateRailwayStations(jrEastIbarakiStations, "jr-east", "kanto");
