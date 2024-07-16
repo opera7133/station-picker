@@ -279,6 +279,18 @@ const niigataRailways = {
         },
       ],
     },
+    hokuhoku: {
+      id: "hokuhoku",
+      name: "北越急行ほくほく線",
+      icon: "assets/chubu/hokuhoku/hokuhoku.svg",
+      railway: [
+        {
+          name: "北越急行ほくほく線",
+          id: "hokuhoku",
+          icon: "assets/chubu/hokuhoku/hokuhoku.svg",
+        },
+      ],
+    },
   },
 };
 
@@ -366,6 +378,35 @@ const ishikawaRailways = {
         },
       ],
     },
+    nototetsu: {
+      id: "nototetsu",
+      name: "能登鉄道七尾線",
+      icon: "assets/chubu/nototetsu/noto.svg",
+      railway: [
+        {
+          name: "能登鉄道七尾線",
+          id: "nototetsu",
+          icon: "assets/chubu/nototetsu/noto.svg",
+        },
+      ],
+    },
+    hokuriku: {
+      id: "hokuriku",
+      name: "北陸鉄道",
+      icon: "assets/chubu/hokuriku/hokuriku.svg",
+      railway: [
+        {
+          name: "石川線",
+          id: "ishikawa",
+          icon: "assets/chubu/hokuriku/hokuriku.svg",
+        },
+        {
+          name: "浅野川線",
+          id: "asanogawa",
+          icon: "assets/chubu/hokuriku/hokuriku.svg",
+        },
+      ],
+    },
   },
 };
 
@@ -402,6 +443,37 @@ const fukuiRailways = {
         },
       ],
     },
+    fukui: {
+      id: "fukui",
+      name: "福井鉄道福武線",
+      icon: "assets/chubu/fukui/fukui.svg",
+      railway: [
+        {
+          name: "福井鉄道福武線",
+          id: "fukubu",
+          icon: "assets/chubu/fukui/fukui.svg",
+        },
+      ],
+    },
+  },
+};
+
+const yamanashiRailways = {
+  id: "yamanashi",
+  name: "山梨",
+  railways: {
+    fujikyuko: {
+      id: "fujikyuko",
+      name: "富士急行線",
+      icon: "assets/chubu/fujikyuko/fujikyuko.svg",
+      railway: [
+        {
+          name: "富士急行線",
+          id: "fujikyuko",
+          icon: "assets/chubu/fujikyuko/fujikyuko.svg",
+        },
+      ],
+    },
   },
 };
 
@@ -421,6 +493,47 @@ const naganoRailways = {
         },
       ],
     },
+    shinano: {
+      id: "shinano",
+      name: "しなの鉄道",
+      icon: "assets/chubu/shinano/shinano.svg",
+      railway: [
+        {
+          name: "しなの鉄道線",
+          id: "shinano",
+          icon: "assets/chubu/shinano/shinano.svg",
+        },
+        {
+          name: "北しなの線",
+          id: "kita-shinano",
+          icon: "assets/chubu/shinano/shinano.svg",
+        },
+      ],
+    },
+    ueda: {
+      id: "ueda",
+      name: "上田電鉄別所線",
+      icon: "assets/chubu/ueda/ueda.svg",
+      railway: [
+        {
+          name: "上田電鉄別所線",
+          id: "ueda",
+          icon: "assets/chubu/ueda/ueda.svg",
+        },
+      ],
+    },
+    nagaden: {
+      id: "nagaden",
+      name: "長野電鉄長野線",
+      icon: "assets/chubu/nagaden/n.png",
+      railway: [
+        {
+          name: "長野線",
+          id: "nagaden",
+          icon: "assets/chubu/nagaden/n.png",
+        },
+      ],
+    },
   },
 };
 
@@ -437,6 +550,42 @@ const gifuRailways = {
           name: "明知鉄道線",
           id: "aketetsu",
           icon: "assets/chubu/aketetsu/aketetsu.svg",
+        },
+      ],
+    },
+    yoro: {
+      id: "yoro",
+      name: "養老鉄道養老線",
+      icon: "assets/chubu/yoro/yoro.svg",
+      railway: [
+        {
+          name: "養老鉄道養老線",
+          id: "yoro",
+          icon: "assets/chubu/yoro/yoro.svg",
+        },
+      ],
+    },
+    tarutetsu: {
+      id: "tarutetsu",
+      name: "樽見鉄道樽見線",
+      icon: "assets/chubu/tarutetsu/tarutetsu.svg",
+      railway: [
+        {
+          name: "樽見鉄道樽見線",
+          id: "tarutetsu",
+          icon: "assets/chubu/tarutetsu/tarutetsu.svg",
+        },
+      ],
+    },
+    nagatetsu: {
+      id: "nagatetsu",
+      name: "長良川鉄道越美南線",
+      icon: "assets/chubu/nagatetsu/nagatetsu.svg",
+      railway: [
+        {
+          name: "長良川鉄道越美南線",
+          id: "nagatetsu",
+          icon: "assets/chubu/nagatetsu/nagatetsu.svg",
         },
       ],
     },
@@ -654,6 +803,7 @@ const chubuRailwaysList = [
   toyamaRailways,
   ishikawaRailways,
   fukuiRailways,
+  yamanashiRailways,
   naganoRailways,
   gifuRailways,
   shizuokaRailways,
@@ -710,15 +860,26 @@ const chubuScripts = [
   "jr-east/nagano",
   "meitetsu/aichi",
   "meitetsu/gifu",
+  // 新潟
   "echigo-tokimeki/tokimeki",
+  // 富山
   "ainokaze/ainokaze",
   "chitetsu/chitetsu",
   "manyo/manyo",
+  // 石川
   "ir-ishikawa/ir",
+  "nototetsu/noto",
+  // 福井
   "hapiline/hapiline",
   "echizen/echizen",
+  // 山梨
+  "fujikyuko/fujikyuko",
+  // 長野
   "alpico/alpico",
+  "shinano/shinano",
+  // 岐阜
   "aketetsu/aketetsu",
+  // 静岡
   "shizutetsu/shizutetsu",
   "enshu/enshu",
   "gakunan/gakunan",
@@ -726,6 +887,7 @@ const chubuScripts = [
   "izukyu/izukyu",
   "tenhama/tenhama",
   "oigawa/oigawa",
+  // 愛知
   "nagoya-metro/nagoya-metro",
   "aichi-kanjo/aichi-kanjo",
   "nagoya-rinkai/aonami",
