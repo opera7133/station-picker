@@ -1,0 +1,37 @@
+const hokurikuStations = {
+  "hokuriku-ishikawa": [
+    { name: "野町", id: "nomachi" },
+    { name: "西泉", id: "nishi-izumi" },
+    { name: "新西金沢", id: "shin-nishi-kanazawa" },
+    { name: "押野", id: "oshino" },
+    { name: "野々市", id: "nonoichi" },
+    { name: "野々市工大前", id: "nonoichi-kodai-mae" },
+    { name: "馬替", id: "magae" },
+    { name: "額住宅前", id: "nuka-jutaku-mae" },
+    { name: "乙丸", id: "otomaru" },
+    { name: "四十万", id: "shijima" },
+    { name: "陽羽里", id: "hibari" },
+    { name: "曽谷", id: "sodani" },
+    { name: "道法寺", id: "dohoji" },
+    { name: "井口", id: "inokuchi" },
+    { name: "小柳", id: "oyanagi" },
+    { name: "日御子", id: "hinomiko" },
+    { name: "鶴来", id: "tsurugi" },
+  ],
+  "hokuriku-asanogawa": [
+    { name: "北鉄金沢", id: "hokutetsu-kanazawa" },
+    { name: "七ツ屋", id: "nanatsuya" },
+    { name: "上諸江", id: "kami-moroe" },
+    { name: "磯部", id: "isobe" },
+    { name: "割出", id: "waridashi" },
+    { name: "三口", id: "mitsukuchi" },
+    { name: "三ツ屋", id: "mitsuya" },
+    { name: "大河端", id: "okobota" },
+    { name: "北間", id: "kitama" },
+    { name: "蚊爪", id: "kagatsume" },
+    { name: "粟ヶ崎", id: "awagasaki" },
+    { name: "内灘", id: "uchinada" },
+  ],
+};
+
+generateRailwayStations(hokurikuStations, "hokuriku", "ishikawa");

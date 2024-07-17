@@ -57,13 +57,38 @@ const setToggle = (railway) => {
   });
 };
 
+const flattenRailways = (railwaysList) => {
+  return railwaysList.reduce((acc, prefecture) => {
+    const railwayList = Object.keys(prefecture.railways).map((key) => {
+      const railway = prefecture.railways[key];
+      if (railway.railway.length === 1) {
+        return [
+          {
+            id: `${prefecture.id}-${railway.id}`,
+            name: railway.name,
+          },
+        ];
+      } else {
+        return railway.railway.map((station) => {
+          return {
+            id: `${prefecture.id}-${railway.id}-${station.id}`,
+            name: `${railway.name}-${station.name}`,
+          };
+        });
+      }
+    });
+    const railwayListFlatten = railwayList.flat();
+    return [...Array.from(acc), ...railwayListFlatten];
+  });
+};
+
 const getRandomStation = () => {
+  const stationNames = new Set();
   const checkboxes = document.querySelectorAll("input[type=checkbox]:checked");
   if (checkboxes.length === 0) {
     alert("駅を選択してください");
     return;
   }
-  const stationNames = new Set();
   checkboxes.forEach((checkbox) => {
     if (checkbox.id.includes("toggle")) return;
     stationNames.add({
@@ -71,7 +96,10 @@ const getRandomStation = () => {
       railway: checkbox.parentElement.parentElement.parentElement.id,
     });
   });
-  const allFlattenRailways = [...flattenKantoRailways, ...flattenChubuRailways];
+  const allFlattenRailways = [
+    ...flattenRailways(kantoRailwaysList),
+    ...flattenRailways(chubuRailwaysList),
+  ];
   const stationNamesArray = Array.from(stationNames);
   const random = Math.floor(Math.random() * stationNamesArray.length);
   const stationName = stationNamesArray[random].name + "駅";
@@ -185,23 +213,6 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
   });
   setToggle(`${prefecture}-${railway}`);
 };
-
-const generateScripts = (scripts, base = "") => {
-  scripts.forEach((script) => {
-    const scriptElement = document.createElement("script");
-    scriptElement.src = `assets/${base}${script}.js`;
-    scriptElement.onload = () => {
-      const railwayStations = window[script.replace(/-|\/|\.|/g, "_")];
-      if (railwayStations) {
-        generateRailwayStations(script, railwayStations);
-      }
-    };
-    document.body.appendChild(scriptElement);
-  });
-};
-
-const mainScripts = ["kanto/kanto", "chubu/chubu"];
-generateScripts(mainScripts);
 
 const appVersion = "1.1.0";
 

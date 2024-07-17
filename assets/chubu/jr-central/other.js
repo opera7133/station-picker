@@ -313,14 +313,6 @@ const jrCentralOtherStations = {
       id: "ogaki",
     },
     {
-      name: "荒尾",
-      id: "arao",
-    },
-    {
-      name: "美濃赤坂",
-      id: "mino-akasaka",
-    },
-    {
       name: "垂井",
       id: "tarui",
     },
@@ -343,6 +335,20 @@ const jrCentralOtherStations = {
     {
       name: "米原",
       id: "maibara",
+    },
+  ],
+  "jr-central-tokaido-akasaka": [
+    {
+      name: "大垣",
+      id: "ogaki",
+    },
+    {
+      name: "荒尾",
+      id: "arao",
+    },
+    {
+      name: "美濃赤坂",
+      id: "mino-akasaka",
     },
   ],
   "jr-central-chuo": [

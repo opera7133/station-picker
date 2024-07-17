@@ -118,6 +118,11 @@ const kantoRailways = {
           icon: "assets/kanto/jr-east/co.svg",
         },
         {
+          name: "中央本線（辰野支線）",
+          id: "chuo-tatsuno",
+          icon: "assets/kanto/jr-east/co.svg",
+        },
+        {
           name: "常磐線",
           id: "joban",
           icon: "assets/kanto/jr-east/joban.svg",
@@ -1020,36 +1025,6 @@ const kantoRailwaysList = [
   ibarakiRailways,
 ];
 
-/*
-return railway list
-{
-  id: string,
-  name: string
-}[]
-*/
-const flattenKantoRailways = kantoRailwaysList.reduce((acc, prefecture) => {
-  const railwayList = Object.keys(prefecture.railways).map((key) => {
-    const railway = prefecture.railways[key];
-    if (railway.railway.length === 1) {
-      return [
-        {
-          id: `${prefecture.id}-${railway.id}`,
-          name: railway.name,
-        },
-      ];
-    } else {
-      return railway.railway.map((station) => {
-        return {
-          id: `${prefecture.id}-${railway.id}-${station.id}`,
-          name: `${railway.name}-${station.name}`,
-        };
-      });
-    }
-  });
-  const railwayListFlatten = railwayList.flat();
-  return [...Array.from(acc), ...railwayListFlatten];
-}, []);
-
 for (const prefecture of kantoRailwaysList) {
   if (prefecture.id === "kanto") {
     generatePrefecture(prefecture, "stations", true);
@@ -1061,61 +1036,4 @@ for (const prefecture of kantoRailwaysList) {
     generateRailwayCompany(railway, prefecture.id);
     generateRailway(railway, prefecture.id);
   });
-}
-
-
-const kantoScripts = [
-  "jr-east/tokyo",
-  "jr-east/chiba",
-  "jr-east/saitama",
-  "jr-east/ibaraki",
-  "jr-east/kanagawa",
-  "jr-east/other",
-  "tokyo-metro/tokyo-metro",
-  "tobu/chiba",
-  "tobu/saitama",
-  "tobu/tochigi",
-  "tobu/gunma",
-  "tobu/tokyo",
-  "odakyu/odakyu",
-  "tokyu/tokyu",
-  "keikyu/kk",
-  "seibu/seibu",
-  "keisei/ks",
-  "tx/tx",
-  "toei/toei",
-  "toei/nt",
-  "toei/sakura",
-  "keio/keio",
-  "rinkai/rinkai",
-  "tokyo-monorail/tokyo-monorail",
-  "yurikamome/yurikamome",
-  "tama-monorail/tama-monorail",
-  "sotetsu/sotetsu",
-  "yokohama-metro/yokohama-metro",
-  "minatomirai/minatomirai",
-  "shonan-monorail/shonan",
-  "enoshima/en",
-  "kanazawa-seaside/seaside",
-  "izu-hakone/izu-hakone",
-  "hokso/hs",
-  "cm/cm",
-  "yu-kari/yu-kari",
-  "kominato/kominato",
-  "isumi/isumi",
-  "toyo/toyo",
-  "choshi/choshi",
-  "ryutetsu/ryutetsu",
-  "sr/sr",
-  "ns/ns",
-  "chichibu/chichibu",
-  "kantetsu/kantetsu",
-  "kashima-rinkai/kashima-rinkai",
-  "hitachinaka/hitachinaka",
-];
-
-generateScripts(kantoScripts, "kanto/");
-
-for (const prefecture of kantoRailwaysList) {
-  setToggle(prefecture.id);
 }

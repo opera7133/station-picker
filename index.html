@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Station Picker</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
     <meta property="og:title" content="Station Picker" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://dl.wmsci.com/station/" />
@@ -93,23 +93,6 @@
       >
       <p class="my-4" id="ver">バージョン：</p>
     </footer>
-    <script src="main.js?v=126"></script>
-    <script>
-      /*if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker.register("sw.js").then(
-            function (registration) {
-              console.log(
-                "ServiceWorker registration successful with scope: ",
-                registration.scope
-              );
-            },
-            function (err) {
-              console.log("ServiceWorker registration failed: ", err);
-            }
-          );
-        });
-      }*/
-    </script>
+    <script src="bundle.js"></script>
   </body>
 </html>

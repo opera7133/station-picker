@@ -695,6 +695,24 @@ const jrEastTokyoStations = {
       id: "shiojiri",
     },
   ],
+  "jr-east-chuo-tatsuno": [
+    {
+      name: "川岸",
+      id: "kawagishi",
+    },
+    {
+      name: "辰野",
+      id: "tatsuno",
+    },
+    {
+      name: "信濃川島",
+      id: "shinano-kawashima",
+    },
+    {
+      name: "小野",
+      id: "ono",
+    },
+  ],
 };
 
 generateRailwayStations(jrEastTokyoStations, "jr-east", "kanto");

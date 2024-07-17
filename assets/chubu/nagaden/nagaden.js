@@ -1,0 +1,28 @@
+const nagadenStations = [
+  { name: "長野", id: "nagano" },
+  { name: "市役所前", id: "shiyakusho-mae" },
+  { name: "権堂", id: "gondo" },
+  { name: "善光寺下", id: "zenkoji-shita" },
+  { name: "本郷", id: "hongo" },
+  { name: "桐原", id: "kihara" },
+  { name: "信濃吉田", id: "shinano-yoshida" },
+  { name: "朝陽", id: "asahi" },
+  { name: "附属中学前", id: "fuzoku-chugaku-mae" },
+  { name: "柳原", id: "yanagihara" },
+  { name: "村山", id: "murayama" },
+  { name: "日野", id: "hino" },
+  { name: "須坂", id: "suzaka" },
+  { name: "北須坂", id: "kita-suzaka" },
+  { name: "小布施", id: "obuse" },
+  { name: "都住", id: "tsusumi" },
+  { name: "桜沢", id: "sakurasawa" },
+  { name: "延徳", id: "entoku" },
+  { name: "信州中野", id: "shinshu-nakano" },
+  { name: "中野松川", id: "nakano-matsukawa" },
+  { name: "信濃竹原", id: "shinano-takebara" },
+  { name: "夜間瀬", id: "yomase" },
+  { name: "上条", id: "kamijo" },
+  { name: "湯田中", id: "yudanaka" },
+];
+
+generateStations(nagadenStations, "nagaden", "nagano");

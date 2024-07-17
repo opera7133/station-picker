@@ -13,6 +13,11 @@ const chubuRailways = {
           icon: "assets/chubu/jr-central/ca.svg",
         },
         {
+          name: "東海道本線（赤坂支線）",
+          id: "tokaido-akasaka",
+          icon: "assets/chubu/jr-central/ca.svg",
+        },
+        {
           name: "御殿場線",
           id: "gotemba",
           icon: "assets/chubu/jr-central/cb.svg",
@@ -810,29 +815,6 @@ const chubuRailwaysList = [
   aichiRailways,
 ];
 
-const flattenChubuRailways = chubuRailwaysList.reduce((acc, prefecture) => {
-  const railwayList = Object.keys(prefecture.railways).map((key) => {
-    const railway = prefecture.railways[key];
-    if (railway.railway.length === 1) {
-      return [
-        {
-          id: `${prefecture.id}-${railway.id}`,
-          name: railway.name,
-        },
-      ];
-    } else {
-      return railway.railway.map((station) => {
-        return {
-          id: `${prefecture.id}-${railway.id}-${station.id}`,
-          name: `${railway.name}-${station.name}`,
-        };
-      });
-    }
-  });
-  const railwayListFlatten = railwayList.flat();
-  return [...Array.from(acc), ...railwayListFlatten];
-}, []);
-
 for (const prefecture of chubuRailwaysList) {
   if (prefecture.id === "chubu") {
     generatePrefecture(prefecture, "stations", true);
@@ -844,60 +826,4 @@ for (const prefecture of chubuRailwaysList) {
     generateRailwayCompany(railway, prefecture.id);
     generateRailway(railway, prefecture.id);
   });
-}
-
-const chubuScripts = [
-  "jr-central/aichi",
-  "jr-central/shizuoka",
-  "jr-central/gifu",
-  "jr-central/yamanashi",
-  "jr-central/other",
-  "jr-west/toyama",
-  "jr-west/niigata",
-  "jr-west/ishikawa",
-  "jr-west/fukui",
-  "jr-east/niigata",
-  "jr-east/nagano",
-  "meitetsu/aichi",
-  "meitetsu/gifu",
-  // 新潟
-  "echigo-tokimeki/tokimeki",
-  // 富山
-  "ainokaze/ainokaze",
-  "chitetsu/chitetsu",
-  "manyo/manyo",
-  // 石川
-  "ir-ishikawa/ir",
-  "nototetsu/noto",
-  // 福井
-  "hapiline/hapiline",
-  "echizen/echizen",
-  // 山梨
-  "fujikyuko/fujikyuko",
-  // 長野
-  "alpico/alpico",
-  "shinano/shinano",
-  // 岐阜
-  "aketetsu/aketetsu",
-  // 静岡
-  "shizutetsu/shizutetsu",
-  "enshu/enshu",
-  "gakunan/gakunan",
-  "izu-hakone/izu-hakone",
-  "izukyu/izukyu",
-  "tenhama/tenhama",
-  "oigawa/oigawa",
-  // 愛知
-  "nagoya-metro/nagoya-metro",
-  "aichi-kanjo/aichi-kanjo",
-  "nagoya-rinkai/aonami",
-  "tkj/tkj",
-  "linimo/linimo",
-  "toyotetsu/toyotetsu",
-];
-
-generateScripts(chubuScripts, "chubu/");
-
-for (const prefecture of chubuRailwaysList) {
-  setToggle(prefecture.id);
 }

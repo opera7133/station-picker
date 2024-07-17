@@ -1,0 +1,83 @@
+import fs from "fs";
+import path from "path";
+import UglifyJS from "uglify-js";
+import { fileURLToPath } from "url";
+
+// read assets/**/*.js and bundle to one file
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const assetsDir = path.join(__dirname, "assets");
+const bundleFile = path.join(__dirname, "bundle.js");
+
+const parent = fs.readdirSync(assetsDir);
+const regionfiles = parent
+  .map((file) => {
+    const filePath = path.join(assetsDir, file);
+    if (fs.lstatSync(filePath).isDirectory()) {
+      return fs.readdirSync(filePath).map((f) => path.join(file, f));
+    }
+    return file;
+  })
+  .flat();
+const regions = [
+  "hokkaido",
+  "tohoku",
+  "kanto",
+  "chubu",
+  "kinki",
+  "chugoku",
+  "shikoku",
+  "kyushu",
+];
+const files = regionfiles
+  .map((f) => {
+    const filePath = path.join(assetsDir, f);
+    if (fs.lstatSync(filePath).isDirectory()) {
+      return fs.readdirSync(filePath).map((ff) => path.join(f, ff));
+    }
+    return f;
+  })
+  .flat()
+  .filter((f) => f.endsWith(".js"))
+  .sort((a, b) => {
+    if (!a.includes("/") || !b.includes("/")) {
+      return 1;
+    }
+    if (a.match(/\//g).length === b.match(/\//g).length) {
+      return a.localeCompare(b);
+    } else {
+      return a.match(/\//g).length - b.match(/\//g).length;
+    }
+  })
+  .sort((a, b) => {
+    const aIndex = regions.findIndex((r) => a.includes(r));
+    const bIndex = regions.findIndex((r) => b.includes(r));
+    return aIndex - bIndex;
+  });
+const content = files
+  .map((file) => fs.readFileSync(path.join(assetsDir, file), "utf8"))
+  .join("\n");
+
+const toggle = `
+for (const prefecture of kantoRailwaysList) {
+  setToggle(prefecture.id);
+}
+
+for (const prefecture of chubuRailwaysList) {
+  setToggle(prefecture.id);
+}`;
+
+const minified = UglifyJS.minify(content + toggle, { warnings: true });
+
+if (minified.error) {
+  console.error(minified.error);
+  process.exit(1);
+}
+
+if (minified.warnings) {
+  console.error(minified.warnings);
+}
+
+fs.writeFileSync(bundleFile, minified.code);
