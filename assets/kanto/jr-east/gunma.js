@@ -29,6 +29,27 @@ const jrEastGunmaStations = {
     { name: "西松井田", id: "nishi-matsuida" },
     { name: "横川", id: "yokokawa" },
   ],
+  "jr-east-takasaki": [
+    { name: "大宮", id: "omiya" },
+    { name: "宮原", id: "miyahara" },
+    { name: "上尾", id: "ageo" },
+    { name: "北上尾", id: "kita-ageo" },
+    { name: "桶川", id: "okegawa" },
+    { name: "北本", id: "kitamoto" },
+    { name: "鴻巣", id: "konosu" },
+    { name: "北鴻巣", id: "kita-konosu" },
+    { name: "吹上", id: "fukiage" },
+    { name: "行田", id: "gyoda" },
+    { name: "熊谷", id: "kumagaya" },
+    { name: "籠原", id: "kagohara" },
+    { name: "深谷", id: "fukaya" },
+    { name: "岡部", id: "okabe" },
+    { name: "本庄", id: "honjo" },
+    { name: "神保原", id: "jinbohara" },
+    { name: "新町", id: "shimmachi" },
+    { name: "倉賀野", id: "kuragano" },
+    { name: "高崎", id: "takasaki" },
+  ],
 };
 
 generateRailwayStations(jrEastGunmaStations, "jr-east", "kanto");

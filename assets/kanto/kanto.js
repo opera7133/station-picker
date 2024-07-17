@@ -73,6 +73,11 @@ const kantoRailways = {
           icon: "assets/kanto/jr-east/ju.svg",
         },
         {
+          name: "高崎線",
+          id: "takasaki",
+          icon: "assets/kanto/jr-east/ju.svg",
+        },
+        {
           name: "中央・総武各駅停車",
           id: "soubu",
           icon: "assets/kanto/jr-east/jb.svg",
@@ -593,6 +598,92 @@ const kantoRailways = {
   },
 };
 
+const tochigiRailways = {
+  id: "tochigi",
+  name: "栃木県",
+  railways: {
+    lightrail: {
+      id: "lightrail",
+      name: "宇都宮芳賀ライトレール線",
+      icon: "assets/kanto/lightrail/lightrail.svg",
+      railway: [
+        {
+          name: "宇都宮芳賀ライトレール線",
+          id: "lightrail",
+          icon: "assets/kanto/lightrail/lightrail.svg",
+        },
+      ],
+    },
+    mooka: {
+      id: "mooka",
+      name: "真岡鐵道真岡線",
+      icon: "assets/kanto/mooka/mooka.svg",
+      railway: [
+        {
+          name: "真岡鐵道真岡線",
+          id: "mooka",
+          icon: "assets/kanto/mooka/mooka.svg",
+        },
+      ],
+    },
+    yagan: {
+      id: "yagan",
+      name: "野岩鉄道会津鬼怒川線",
+      icon: "assets/kanto/yagan/yagan.png",
+      railway: [
+        {
+          name: "野岩鉄道会津鬼怒川線",
+          id: "yagan",
+          icon: "assets/kanto/yagan/yagan.png",
+        },
+      ],
+    },
+  },
+};
+
+const gunmaRailways = {
+  id: "gunma",
+  name: "群馬県",
+  railways: {
+    watarase: {
+      id: "watarase",
+      name: "わたらせ渓谷線",
+      icon: "assets/kanto/watarase/wk.svg",
+      railway: [
+        {
+          name: "わたらせ渓谷線",
+          id: "watarase",
+          icon: "assets/kanto/watarase/wk.svg",
+        },
+      ],
+    },
+    jomo: {
+      id: "jomo",
+      name: "上毛電気鉄道上毛線",
+      icon: "assets/kanto/jomo/jomo.svg",
+      railway: [
+        {
+          name: "上毛電気鉄道上毛線",
+          id: "jomo",
+          icon: "assets/kanto/jomo/jomo.svg",
+        },
+      ],
+    },
+    joshin: {
+      id: "joshin",
+      name: "上信電鉄上信線",
+      icon: "assets/kanto/joshin/joshin.svg",
+      railway: [
+        {
+          name: "上信電鉄上信線",
+          id: "joshin",
+          icon: "assets/kanto/joshin/joshin.svg",
+        },
+      ],
+    },
+  },
+};
+
 const tokyoRailways = {
   id: "tokyo",
   name: "東京都",
@@ -1048,11 +1139,13 @@ const ibarakiRailways = {
 
 const kantoRailwaysList = [
   kantoRailways,
+  ibarakiRailways,
+  tochigiRailways,
+  gunmaRailways,
+  saitamaRailways,
+  chibaRailways,
   tokyoRailways,
   kanagawaRailways,
-  chibaRailways,
-  saitamaRailways,
-  ibarakiRailways,
 ];
 
 for (const prefecture of kantoRailwaysList) {

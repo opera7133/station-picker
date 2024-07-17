@@ -1,0 +1,25 @@
+const joshinStations = [
+  { name: "高崎", id: "takasaki" },
+  { name: "南高崎", id: "minami-takasaki" },
+  { name: "佐野のわたし", id: "sano-no-watashi-no" },
+  { name: "根小屋", id: "negoya" },
+  { name: "高崎商科大学前", id: "takasaki-shoka-daigaku-mae" },
+  { name: "山名", id: "yamana" },
+  { name: "西山名", id: "nishi-yamana" },
+  { name: "馬庭", id: "maniwa" },
+  { name: "吉井", id: "yoshii" },
+  { name: "西吉井", id: "nishi-yoshii" },
+  { name: "上州新屋", id: "joshu-niiya" },
+  { name: "上州福島", id: "joshu-fukushima" },
+  { name: "東富岡", id: "higashi-tomioka" },
+  { name: "上州富岡", id: "joshu-tomioka" },
+  { name: "西富岡", id: "nishi-tomioka" },
+  { name: "上州七日市", id: "joshu-nanokaichi" },
+  { name: "上州一ノ宮", id: "joshu-ichinomiya" },
+  { name: "神農原", id: "kanohara" },
+  { name: "南蛇井", id: "nanjai" },
+  { name: "千平", id: "sendaira" },
+  { name: "下仁田", id: "shimonita" },
+];
+
+generateStations(joshinStations, "joshin", "gunma");

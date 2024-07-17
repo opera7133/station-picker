@@ -1,0 +1,26 @@
+const jomoStations = [
+  { name: "中央前橋", id: "chuo-maebashi" },
+  { name: "城東", id: "joto" },
+  { name: "三俣", id: "mitsumata" },
+  { name: "片貝", id: "katakai" },
+  { name: "上泉", id: "kami-izumi" },
+  { name: "赤坂", id: "akasaka" },
+  { name: "心臓血管センター", id: "shinzo-kekkan-center" },
+  { name: "江木", id: "egi" },
+  { name: "大胡", id: "ogo" },
+  { name: "樋越", id: "higoshi" },
+  { name: "北原", id: "kitahara" },
+  { name: "新屋", id: "araya" },
+  { name: "粕川", id: "kasukawa" },
+  { name: "膳", id: "zen" },
+  { name: "新里", id: "niisato" },
+  { name: "新川", id: "nikkawa" },
+  { name: "東新川", id: "higashi-nikkawa" },
+  { name: "赤城", id: "akagi" },
+  { name: "天王宿", id: "tennojuku" },
+  { name: "富士山下", id: "fujiyama-shita" },
+  { name: "丸山下", id: "maruyama-shita" },
+  { name: "西桐生", id: "nishi-kiryu" },
+];
+
+generateStations(jomoStations, "jomo", "gunma");
