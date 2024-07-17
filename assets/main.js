@@ -60,7 +60,8 @@ const setToggle = (railway) => {
 };
 
 const flattenRailways = (railwaysList) => {
-  return railwaysList.reduce((acc, prefecture) => {
+  const flattenList = [];
+  for (const prefecture of railwaysList) {
     const railwayList = Object.keys(prefecture.railways).map((key) => {
       const railway = prefecture.railways[key];
       if (railway.railway.length === 1) {
@@ -80,19 +81,22 @@ const flattenRailways = (railwaysList) => {
       }
     });
     const railwayListFlatten = railwayList.flat();
-    return [...Array.from(acc), ...railwayListFlatten];
-  });
+    flattenList.push(...railwayListFlatten);
+  }
+  return flattenList;
 };
 
 const getRandomStation = () => {
   const stationNames = new Set();
-  const checkboxes = document.querySelectorAll("input[type=checkbox]:checked");
+  const checkboxes = Array.from(
+    document.querySelectorAll("input[type=checkbox]:checked")
+  ).filter((checkbox) => !checkbox.id.includes("toggle"));
   if (checkboxes.length === 0) {
     alert("駅を選択してください");
     return;
   }
+  console.log(checkboxes);
   checkboxes.forEach((checkbox) => {
-    if (checkbox.id.includes("toggle")) return;
     stationNames.add({
       name: checkbox.parentElement.querySelector("label").textContent,
       railway: checkbox.parentElement.parentElement.parentElement.id,
@@ -103,6 +107,7 @@ const getRandomStation = () => {
     ...flattenRailways(chubuRailwaysList),
   ];
   const stationNamesArray = Array.from(stationNames);
+  console.log(kantoRailwaysList);
   const random = Math.floor(Math.random() * stationNamesArray.length);
   const stationName = stationNamesArray[random].name + "駅";
   const railwayName = allFlattenRailways.find(
@@ -205,6 +210,6 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
   });
 };
 
-const appVersion = "1.1.3";
+const appVersion = "1.1.4";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;
