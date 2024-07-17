@@ -41,7 +41,8 @@ const jrEastNiigataStations = {
       id: "shibata",
     },
   ],
-  "jr-east-shinetsu": [],
+  "jr-east-shinetsu-sn": [],
+  "jr-east-shinetsu-nn": [],
   "jr-east-joetsu": [],
   "jr-east-yahiko": [
     {

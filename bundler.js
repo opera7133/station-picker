@@ -67,6 +67,10 @@ for (const prefecture of kantoRailwaysList) {
 
 for (const prefecture of chubuRailwaysList) {
   setToggle(prefecture.id);
+}
+
+for (const toggler of toggleList) {
+  setToggle(toggler);
 }`;
 
 const minified = UglifyJS.minify(content + toggle, { warnings: true });

@@ -68,6 +68,11 @@ const kantoRailways = {
           icon: "assets/kanto/jr-east/jc.svg",
         },
         {
+          name: "宇都宮線",
+          id: "utsunomiya",
+          icon: "assets/kanto/jr-east/ju.svg",
+        },
+        {
           name: "中央・総武各駅停車",
           id: "soubu",
           icon: "assets/kanto/jr-east/jb.svg",
@@ -136,6 +141,31 @@ const kantoRailways = {
           name: "川越線",
           id: "kawagoe",
           icon: "assets/kanto/jr-east/kawagoe.svg",
+        },
+        {
+          name: "吾妻線",
+          id: "agatsuma",
+          icon: "assets/kanto/jr-east/agatsuma.svg",
+        },
+        {
+          name: "信越本線（高崎〜横川）",
+          id: "shinetsu-ty",
+          icon: "assets/chubu/jr-east/shinetsu.svg",
+        },
+        {
+          name: "日光線",
+          id: "nikko",
+          icon: "assets/kanto/jr-east/nikko.svg",
+        },
+        {
+          name: "両毛線",
+          id: "ryomo",
+          icon: "assets/kanto/jr-east/ryomo.svg",
+        },
+        {
+          name: "烏山線",
+          id: "karasuyama",
+          icon: "assets/kanto/jr-east/karasuyama.svg",
         },
         {
           name: "相模線",

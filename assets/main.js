@@ -45,6 +45,8 @@ const stationTemplate = (station, key) => `
       </div>
     `;
 
+const toggleList = [];
+
 const setToggle = (railway) => {
   const toggle = document.getElementById(railway + "-toggle");
   toggle.addEventListener("click", () => {
@@ -143,7 +145,6 @@ document.getElementById("retry").addEventListener("click", () => {
 const generatePrefecture = (prefecture, parent, top) => {
   const prefectureElement = document.getElementById(parent);
   prefectureElement.innerHTML += prefectureTemplate(prefecture, top);
-  setToggle(prefecture.id);
 };
 
 const generateRailwayCompany = (railwayCompany, parent) => {
@@ -152,6 +153,7 @@ const generateRailwayCompany = (railwayCompany, parent) => {
     railwayCompany,
     parent
   );
+  toggleList.push(`${parent}-${railwayCompany.id}`);
 };
 
 const generateRailway = (railway, prefecture) => {
@@ -181,7 +183,7 @@ const generateStations = (stations, railway, prefecture) => {
   });
   stationElements += "</div>";
   stationElement.innerHTML += stationElements;
-  setToggle(`${prefecture}-${railway}`);
+  toggleList.push(`${prefecture}-${railway}`);
 };
 
 const generateRailwayStations = (railwayStations, railway, prefecture) => {
@@ -199,21 +201,10 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
     });
     stationElements += "</div>";
     stationElement.innerHTML += stationElements;
-    const stationToggle = document.getElementById(
-      `${prefecture}-${key}-toggle`
-    );
-    stationToggle.addEventListener("click", (event) => {
-      const checkboxes = document.querySelectorAll(
-        `#${prefecture}-${key} input[type="checkbox"]`
-      );
-      checkboxes.forEach((checkbox) => {
-        checkbox.checked = event.target.checked;
-      });
-    });
+    toggleList.push(`${prefecture}-${key}`);
   });
-  setToggle(`${prefecture}-${railway}`);
 };
 
-const appVersion = "1.1.0";
+const appVersion = "1.1.1";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;

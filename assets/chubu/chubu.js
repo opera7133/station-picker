@@ -107,8 +107,13 @@ const chubuRailways = {
           icon: "assets/chubu/jr-east/shinonoi.svg",
         },
         {
-          name: "信越本線",
-          id: "shinetsu",
+          name: "信越本線（篠ノ井〜長野）",
+          id: "shinetsu-sn",
+          icon: "assets/chubu/jr-east/shinetsu.svg",
+        },
+        {
+          name: "信越本線（直江津〜新潟）",
+          id: "shinetsu-nn",
           icon: "assets/chubu/jr-east/shinetsu.svg",
         },
         {
