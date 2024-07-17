@@ -95,7 +95,6 @@ const getRandomStation = () => {
     alert("駅を選択してください");
     return;
   }
-  console.log(checkboxes);
   checkboxes.forEach((checkbox) => {
     stationNames.add({
       name: checkbox.parentElement.querySelector("label").textContent,
@@ -107,7 +106,6 @@ const getRandomStation = () => {
     ...flattenRailways(chubuRailwaysList),
   ];
   const stationNamesArray = Array.from(stationNames);
-  console.log(kantoRailwaysList);
   const random = Math.floor(Math.random() * stationNamesArray.length);
   const stationName = stationNamesArray[random].name + "駅";
   const railwayName = allFlattenRailways.find(
