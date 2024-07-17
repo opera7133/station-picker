@@ -117,7 +117,10 @@ const getRandomStation = () => {
   document.getElementById("result-railway").textContent = railwayName;
   document.getElementById(
     "result-map"
-  ).src = `https://maps.google.co.jp/maps?output=embed&q=${railwayName}%20${stationName}`;
+  ).src = `https://maps.google.co.jp/maps?output=embed&q=${railwayNamel.replace(
+    /（(.*)）/g,
+    ""
+  )}%20${stationName}`;
   document.getElementById(
     "result-tweet"
   ).value = `今日の駅は${railwayName}の『${stationName}』です！\n#StationPicker\nhttps://dl.wmsci.com/station/`;
