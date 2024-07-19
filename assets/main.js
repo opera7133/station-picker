@@ -102,8 +102,14 @@ const getRandomStation = () => {
     });
   });
   const allFlattenRailways = [
+    ...flattenRailways(hokkaidoRailwaysList),
+    ...flattenRailways(tohokuRailwaysList),
     ...flattenRailways(kantoRailwaysList),
     ...flattenRailways(chubuRailwaysList),
+    ...flattenRailways(kinkiRailwaysList),
+    ...flattenRailways(chugokuRailwaysList),
+    ...flattenRailways(shikokuRailwaysList),
+    ...flattenRailways(kyushuRailwaysList),
   ];
   const stationNamesArray = Array.from(stationNames);
   const random = Math.floor(Math.random() * stationNamesArray.length);
@@ -154,6 +160,9 @@ const generatePrefecture = (prefecture, parent, top) => {
 };
 
 const generateRailwayCompany = (railwayCompany, parent) => {
+  if (railwayCompany.railway.length === 0) {
+    return;
+  }
   const railwayCompanyElement = document.getElementById(parent);
   railwayCompanyElement.innerHTML += railwayCompanyTemplate(
     railwayCompany,
@@ -196,6 +205,10 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
   Object.keys(railwayStations).forEach((key) => {
     const stations = railwayStations[key];
     const stationElement = document.getElementById(`${prefecture}-${key}`);
+    if (!stationElement) {
+      alert(`${prefecture}-${key} is not found`);
+      return;
+    }
     if ((stations.length === 0 || !stations) && stationElement) {
       stationElement.remove();
       return;
@@ -211,6 +224,6 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
   });
 };
 
-const appVersion = "1.1.4";
+const appVersion = "1.2.0-alpha1";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;

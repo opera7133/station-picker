@@ -22,14 +22,14 @@ const regionfiles = parent
   })
   .flat();
 const regions = [
-  "hokkaido",
-  "tohoku",
+  //"hokkaido",
+  //"tohoku",
   "kanto",
   "chubu",
   "kinki",
-  "chugoku",
-  "shikoku",
-  "kyushu",
+  //"chugoku",
+  //"shikoku",
+  //"kyushu",
 ];
 const files = regionfiles
   .map((f) => {
@@ -45,10 +45,10 @@ const files = regionfiles
     if (!a.includes("/") || !b.includes("/")) {
       return 1;
     }
-    if (a.match(/\//g).length === b.match(/\//g).length) {
+    if (a.match(/\//g)?.length === b.match(/\//g)?.length) {
       return a.localeCompare(b);
     } else {
-      return a.match(/\//g).length - b.match(/\//g).length;
+      return a.match(/\//g)?.length! - b.match(/\//g)?.length!;
     }
   })
   .sort((a, b) => {
@@ -60,15 +60,15 @@ const content = files
   .map((file) => fs.readFileSync(path.join(assetsDir, file), "utf8"))
   .join("\n");
 
-const toggle = `
-for (const prefecture of kantoRailwaysList) {
-  setToggle(prefecture.id);
+let regionToggle = "";
+
+for (const region of regions) {
+  regionToggle += `for (const prefecture of ${region}RailwaysList) {
+    setToggle(prefecture.id);
+  }`;
 }
 
-for (const prefecture of chubuRailwaysList) {
-  setToggle(prefecture.id);
-}
-
+const toggle = `${regionToggle}
 for (const toggler of toggleList) {
   setToggle(toggler);
 }`;

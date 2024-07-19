@@ -1,11 +1,10 @@
 {
   "name": "station-selector",
-  "devDependencies": { "@tailwindcss/forms": "^0.5.7", "tailwindcss": "^3.4.4" },
+  "devDependencies": { "@tailwindcss/forms": "^0.5.7", "@types/uglify-js": "^3.17.5", "tailwindcss": "^3.4.4" },
   "scripts": {
-    "build": "node bundler.js && tailwindcss build -i assets/main.css -o assets/styles.css --minify",
+    "build": "bun bundler.ts && tailwindcss build -i assets/main.css -o assets/styles.css --minify",
     "watch": "tailwindcss build -i assets/main.css -o assets/styles.css --watch --minify"
   },
-  "type": "module",
   "dependencies": {
     "@putout/minify": "^4.4.0",
     "uglify-js": "^3.18.0"

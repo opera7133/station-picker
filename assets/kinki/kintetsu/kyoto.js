@@ -1,0 +1,32 @@
+const kintetsuKyotoStations = {
+  "kintetsu-kyoto": [
+    { name: "京都", id: "kyoto" },
+    { name: "東寺", id: "toji" },
+    { name: "十条", id: "jujo" },
+    { name: "上鳥羽口", id: "kamitobaguchi" },
+    { name: "竹田", id: "takeda" },
+    { name: "伏見", id: "fushimi" },
+    { name: "近鉄丹波橋", id: "kintetsu-tambabashi" },
+    { name: "桃山御陵前", id: "momoyama-goryomae" },
+    { name: "向島", id: "mukaijima" },
+    { name: "小倉", id: "ogura" },
+    { name: "伊勢田", id: "iseda" },
+    { name: "大久保", id: "okubo" },
+    { name: "久津川", id: "kutsukawa" },
+    { name: "寺田", id: "terada" },
+    { name: "富野荘", id: "tonosho" },
+    { name: "新田辺", id: "shin-tanabe" },
+    { name: "興戸", id: "kodo" },
+    { name: "三山木", id: "miyamaki" },
+    { name: "近鉄宮津", id: "kintetsu-miyazu" },
+    { name: "狛田", id: "komada" },
+    { name: "新祝園", id: "shin-hosono" },
+    { name: "木津川台", id: "kizugawadai" },
+    { name: "山田川", id: "yamadagawa" },
+    { name: "高の原", id: "takanohara" },
+    { name: "平城", id: "heijo" },
+    { name: "大和西大寺", id: "yamato-saidaiji" },
+  ],
+};
+
+generateRailwayStations(kintetsuKyotoStations, "kintetsu", "kinki");
