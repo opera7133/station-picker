@@ -534,18 +534,23 @@ const shigaRailways = {
       icon: "assets/kinki/ohmi/ohmi.svg",
       railway: [
         {
-          id: "honsen",
-          name: "本線",
+          id: "hikone-taga-taisha",
+          name: "彦根・多賀大社線",
           icon: "assets/kinki/ohmi/ohmi.svg",
         },
         {
-          id: "taga",
-          name: "多賀線",
+          id: "koto-omiji",
+          name: "湖東・近江路線",
           icon: "assets/kinki/ohmi/ohmi.svg",
         },
         {
-          id: "yokaichi",
-          name: "八日市線",
+          id: "minakuchi-gamono",
+          name: "水口・蒲生野線",
+          icon: "assets/kinki/ohmi/ohmi.svg",
+        },
+        {
+          id: "manyo-akane",
+          name: "万葉あかね線",
           icon: "assets/kinki/ohmi/ohmi.svg",
         },
       ],
@@ -631,8 +636,13 @@ const kyotoRailways = {
           icon: "assets/kinki/kyoto-tango/tango.svg",
         },
         {
-          id: "miyazu",
-          name: "宮津線",
+          id: "miyatoyo",
+          name: "宮豊線",
+          icon: "assets/kinki/kyoto-tango/tango.svg",
+        },
+        {
+          id: "miyamai",
+          name: "宮舞線",
           icon: "assets/kinki/kyoto-tango/tango.svg",
         },
       ],
@@ -773,6 +783,28 @@ const hyogoRailways = {
   id: "hyogo",
   name: "兵庫",
   railways: {
+    "kobe-metro": {
+      id: "kobe-metro",
+      name: "神戸市営地下鉄",
+      icon: "assets/kinki/kobe-metro/kobe-metro.svg",
+      railway: [
+        {
+          id: "seishin-yamate",
+          name: "西神・山手線",
+          icon: "assets/kinki/kobe-metro/seishin.svg",
+        },
+        {
+          id: "hokushin",
+          name: "北神線",
+          icon: "assets/kinki/kobe-metro/hokushin.svg",
+        },
+        {
+          id: "kaigan",
+          name: "海岸線",
+          icon: "assets/kinki/kobe-metro/kaigan.svg",
+        },
+      ],
+    },
     "kobe-dentetsu": {
       id: "kobe-dentetsu",
       name: "神戸電鉄",

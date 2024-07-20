@@ -1,0 +1,36 @@
+const sangiStations = {
+  "sangi-sangi": [
+    { name: "近鉄富田", id: "kintetsu-tomida" },
+    { name: "大矢知", id: "oyachi" },
+    { name: "平津", id: "heizu" },
+    { name: "暁学園前", id: "akatsuki-gakuen-mae" },
+    { name: "山城", id: "yamajo" },
+    { name: "保々", id: "hobo" },
+    { name: "北勢中央公園口", id: "hokusei-chuo-koen-guchi" },
+    { name: "梅戸井", id: "umedoi" },
+    { name: "大安", id: "daian" },
+    { name: "三里", id: "misato" },
+    { name: "丹生川", id: "nyugawa" },
+    { name: "伊勢治田", id: "ise-hatta" },
+    { name: "東藤原", id: "higashi-fujiwara" },
+    { name: "西野尻", id: "nishi-nojiri" },
+    { name: "西藤原", id: "nishi-fujiwara" },
+  ],
+  "sangi-hokusei": [
+    { name: "西桑名", id: "nishi-kuwana" },
+    { name: "馬道", id: "umamichi" },
+    { name: "西別所", id: "nishi-bessho" },
+    { name: "蓮花寺", id: "rengeji" },
+    { name: "在良", id: "ariyoshi" },
+    { name: "星川", id: "hoshikawa" },
+    { name: "七和", id: "nanawa" },
+    { name: "穴太", id: "ano" },
+    { name: "東員", id: "toin" },
+    { name: "大泉", id: "oizumi" },
+    { name: "楚原", id: "sohara" },
+    { name: "麻生田", id: "oda" },
+    { name: "阿下喜", id: "ageki" },
+  ],
+};
+
+generateRailwayStations(sangiStations, "sangi", "mie");

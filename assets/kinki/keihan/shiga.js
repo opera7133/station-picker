@@ -1,5 +1,22 @@
 const keihanShigaStations = {
   "keihan-ishiyama-sakamoto": [
+    {
+      name: "坂本比叡山口",
+      yomi: "さかもとひえいざんぐち",
+      id: "sakamoto-hieizanguchi",
+    },
+    { name: "松ノ馬場", yomi: "まつのばんば", id: "matsunobamba" },
+    { name: "穴太", yomi: "あの", id: "ano" },
+    { name: "滋賀里", yomi: "しがさと", id: "shigasato" },
+    { name: "南滋賀", yomi: "みなみしが", id: "minami-shiga" },
+    { name: "近江神宮前", yomi: "おうみじんぐうまえ", id: "omi-jingu-mae" },
+    { name: "京阪大津京", yomi: "けいはんおおつきょう", id: "keihan-otsu-kyo" },
+    {
+      name: "大津市役所前",
+      yomi: "おおつしやくしょまえ",
+      id: "otsu-shiyakushomae",
+    },
+    { name: "三井寺", yomi: "みいでら", id: "miidera" },
     { name: "石山寺", yomi: "いしやまでら", id: "ishiyamadera" },
     { name: "唐橋前", yomi: "からはしまえ", id: "karahashimae" },
     { name: "京阪石山", yomi: "けいはんいしやま", id: "keihan-ishiyama" },

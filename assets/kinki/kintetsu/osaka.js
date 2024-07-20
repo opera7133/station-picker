@@ -105,6 +105,26 @@ const kintetsuOsakaStations = {
     { name: "橿原神宮西口", id: "kashihara-jingu-nishiguchi" },
     { name: "橿原神宮前", id: "kashihara-jingu-mae" },
   ],
+  "kintetsu-shigi": [
+    { name: "河内山本", id: "kawachi-yamamoto" },
+    { name: "服部川", id: "hattorigawa" },
+    { name: "信貴山口", id: "shigisan-guchi" },
+  ],
+  "kintetsu-domyoji": [
+    { name: "柏原", id: "kashiwara" },
+    { name: "柏原南口", id: "kashiwara-minamiguchi" },
+    { name: "道明寺", id: "domyoji" },
+  ],
+  "kintetsu-nagano": [
+    { name: "古市", id: "furuichi" },
+    { name: "喜志", id: "kishi" },
+    { name: "富田林", id: "tondabayashi" },
+    { name: "富田林西口", id: "tondabayashi-nishiguchi" },
+    { name: "川西", id: "kawanishi" },
+    { name: "滝谷不動", id: "takidanifudo" },
+    { name: "汐ノ宮", id: "shionomiya" },
+    { name: "河内長野", id: "kawachinagano" },
+  ],
 };
 
 generateRailwayStations(kintetsuOsakaStations, "kintetsu", "kinki");

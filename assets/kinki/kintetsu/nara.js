@@ -46,6 +46,42 @@ const kintetsuNaraStations = {
     { name: "吉野神宮", id: "yoshino-jingu" },
     { name: "吉野", id: "yoshino" },
   ],
+  "kintetsu-ikoma": [
+    { name: "生駒", id: "ikoma" },
+    { name: "菜畑", id: "nabata" },
+    { name: "一分", id: "ichibu" },
+    { name: "南生駒", id: "minami-ikoma" },
+    { name: "萩の台", id: "haginodai" },
+    { name: "東山", id: "higashiyama" },
+    { name: "元山上口", id: "motosanjo-guchi" },
+    { name: "平群", id: "heguri" },
+    { name: "竜田川", id: "tatsutagawa" },
+    { name: "勢野北口", id: "seya-kitaguchi" },
+    { name: "信貴山下", id: "shigisan-shita" },
+    { name: "王寺", id: "oji" },
+  ],
+  "kintetsu-tenri": [
+    { name: "平端", id: "hirahata" },
+    { name: "二階堂", id: "nikaido" },
+    { name: "前栽", id: "senzai" },
+    { name: "天理", id: "tenri" },
+  ],
+  "kintetsu-tawaramoto": [
+    { name: "西田原本", id: "nishi-tawaramoto" },
+    { name: "黒田", id: "kuroda" },
+    { name: "但馬", id: "tajima" },
+    { name: "箸尾", id: "hashio" },
+    { name: "池部", id: "ikebe" },
+    { name: "佐味田川", id: "samitagawa" },
+    { name: "大輪田", id: "owada" },
+    { name: "新王寺", id: "shin-oji" },
+  ],
+  "kintetsu-gose": [
+    { name: "尺土", id: "shakudo" },
+    { name: "近鉄新庄", id: "kintetsu-shinjo" },
+    { name: "忍海", id: "oshimi" },
+    { name: "近鉄御所", id: "kintetsu-gose" },
+  ],
 };
 
 generateRailwayStations(kintetsuNaraStations, "kintetsu", "kinki");
