@@ -513,7 +513,7 @@ const mieRailways = {
           icon: "assets/kinki/asunarou/asunarou.jpg",
         },
         {
-          id: "hacioji",
+          id: "hachioji",
           name: "八王子線",
           icon: "assets/kinki/asunarou/asunarou.jpg",
         },
