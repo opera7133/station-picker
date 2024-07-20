@@ -216,6 +216,10 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
     let stationElements = "";
     stationElements += '<div class="ml-4 text-lg">';
     stations.forEach((station) => {
+      if (!station || !station.name || !station.id) {
+        alert(`${station} key is not found`);
+        return;
+      }
       stationElements += stationTemplate(station, key);
     });
     stationElements += "</div>";

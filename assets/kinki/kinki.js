@@ -93,11 +93,6 @@ const kinkiRailways = {
           icon: "assets/kinki/jr-west/j.svg",
         },
         {
-          id: "kishin",
-          name: "姫新線",
-          icon: "assets/kinki/jr-west/k.svg",
-        },
-        {
           id: "maizuru",
           name: "舞鶴線",
           icon: "assets/kinki/jr-west/l.svg",
@@ -149,7 +144,7 @@ const kinkiRailways = {
         },
         {
           id: "kinokuni",
-          name: "きのくに線",
+          name: "紀勢線",
           icon: "assets/kinki/jr-west/w.svg",
         },
       ],
@@ -314,13 +309,8 @@ const kinkiRailways = {
           icon: "assets/kinki/hankyu/blue.svg",
         },
         {
-          id: "imazu-kita",
-          name: "今津北線",
-          icon: "assets/kinki/hankyu/blue.svg",
-        },
-        {
-          id: "imazu-minami",
-          name: "今津南線",
+          id: "imazu",
+          name: "今津線",
           icon: "assets/kinki/hankyu/blue.svg",
         },
         {
@@ -393,7 +383,7 @@ const kinkiRailways = {
           icon: "assets/kinki/keihan/kh.png",
         },
         {
-          id: "outou",
+          id: "oto",
           name: "鴨東線",
           icon: "assets/kinki/keihan/kh.png",
         },

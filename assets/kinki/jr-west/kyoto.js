@@ -64,7 +64,14 @@ const jrWestKyotoStations = {
     { name: "玄武洞", id: "genbudo" },
     { name: "城崎温泉", id: "kinosaki-onsen" },
   ],
-  "jr-west-maizuru": [],
+  "jr-west-maizuru": [
+    { name: "綾部", id: "ayabe" },
+    { name: "淵垣", id: "fuchigaki" },
+    { name: "梅迫", id: "umezako" },
+    { name: "真倉", id: "magura" },
+    { name: "西舞鶴", id: "nishi-maizuru" },
+    { name: "東舞鶴", id: "higashi-maizuru" },
+  ],
 };
 
 generateRailwayStations(jrWestKyotoStations, "jr-west", "kinki");
