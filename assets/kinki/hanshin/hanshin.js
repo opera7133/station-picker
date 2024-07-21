@@ -32,6 +32,7 @@ const hanshinStations = {
     { name: "岩屋", id: "iwaya" },
     { name: "春日野道", id: "kasuganomichi" },
     { name: "神戸三宮", id: "kobe-sannomiya" },
+    { name: "元町", id: "motomachi" },
   ],
   "hanshin-mukogawa": [
     { name: "武庫川", id: "mukogawa" },
@@ -40,7 +41,6 @@ const hanshinStations = {
     { name: "武庫川団地前", id: "mukogawa-danchimae" },
   ],
   "hanshin-kobe-kosoku": [
-    { name: "神戸三宮", id: "kobe-sannomiya" },
     { name: "元町", id: "motomachi" },
     { name: "西元町", id: "nishi-motomachi" },
     { name: "高速神戸", id: "kosoku-kobe" },

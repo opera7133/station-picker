@@ -217,7 +217,7 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
     stationElements += '<div class="ml-4 text-lg">';
     stations.forEach((station) => {
       if (!station || !station.name || !station.id) {
-        alert(`${station} key is not found`);
+        alert(`${station.toString()} key is not found`);
         return;
       }
       stationElements += stationTemplate(station, key);
@@ -228,6 +228,6 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
   });
 };
 
-const appVersion = "1.2.0-alpha2";
+const appVersion = "1.2.0";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;

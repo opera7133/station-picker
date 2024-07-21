@@ -28,6 +28,11 @@ const kinkiRailways = {
           icon: "assets/kinki/jr-west/a.svg",
         },
         {
+          id: "wadamisaki",
+          name: "和田岬線",
+          icon: "assets/kinki/jr-west/a.svg",
+        },
+        {
           id: "sanyo",
           name: "山陽線",
           icon: "assets/kinki/jr-west/a.svg",
@@ -821,7 +826,7 @@ const hyogoRailways = {
           icon: "assets/kinki/kobe-dentetsu/kb.svg",
         },
         {
-          id: "koen-toshi",
+          id: "koentoshi",
           name: "公園都市線",
           icon: "assets/kinki/kobe-dentetsu/kb.svg",
         },
