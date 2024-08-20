@@ -1,0 +1,28 @@
+const sapporoStations = [
+  { name: "西4丁目", id: "nishi-4-chome" },
+  { name: "西8丁目", id: "nishi-8-chome" },
+  { name: "中央区役所前", id: "chuo-kuyakusho-mae" },
+  { name: "西15丁目", id: "nishi-15-chome" },
+  { name: "西線6条", id: "nishisen-6-jo" },
+  { name: "西線9条旭山公園通", id: "nishisen-9-jo-asahiyama-koen-dori" },
+  { name: "西線11条", id: "nishisen-11-jo" },
+  { name: "西線14条", id: "nishisen-14-jo" },
+  { name: "西線16条", id: "nishisen-16-jo" },
+  { name: "ロープウェイ入口", id: "ropeway-iriguchi" },
+  { name: "電車事業所前", id: "densha-jigyosho-mae" },
+  { name: "中央図書館前", id: "chuo-toshokan-mae" },
+  { name: "石山通", id: "ishiyama-dori" },
+  { name: "東屯田通", id: "higashi-tonden-dori" },
+  { name: "幌南小学校前", id: "konan-shogakko-mae" },
+  { name: "山鼻19条", id: "yamahana-19-jo" },
+  { name: "静修学園前", id: "seishu-gakuem-mae" },
+  { name: "行啓通", id: "gyokei-dori" },
+  { name: "中島公園通", id: "nakajima-koen-dori" },
+  { name: "山鼻9条", id: "yamahana-9-jo" },
+  { name: "東本願寺前", id: "higashi-honganji-mae" },
+  { name: "資生館小学校前", id: "shiseikan-shogakko-mae" },
+  { name: "すすきの", id: "susukino" },
+  { name: "狸小路", id: "tanuki-koji" },
+];
+
+generateStations(sapporoStations, "sapporo", "sapporo");

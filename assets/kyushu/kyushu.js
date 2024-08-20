@@ -1,6 +1,6 @@
 const kyushuRailways = {
   id: "kyushu",
-  name: "九州",
+  name: "九州・沖縄",
   railways: {
     "jr-kyushu": {
       id: "jr-kyushu",
