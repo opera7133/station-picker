@@ -948,16 +948,3 @@ const kinkiRailwaysList = [
   hyogoRailways,
   wakayamaRailways,
 ];
-
-for (const prefecture of kinkiRailwaysList) {
-  if (prefecture.id === "kinki") {
-    generatePrefecture(prefecture, "stations", true);
-  } else {
-    generatePrefecture(prefecture, "kinki");
-  }
-  Object.keys(prefecture.railways).forEach((key) => {
-    const railway = prefecture.railways[key];
-    generateRailwayCompany(railway, prefecture.id);
-    generateRailway(railway, prefecture.id);
-  });
-}

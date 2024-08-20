@@ -2,7 +2,9 @@
   "name": "station-selector",
   "devDependencies": { "@tailwindcss/forms": "^0.5.7", "@types/uglify-js": "^3.17.5", "tailwindcss": "^3.4.4" },
   "scripts": {
-    "build": "bun bundler.ts && tailwindcss build -i assets/main.css -o assets/styles.css --minify",
+    "build": "bun run build/js && bun run build/css",
+    "build/js": "bun bundler.ts",
+    "build/css": "tailwindcss build -i assets/main.css -o assets/styles.css --minify",
     "watch": "tailwindcss build -i assets/main.css -o assets/styles.css --watch --minify"
   },
   "dependencies": {

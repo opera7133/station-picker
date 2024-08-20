@@ -29,7 +29,7 @@ const regions = [
   "kinki",
   //"chugoku",
   //"shikoku",
-  //"kyushu",
+  "kyushu",
 ];
 const files = regionfiles
   .map((f) => {
@@ -56,8 +56,32 @@ const files = regionfiles
     const bIndex = regions.findIndex((r) => b.includes(r));
     return aIndex - bIndex;
   });
+
 const content = files
-  .map((file) => fs.readFileSync(path.join(assetsDir, file), "utf8"))
+  .map((file, i) => {
+    const fn = fs.readFileSync(path.join(assetsDir, file), "utf8");
+    const fileName = path.basename(file, ".js");
+    if (regions.includes(fileName)) {
+      const region = fileName;
+      return (
+        fn +
+        `for (const prefecture of ${region}RailwaysList) {
+  if (prefecture.id === "${region}") {
+    generatePrefecture(prefecture, "stations", true);
+  } else {
+    generatePrefecture(prefecture, "${region}");
+  }
+  Object.keys(prefecture.railways).forEach((key) => {
+    const railway = prefecture.railways[key];
+    generateRailwayCompany(railway, prefecture.id);
+    generateRailway(railway, prefecture.id);
+  });
+}`
+      );
+    } else {
+      return fn;
+    }
+  })
   .join("\n");
 
 let regionToggle = "";

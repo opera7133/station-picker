@@ -199,17 +199,3 @@ const tohokuRailwaysList = [
   yamagataRailways,
   fukushimaRailways,
 ];
-/*
-for (const prefecture of tohokuRailwaysList) {
-  if (prefecture.id === "tohoku") {
-    generatePrefecture(prefecture, "stations", true);
-  } else {
-    generatePrefecture(prefecture, "tohoku");
-  }
-  Object.keys(prefecture.railways).forEach((key) => {
-    const railway = prefecture.railways[key];
-    generateRailwayCompany(railway, prefecture.id);
-    generateRailway(railway, prefecture.id);
-  });
-}
-*/

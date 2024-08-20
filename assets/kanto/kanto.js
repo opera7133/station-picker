@@ -1147,16 +1147,3 @@ const kantoRailwaysList = [
   tokyoRailways,
   kanagawaRailways,
 ];
-
-for (const prefecture of kantoRailwaysList) {
-  if (prefecture.id === "kanto") {
-    generatePrefecture(prefecture, "stations", true);
-  } else {
-    generatePrefecture(prefecture, "kanto");
-  }
-  Object.keys(prefecture.railways).forEach((key) => {
-    const railway = prefecture.railways[key];
-    generateRailwayCompany(railway, prefecture.id);
-    generateRailway(railway, prefecture.id);
-  });
-}

@@ -1,0 +1,25 @@
+const chikuhoStations = [
+  { name: "黒崎駅前", id: "kurosaki-ekimae" },
+  { name: "西黒崎", id: "nishi-kurosaki" },
+  { name: "熊西", id: "kumanishi" },
+  { name: "萩原", id: "hagiwara" },
+  { name: "穴生", id: "ano" },
+  { name: "森下", id: "morishita" },
+  { name: "今池", id: "imaike" },
+  { name: "永犬丸", id: "einomaru" },
+  { name: "三ヶ森", id: "sangamori" },
+  { name: "西山", id: "nishiyama" },
+  { name: "通谷", id: "toritani" },
+  { name: "東中間", id: "higashi-nakama" },
+  { name: "筑豊中間", id: "chikuho-nakama" },
+  { name: "希望が丘高校前", id: "kibogaoka-koko-mae" },
+  { name: "筑豊香月", id: "chikuho-katsuki" },
+  { name: "楠橋", id: "kusubashi" },
+  { name: "新木屋瀬", id: "shin-koyanose" },
+  { name: "木屋瀬", id: "koyanose" },
+  { name: "遠賀野", id: "ongano" },
+  { name: "感田", id: "ganda" },
+  { name: "筑豊直方", id: "chikuho-nogata" },
+];
+
+generateStations(chikuhoStations, "chikuho", "fukuoka");

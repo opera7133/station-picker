@@ -8,14 +8,164 @@ const kyushuRailways = {
       icon: "assets/kyushu/jr-kyushu/jr.svg",
       railway: [
         {
-          id: "kagoshima-main",
-          name: "鹿児島本線",
+          id: "sanyo",
+          name: "山陽本線",
           icon: "assets/kyushu/jr-kyushu/ja.svg",
         },
         {
-          id: "nagasaki",
-          name: "長崎本線",
+          id: "kagoshima-ja",
+          name: "鹿児島本線（博多〜門司港）",
+          icon: "assets/kyushu/jr-kyushu/ja.svg",
+        },
+        {
+          id: "kagoshima-jb",
+          name: "鹿児島本線（博多〜荒尾）",
+          icon: "assets/kyushu/jr-kyushu/jb.svg",
+        },
+        {
+          id: "fukuhoku-yutaka",
+          name: "福北ゆたか線",
+          icon: "assets/kyushu/jr-kyushu/jc.svg",
+        },
+        {
+          id: "kashii",
+          name: "香椎線",
+          icon: "assets/kyushu/jr-kyushu/jd.svg",
+        },
+        {
+          id: "wakamatsu",
+          name: "若松線",
+          icon: "assets/kyushu/jr-kyushu/je.svg",
+        },
+        {
+          id: "nippo",
+          name: "日豊本線（小倉〜行橋）",
+          icon: "assets/kyushu/jr-kyushu/jf.svg",
+        },
+        {
+          id: "haruda",
+          name: "原田線",
+          icon: "assets/kyushu/jr-kyushu/jg.svg",
+        },
+        {
+          id: "nagasaki-jh",
+          name: "長崎本線（鳥栖〜佐賀）",
           icon: "assets/kyushu/jr-kyushu/jh.svg",
+        },
+        {
+          id: "hitahikosan",
+          name: "日田彦山線",
+          icon: "assets/kyushu/jr-kyushu/ji.svg",
+        },
+        {
+          id: "gotoji",
+          name: "後藤寺線",
+          icon: "assets/kyushu/jr-kyushu/jj.svg",
+        },
+        {
+          id: "chikuhi",
+          name: "筑肥線（姪浜〜西唐津）",
+          icon: "assets/kyushu/jr-kyushu/jk.svg",
+        },
+        {
+          id: "kagoshima-kumamoto",
+          name: "鹿児島本線（荒尾〜八代）",
+          icon: "assets/kyushu/jr-kyushu/red.svg",
+        },
+        {
+          id: "kagoshima-kagoshima",
+          name: "鹿児島本線（川内〜鹿児島）",
+          icon: "assets/kyushu/jr-kyushu/red.svg",
+        },
+        {
+          id: "nippo-oita",
+          name: "日豊本線（行橋〜延岡）",
+          icon: "assets/kyushu/jr-kyushu/blue.svg",
+        },
+        {
+          id: "nippo-miyazaki",
+          name: "日豊本線（延岡〜鹿児島）",
+          icon: "assets/kyushu/jr-kyushu/blue.svg",
+        },
+        {
+          id: "chikuhi-saga",
+          name: "筑肥線（西唐津〜伊万里）",
+          icon: "assets/kyushu/jr-kyushu/purple.svg",
+        },
+        {
+          id: "karatsu",
+          name: "唐津線",
+          icon: "assets/kyushu/jr-kyushu/blue.svg",
+        },
+        {
+          id: "nagasaki-saga",
+          name: "長崎本線（佐賀〜江北）",
+          icon: "assets/kyushu/jr-kyushu/yellow.svg",
+        },
+        {
+          id: "nagasaki-hizen",
+          name: "長崎本線（江北〜諫早）",
+          icon: "assets/kyushu/jr-kyushu/yellow.svg",
+        },
+        {
+          id: "nagasaki-shinsen",
+          name: "長崎本線（諫早〜長崎｜新線）",
+          icon: "assets/kyushu/jr-kyushu/yellow.svg",
+        },
+        {
+          id: "nagasaki-kyusen",
+          name: "長崎本線（諫早〜長崎｜旧線）",
+          icon: "assets/kyushu/jr-kyushu/yellow.svg",
+        },
+        {
+          id: "sasebo",
+          name: "佐世保線",
+          icon: "assets/kyushu/jr-kyushu/green.svg",
+        },
+        {
+          id: "omura",
+          name: "大村線",
+          icon: "assets/kyushu/jr-kyushu/blue.svg",
+        },
+        {
+          id: "kyudai",
+          name: "久大本線",
+          icon: "assets/kyushu/jr-kyushu/green.svg",
+        },
+        {
+          id: "hohi",
+          name: "豊肥本線",
+          icon: "assets/kyushu/jr-kyushu/brown.svg",
+        },
+        {
+          id: "misumi",
+          name: "三角線",
+          icon: "assets/kyushu/jr-kyushu/blue.svg",
+        },
+        {
+          id: "hisatsu",
+          name: "肥薩線",
+          icon: "assets/kyushu/jr-kyushu/purple.svg",
+        },
+        {
+          id: "kitto",
+          name: "吉都線",
+          icon: "assets/kyushu/jr-kyushu/green.svg",
+        },
+        {
+          id: "nichinan",
+          name: "日南線",
+          icon: "assets/kyushu/jr-kyushu/yellow.svg",
+        },
+        {
+          id: "miyazaki-airport",
+          name: "宮崎空港線",
+          icon: "assets/kyushu/jr-kyushu/green.svg",
+        },
+        {
+          id: "ibusuki-makurazaki",
+          name: "指宿枕崎線",
+          icon: "assets/kyushu/jr-kyushu/yellow.svg",
         },
       ],
     },
@@ -68,7 +218,7 @@ const fukuokaRailways = {
       icon: "assets/kyushu/nishitetsu/n.svg",
       railway: [
         {
-          id: "tenjin-ohmuta",
+          id: "tenjin-omuta",
           name: "天神大牟田線",
           icon: "assets/kyushu/nishitetsu/t.svg",
         },
@@ -262,13 +412,13 @@ const kumamotoRailways = {
       icon: "assets/kyushu/kumamoto-dentetsu/kumamoto-dentetsu.svg",
       railway: [
         {
-          id: "kikuchi",
-          name: "菊池線",
+          id: "honsen",
+          name: "本線",
           icon: "assets/kyushu/kumamoto-dentetsu/kumamoto-dentetsu.svg",
         },
         {
-          id: "fujisaki",
-          name: "藤崎線",
+          id: "kami-kumamoto",
+          name: "上熊本線",
           icon: "assets/kyushu/kumamoto-dentetsu/kumamoto-dentetsu.svg",
         },
       ],
@@ -338,17 +488,3 @@ const kyushuRailwaysList = [
   kagoshimaRailways,
   okinawaRailways,
 ];
-/*
-for (const prefecture of kyushuRailwaysList) {
-  if (prefecture.id === "kyushu") {
-    generatePrefecture(prefecture, "stations", true);
-  } else {
-    generatePrefecture(prefecture, "kyushu");
-  }
-  Object.keys(prefecture.railways).forEach((key) => {
-    const railway = prefecture.railways[key];
-    generateRailwayCompany(railway, prefecture.id);
-    generateRailway(railway, prefecture.id);
-  });
-}
-*/

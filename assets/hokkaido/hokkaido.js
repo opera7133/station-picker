@@ -93,17 +93,3 @@ const hokkaidoRailwaysList = [
   sapporoRailways,
   hakodateRailways,
 ];
-/*
-for (const prefecture of hokkaidoRailwaysList) {
-  if (prefecture.id === "hokkaido") {
-    generatePrefecture(prefecture, "stations", true);
-  } else {
-    generatePrefecture(prefecture, "hokkaido");
-  }
-  Object.keys(prefecture.railways).forEach((key) => {
-    const railway = prefecture.railways[key];
-    generateRailwayCompany(railway, prefecture.id);
-    generateRailway(railway, prefecture.id);
-  });
-}
-*/

@@ -202,17 +202,3 @@ const shikokuRailwaysList = [
   ehimeRailways,
   kochiRailways,
 ];
-/*
-for (const prefecture of shikokuRailwaysList) {
-  if (prefecture.id === "shikoku") {
-    generatePrefecture(prefecture, "stations", true);
-  } else {
-    generatePrefecture(prefecture, "shikoku");
-  }
-  Object.keys(prefecture.railways).forEach((key) => {
-    const railway = prefecture.railways[key];
-    generateRailwayCompany(railway, prefecture.id);
-    generateRailway(railway, prefecture.id);
-  });
-}
-*/

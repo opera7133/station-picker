@@ -42,17 +42,3 @@ const chugokuRailwaysList = [
   hiroshimaRailways,
   yamaguchiRailways,
 ];
-/*
-for (const prefecture of chugokuRailwaysList) {
-  if (prefecture.id === "chugoku") {
-    generatePrefecture(prefecture, "stations", true);
-  } else {
-    generatePrefecture(prefecture, "chugoku");
-  }
-  Object.keys(prefecture.railways).forEach((key) => {
-    const railway = prefecture.railways[key];
-    generateRailwayCompany(railway, prefecture.id);
-    generateRailway(railway, prefecture.id);
-  });
-}
-*/

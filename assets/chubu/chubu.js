@@ -819,16 +819,3 @@ const chubuRailwaysList = [
   shizuokaRailways,
   aichiRailways,
 ];
-
-for (const prefecture of chubuRailwaysList) {
-  if (prefecture.id === "chubu") {
-    generatePrefecture(prefecture, "stations", true);
-  } else {
-    generatePrefecture(prefecture, "chubu");
-  }
-  Object.keys(prefecture.railways).forEach((key) => {
-    const railway = prefecture.railways[key];
-    generateRailwayCompany(railway, prefecture.id);
-    generateRailway(railway, prefecture.id);
-  });
-}
