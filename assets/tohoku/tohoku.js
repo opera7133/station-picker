@@ -13,6 +13,11 @@ const tohokuRailways = {
           icon: "assets/tohoku/jr-east/tohoku.svg",
         },
         {
+          id: "rifu",
+          name: "利府線",
+          icon: "assets/tohoku/jr-east/tohoku.svg",
+        },
+        {
           id: "joban",
           name: "常磐線",
           icon: "assets/tohoku/jr-east/joban.svg",
@@ -38,9 +43,19 @@ const tohokuRailways = {
           icon: "assets/tohoku/jr-east/senseki.svg",
         },
         {
-          id: "ouu",
+          id: "ou",
           name: "奥羽本線",
           icon: "assets/tohoku/jr-east/ouu.svg",
+        },
+        {
+          id: "suigun",
+          name: "水郡線",
+          icon: "assets/tohoku/jr-east/suigun.svg",
+        },
+        {
+          id: "suigun-hitachiota",
+          name: "水郡線(常陸太田支線)",
+          icon: "assets/tohoku/jr-east/suigun.svg",
         },
         {
           id: "yonesaka",
