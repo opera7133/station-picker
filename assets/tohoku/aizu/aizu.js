@@ -1,0 +1,25 @@
+const aizuStations = [
+  { name: "西若松", id: "nishi-wakamatsu" },
+  { name: "南若松", id: "minami-wakamatsu" },
+  { name: "門田", id: "monden" },
+  { name: "あまや", id: "amaya" },
+  { name: "芦ノ牧温泉", id: "ashinomaki-onsen" },
+  { name: "大川ダム公園", id: "okawa-dam-park" },
+  { name: "芦ノ牧温泉南", id: "ashinomaki-onsen-minami" },
+  { name: "湯野上温泉", id: "yunokami-onsen" },
+  { name: "塔のへつり", id: "to-no-hetsuri" },
+  { name: "弥五島", id: "yagoshima" },
+  { name: "会津下郷", id: "aizu-shimogo" },
+  { name: "ふるさと公園", id: "furusato-park" },
+  { name: "養鱒公園", id: "yoson-park" },
+  { name: "会津長野", id: "aizu-nagano" },
+  { name: "田島高校前", id: "tajima-koko-mae" },
+  { name: "会津田島", id: "aizu-tajima" },
+  { name: "中荒井", id: "naka-arai" },
+  { name: "会津荒海", id: "aizu-arakai" },
+  { name: "会津山村道場", id: "aizu-sanson-dojo" },
+  { name: "七ヶ岳登山口", id: "nanatsugatake-tozanguchi" },
+  { name: "会津高原尾瀬口", id: "aizu-kogen-ozeguchi" },
+];
+
+generateStations(aizuStations, "aizu", "fukushima");

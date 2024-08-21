@@ -1,0 +1,35 @@
+const konanStations = {
+  "konan-konan": [
+    { name: "弘前", id: "hirosaki" },
+    { name: "弘前東高前", id: "hirosaki-higashiko-mae" },
+    { name: "運動公園前", id: "undokoen-mae" },
+    { name: "新里", id: "nisato" },
+    { name: "館田", id: "tachita" },
+    { name: "平賀", id: "hiraka" },
+    { name: "格納高校前", id: "kakuno-koko-mae" },
+    { name: "津軽尾上", id: "tsugaro-onoe" },
+    { name: "尾上高校前", id: "onoe-koko-mae" },
+    { name: "田んぼアート", id: "tanbo-art" },
+    { name: "田舎館", id: "inakadate" },
+    { name: "境松", id: "sakaimatsu" },
+    { name: "黒石", id: "kuroishi" },
+  ],
+  "konan-owani": [
+    { name: "中央弘前", id: "chuo-hirosaki" },
+    { name: "弘高下", id: "hiroko-shita" },
+    { name: "弘前学院大学前", id: "hirosaki-gakuin-daigaku-mae" },
+    { name: "聖愛中高前", id: "seiai-chuko-mae" },
+    { name: "千年", id: "chitose" },
+    { name: "小栗山", id: "koguriyama" },
+    { name: "松木平", id: "matsukitai" },
+    { name: "津軽大沢", id: "tsugaro-osawa" },
+    { name: "義塾高校前", id: "gijuku-koko-mae" },
+    { name: "石川", id: "ishikawa" },
+    { name: "石川プール前", id: "ishikawa-pool-mae" },
+    { name: "鯖石", id: "sabaishi" },
+    { name: "宿川原", id: "shukugawara" },
+    { name: "大鰐", id: "owani" },
+  ],
+};
+
+generateRailwayStations(konanStations, "konan", "aomori");
