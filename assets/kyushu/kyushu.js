@@ -200,18 +200,6 @@ const fukuokaRailways = {
   id: "fukuoka",
   name: "福岡",
   railways: {
-    "jr-west": {
-      id: "jr-west",
-      name: "JR西日本（博多南線）",
-      icon: "assets/kyushu/jr-west/jr.svg",
-      railway: [
-        {
-          id: "hakata-minami",
-          name: "博多南線",
-          icon: "assets/kyushu/jr-west/west.svg",
-        },
-      ],
-    },
     nishitetsu: {
       id: "nishitetsu",
       name: "西日本鉄道",

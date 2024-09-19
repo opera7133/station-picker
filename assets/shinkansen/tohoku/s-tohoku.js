@@ -1,0 +1,27 @@
+const tohokuShinkansenStations = [
+  { name: "東京", id: "tokyo" },
+  { name: "上野", id: "ueno" },
+  { name: "大宮", id: "omiya" },
+  { name: "小山", id: "oyama" },
+  { name: "宇都宮", id: "utsunomiya" },
+  { name: "那須塩原", id: "nasushiobara" },
+  { name: "新白河", id: "shin-shirakawa" },
+  { name: "郡山", id: "koriyama" },
+  { name: "福島", id: "fukushima" },
+  { name: "白石蔵王", id: "shiroishi-zao" },
+  { name: "仙台", id: "sendai" },
+  { name: "古川", id: "furukawa" },
+  { name: "くりこま高原", id: "kurikoma-kogen" },
+  { name: "一ノ関", id: "ichinoseki" },
+  { name: "水沢江刺", id: "mizusawa-esashi" },
+  { name: "北上", id: "kitakami" },
+  { name: "新花巻", id: "shin-hanamaki" },
+  { name: "盛岡", id: "morioka" },
+  { name: "いわて沼宮内", id: "iwate-numakunai" },
+  { name: "二戸", id: "ninohe" },
+  { name: "八戸", id: "hachinohe" },
+  { name: "七戸十和田", id: "shichinohe-towada" },
+  { name: "青森", id: "aomori" },
+];
+
+generateStations(tohokuShinkansenStations, "tohoku", "shinkansen");

@@ -22,6 +22,7 @@ const regionfiles = parent
   })
   .flat();
 const regions = [
+  "shinkansen",
   "hokkaido",
   "tohoku",
   "kanto",

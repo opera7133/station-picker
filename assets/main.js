@@ -103,6 +103,7 @@ const getRandomStation = () => {
       });
     });
     const allFlattenRailways = [
+      ...flattenRailways(shinkansenRailwaysList),
       ...flattenRailways(hokkaidoRailwaysList),
       ...flattenRailways(tohokuRailwaysList),
       ...flattenRailways(kantoRailwaysList),
@@ -287,6 +288,6 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
   });
 };
 
-const appVersion = "1.6.1";
+const appVersion = "1.7.0";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;

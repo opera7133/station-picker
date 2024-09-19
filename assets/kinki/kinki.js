@@ -621,12 +621,12 @@ const kyotoRailways = {
         {
           id: "eizan",
           name: "叡山本線",
-          icon: "assets/kinki/eiden/eiden.svg",
+          icon: "assets/kinki/eiden/eizan.svg",
         },
         {
           id: "kurama",
           name: "鞍馬線",
-          icon: "assets/kinki/eiden/eiden.svg",
+          icon: "assets/kinki/eiden/kurama.svg",
         },
       ],
     },
