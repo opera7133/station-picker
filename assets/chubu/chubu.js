@@ -280,12 +280,12 @@ const niigataRailways = {
         {
           name: "日本海ひすいライン",
           id: "nihonkai",
-          icon: "assets/chubu/echigo-tokimeki/tokimeki.svg",
+          icon: "assets/chubu/echigo-tokimeki/hisui.svg",
         },
         {
           name: "妙高はねうまライン",
           id: "myoko",
-          icon: "assets/chubu/echigo-tokimeki/tokimeki.svg",
+          icon: "assets/chubu/echigo-tokimeki/haneuma.svg",
         },
       ],
     },
@@ -380,12 +380,12 @@ const toyamaRailways = {
     manyo: {
       id: "manyo",
       name: "万葉線",
-      icon: "assets/chubu/manyo/manyo.jpg",
+      icon: "assets/chubu/manyo/manyo.svg",
       railway: [
         {
           name: "万葉線",
           id: "manyo",
-          icon: "assets/chubu/manyo/manyo.jpg",
+          icon: "assets/chubu/manyo/manyo.svg",
         },
       ],
     },
@@ -428,12 +428,12 @@ const ishikawaRailways = {
         {
           name: "石川線",
           id: "ishikawa",
-          icon: "assets/chubu/hokuriku/hokuriku.svg",
+          icon: "assets/chubu/hokuriku/i.svg",
         },
         {
           name: "浅野川線",
           id: "asanogawa",
-          icon: "assets/chubu/hokuriku/hokuriku.svg",
+          icon: "assets/chubu/hokuriku/a.svg",
         },
       ],
     },
@@ -464,12 +464,12 @@ const fukuiRailways = {
         {
           name: "勝山永平寺線",
           id: "katsuyama",
-          icon: "assets/chubu/echizen/echizen.svg",
+          icon: "assets/chubu/echizen/katsuyama.svg",
         },
         {
           name: "三国芦原線",
           id: "awara",
-          icon: "assets/chubu/echizen/echizen.svg",
+          icon: "assets/chubu/echizen/mikuni.svg",
         },
       ],
     },
@@ -555,12 +555,12 @@ const naganoRailways = {
     nagaden: {
       id: "nagaden",
       name: "長野電鉄長野線",
-      icon: "assets/chubu/nagaden/n.png",
+      icon: "assets/chubu/nagaden/n.svg",
       railway: [
         {
           name: "長野線",
           id: "nagaden",
-          icon: "assets/chubu/nagaden/n.png",
+          icon: "assets/chubu/nagaden/n.svg",
         },
       ],
     },

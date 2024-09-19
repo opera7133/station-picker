@@ -356,7 +356,7 @@ const kantoRailways = {
     tb: {
       id: "tb",
       name: "東武鉄道",
-      icon: "assets/kanto/tobu/tobu.png",
+      icon: "assets/kanto/tobu/tobu.svg",
       railway: [
         {
           name: "アーバンパークライン",
@@ -629,12 +629,12 @@ const tochigiRailways = {
     yagan: {
       id: "yagan",
       name: "野岩鉄道会津鬼怒川線",
-      icon: "assets/kanto/yagan/yagan.png",
+      icon: "assets/kanto/yagan/yagan.svg",
       railway: [
         {
           name: "野岩鉄道会津鬼怒川線",
           id: "yagan",
-          icon: "assets/kanto/yagan/yagan.png",
+          icon: "assets/kanto/yagan/yagan.svg",
         },
       ],
     },
@@ -1034,12 +1034,12 @@ const chibaRailways = {
     ryutetsu: {
       id: "ryutetsu",
       name: "流鉄流山線",
-      icon: "assets/kanto/ryutetsu/rn.png",
+      icon: "assets/kanto/ryutetsu/rn.svg",
       railway: [
         {
           name: "流鉄流山線",
           id: "ryutetsu",
-          icon: "assets/kanto/ryutetsu/rn.png",
+          icon: "assets/kanto/ryutetsu/rn.svg",
         },
       ],
     },
