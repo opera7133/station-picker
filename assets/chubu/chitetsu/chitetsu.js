@@ -161,108 +161,6 @@ const chitetsuStations = {
       id: "unazuki-onsen",
     },
   ],
-  "chitetsu-toyama-kido": [
-    {
-      name: "南富山駅前",
-      id: "minami-toyama-ekimae",
-    },
-    {
-      name: "大町",
-      id: "omachi",
-    },
-    {
-      name: "堀川小泉",
-      id: "horikawa-koizumi",
-    },
-    {
-      name: "小泉町",
-      id: "koizumi-cho",
-    },
-    {
-      name: "西中野",
-      id: "nishi-nakano",
-    },
-    {
-      name: "広貫堂前",
-      id: "kokando-mae",
-    },
-    {
-      name: "上本町",
-      id: "kami-hommachi",
-    },
-    {
-      name: "西町",
-      id: "nishicho",
-    },
-    {
-      name: "中町（西町北）",
-      id: "nakamachi",
-    },
-    {
-      name: "荒町",
-      id: "aramachi",
-    },
-    {
-      name: "桜橋",
-      id: "sakura-bashi",
-    },
-    {
-      name: "電気ビル前",
-      id: "denki-biru-mae",
-    },
-    {
-      name: "地鉄ビル前",
-      id: "chitetsu-biru-mae",
-    },
-    {
-      name: "電鉄富山駅・エスタ前",
-      id: "dentetsu-toyama-eki-mae",
-    },
-    {
-      name: "富山",
-      id: "toyama",
-    },
-    {
-      name: "新富町",
-      id: "shintomi-cho",
-    },
-    {
-      name: "県庁前",
-      id: "kencho-mae",
-    },
-    {
-      name: "丸の内",
-      id: "marunouchi",
-    },
-    {
-      name: "諏訪川原",
-      id: "suwanokawara",
-    },
-    {
-      name: "安野屋",
-      id: "yasunoya",
-    },
-    {
-      name: "トヨタモビリティ富山Gスクエア五福前（五福末広町）",
-      id: "gofuku-suehiro-cho",
-    },
-    {
-      name: "富山大学前",
-      id: "toyama-daigaku-mae",
-    },
-    {
-      name: "国際会議場前",
-      id: "kokusai-kaigijo-mae",
-    },
-    {
-      name: "大手モール",
-      id: "ote-mall",
-    },
-    {
-      name: "グランドプラザ前",
-      id: "grand-plaza-mae",
-    },
-  ],
   "chitetsu-tateyama": [
     {
       name: "寺田",
@@ -393,66 +291,528 @@ const chitetsuStations = {
       id: "iwakuraji",
     },
   ],
-  "chitetsu-toyamako": [
+  "chitetsu-1": [
     {
-      name: "富山",
-      id: "toyama",
+      name: "南富山駅前",
+      id: "minami-toyama-ekimae",
     },
     {
-      name: "オークスカナルパークホテル富山前",
-      id: "oarks-canal-park-hotel-toyama",
+      name: "大町",
+      id: "omachi",
     },
     {
-      name: "インテック本社前",
-      id: "intec-honsha-mae",
+      name: "堀川小泉",
+      id: "horikawa-koizumi",
     },
     {
-      name: "龍谷富山高校前（永楽町）",
-      id: "ryokoku-toyama-koko-mae",
+      name: "小泉町",
+      id: "koizumi-cho",
     },
     {
-      name: "奥田中学校前",
-      id: "okuda-chugakko-mae",
+      name: "西中野",
+      id: "nishi-nakano",
     },
     {
-      name: "下奥井",
-      id: "shimo-okui",
+      name: "広貫堂前",
+      id: "kokando-mae",
     },
     {
-      name: "粟島（大阪屋ショップ前）",
-      id: "awajima",
+      name: "上本町",
+      id: "kami-hommachi",
     },
     {
-      name: "越中中島",
-      id: "etchu-nakajima",
+      name: "西町",
+      id: "nishicho",
     },
     {
-      name: "城川原",
-      id: "jogawara",
+      name: "中町（西町北）",
+      id: "nakamachi",
     },
     {
-      name: "犬島新町",
-      id: "inujima-shimmachi",
+      name: "荒町",
+      id: "aramachi",
     },
     {
-      name: "蓮町（馬場記念公園前）",
-      id: "hasumachi",
+      name: "桜橋",
+      id: "sakura-bashi",
     },
     {
-      name: "萩浦小学校前",
-      id: "hagiura-shogakko-mae",
+      name: "電気ビル前",
+      id: "denki-biru-mae",
     },
     {
-      name: "東岩瀬",
-      id: "higashi-iwase",
+      name: "地鉄ビル前",
+      id: "chitetsu-biru-mae",
+    },
+    {
+      name: "電鉄富山駅・エスタ前",
+      id: "dentetsu-toyama-eki-mae",
+    },
+    {
+      name: "富山駅",
+      id: "toyama-eki",
+    },
+  ],
+  "chitetsu-2": [
+    {
+      name: "南富山駅前",
+      id: "minami-toyama-ekimae",
+    },
+    {
+      name: "大町",
+      id: "omachi",
+    },
+    {
+      name: "堀川小泉",
+      id: "horikawa-koizumi",
+    },
+    {
+      name: "小泉町",
+      id: "koizumi-cho",
+    },
+    {
+      name: "西中野",
+      id: "nishi-nakano",
+    },
+    {
+      name: "広貫堂前",
+      id: "kokando-mae",
+    },
+    {
+      name: "上本町",
+      id: "kami-hommachi",
+    },
+    {
+      name: "西町",
+      id: "nishicho",
+    },
+    {
+      name: "中町（西町北）",
+      id: "nakamachi",
+    },
+    {
+      name: "荒町",
+      id: "aramachi",
+    },
+    {
+      name: "桜橋",
+      id: "sakura-bashi",
+    },
+    {
+      name: "電気ビル前",
+      id: "denki-biru-mae",
+    },
+    {
+      name: "地鉄ビル前",
+      id: "chitetsu-biru-mae",
+    },
+    {
+      name: "電鉄富山駅・エスタ前",
+      id: "dentetsu-toyama-eki-mae",
+    },
+    {
+      name: "富山駅",
+      id: "toyama-eki",
+    },
+    {
+      name: "新富町",
+      id: "shintomi-cho",
+    },
+    {
+      name: "県庁前",
+      id: "kencho-mae",
+    },
+    {
+      name: "丸の内",
+      id: "marunouchi",
+    },
+    {
+      name: "諏訪川原",
+      id: "suwanokawara",
+    },
+    {
+      name: "安野屋",
+      id: "yasunoya",
+    },
+    {
+      name: "トヨタモビリティ富山Gスクエア五福前（五福末広町）",
+      id: "gofuku-suehiro-cho",
+    },
+    {
+      name: "富山大学前",
+      id: "toyama-daigaku-mae",
+    },
+  ],
+  "chitetsu-3": [
+    {
+      name: "富山駅",
+      id: "toyama-eki",
+    },
+    {
+      name: "新富町",
+      id: "shintomi-cho",
+    },
+    {
+      name: "県庁前",
+      id: "kencho-mae",
+    },
+    {
+      name: "丸の内",
+      id: "marunouchi",
+    },
+    {
+      name: "国際会議場前",
+      id: "kokusai-kaigijo-mae",
+    },
+    {
+      name: "大手モール",
+      id: "ote-mall",
+    },
+    {
+      name: "グランドプラザ前",
+      id: "grand-plaza-mae",
+    },
+    {
+      name: "中町（西町北）",
+      id: "nakamachi",
+    },
+    {
+      name: "荒町",
+      id: "aramachi",
+    },
+    {
+      name: "桜橋",
+      id: "sakura-bashi",
+    },
+    {
+      name: "電気ビル前",
+      id: "denki-biru-mae",
+    },
+    {
+      name: "地鉄ビル前",
+      id: "chitetsu-biru-mae",
+    },
+    {
+      name: "電鉄富山駅・エスタ前",
+      id: "dentetsu-toyama-eki-mae",
+    },
+  ],
+  "chitetsu-4": [
+    {
+      name: "岩瀬浜",
+      id: "iwasehama",
     },
     {
       name: "競輪場前",
       id: "keirinjo-mae",
     },
     {
+      name: "東岩瀬",
+      id: "higashi-iwase",
+    },
+    {
+      name: "萩浦小学校前",
+      id: "hagiura-shogakko-mae",
+    },
+    {
+      name: "蓮町（馬場記念公園前）",
+      id: "hasumachi",
+    },
+    {
+      name: "犬島新町",
+      id: "inujima-shimmachi",
+    },
+    {
+      name: "城川原",
+      id: "jogawara",
+    },
+    {
+      name: "越中中島",
+      id: "etchu-nakajima",
+    },
+    {
+      name: "粟島（大阪屋ショップ前）",
+      id: "awajima",
+    },
+    {
+      name: "下奥井",
+      id: "shimo-okui",
+    },
+    {
+      name: "奥田中学校前",
+      id: "okuda-chugakko-mae",
+    },
+    {
+      name: "龍谷富山高校前（永楽町）",
+      id: "ryokoku-toyama-koko-mae",
+    },
+    {
+      name: "インテック本社前",
+      id: "intec-honsha-mae",
+    },
+    {
+      name: "オークスカナルパークホテル富山前",
+      id: "oarks-canal-park-hotel-toyama",
+    },
+    {
+      name: "富山駅",
+      id: "toyama-eki",
+    },
+    {
+      name: "電鉄富山駅・エスタ前",
+      id: "dentetsu-toyama-eki-mae",
+    },
+    {
+      name: "地鉄ビル前",
+      id: "chitetsu-biru-mae",
+    },
+    {
+      name: "電気ビル前",
+      id: "denki-biru-mae",
+    },
+    {
+      name: "桜橋",
+      id: "sakura-bashi",
+    },
+    {
+      name: "荒町",
+      id: "aramachi",
+    },
+    {
+      name: "中町（西町北）",
+      id: "nakamachi",
+    },
+    {
+      name: "西町",
+      id: "nishicho",
+    },
+    {
+      name: "上本町",
+      id: "kami-hommachi",
+    },
+    {
+      name: "広貫堂前",
+      id: "kokando-mae",
+    },
+    {
+      name: "西中野",
+      id: "nishi-nakano",
+    },
+    {
+      name: "小泉町",
+      id: "koizumi-cho",
+    },
+    {
+      name: "堀川小泉",
+      id: "horikawa-koizumi",
+    },
+    {
+      name: "大町",
+      id: "omachi",
+    },
+    {
+      name: "南富山駅前",
+      id: "minami-toyama-ekimae",
+    },
+  ],
+  "chitetsu-5": [
+    {
       name: "岩瀬浜",
       id: "iwasehama",
+    },
+    {
+      name: "競輪場前",
+      id: "keirinjo-mae",
+    },
+    {
+      name: "東岩瀬",
+      id: "higashi-iwase",
+    },
+    {
+      name: "萩浦小学校前",
+      id: "hagiura-shogakko-mae",
+    },
+    {
+      name: "蓮町（馬場記念公園前）",
+      id: "hasumachi",
+    },
+    {
+      name: "犬島新町",
+      id: "inujima-shimmachi",
+    },
+    {
+      name: "城川原",
+      id: "jogawara",
+    },
+    {
+      name: "越中中島",
+      id: "etchu-nakajima",
+    },
+    {
+      name: "粟島（大阪屋ショップ前）",
+      id: "awajima",
+    },
+    {
+      name: "下奥井",
+      id: "shimo-okui",
+    },
+    {
+      name: "奥田中学校前",
+      id: "okuda-chugakko-mae",
+    },
+    {
+      name: "龍谷富山高校前（永楽町）",
+      id: "ryokoku-toyama-koko-mae",
+    },
+    {
+      name: "インテック本社前",
+      id: "intec-honsha-mae",
+    },
+    {
+      name: "オークスカナルパークホテル富山前",
+      id: "oarks-canal-park-hotel-toyama",
+    },
+    {
+      name: "富山駅",
+      id: "toyama-eki",
+    },
+    {
+      name: "新富町",
+      id: "shintomi-cho",
+    },
+    {
+      name: "県庁前",
+      id: "kencho-mae",
+    },
+    {
+      name: "丸の内",
+      id: "marunouchi",
+    },
+    {
+      name: "諏訪川原",
+      id: "suwanokawara",
+    },
+    {
+      name: "安野屋",
+      id: "yasunoya",
+    },
+    {
+      name: "トヨタモビリティ富山Gスクエア五福前（五福末広町）",
+      id: "gofuku-suehiro-cho",
+    },
+    {
+      name: "富山大学前",
+      id: "toyama-daigaku-mae",
+    },
+  ],
+  "chitetsu-6": [
+    {
+      name: "岩瀬浜",
+      id: "iwasehama",
+    },
+    {
+      name: "競輪場前",
+      id: "keirinjo-mae",
+    },
+    {
+      name: "東岩瀬",
+      id: "higashi-iwase",
+    },
+    {
+      name: "萩浦小学校前",
+      id: "hagiura-shogakko-mae",
+    },
+    {
+      name: "蓮町（馬場記念公園前）",
+      id: "hasumachi",
+    },
+    {
+      name: "犬島新町",
+      id: "inujima-shimmachi",
+    },
+    {
+      name: "城川原",
+      id: "jogawara",
+    },
+    {
+      name: "越中中島",
+      id: "etchu-nakajima",
+    },
+    {
+      name: "粟島（大阪屋ショップ前）",
+      id: "awajima",
+    },
+    {
+      name: "下奥井",
+      id: "shimo-okui",
+    },
+    {
+      name: "奥田中学校前",
+      id: "okuda-chugakko-mae",
+    },
+    {
+      name: "龍谷富山高校前（永楽町）",
+      id: "ryokoku-toyama-koko-mae",
+    },
+    {
+      name: "インテック本社前",
+      id: "intec-honsha-mae",
+    },
+    {
+      name: "オークスカナルパークホテル富山前",
+      id: "oarks-canal-park-hotel-toyama",
+    },
+    {
+      name: "富山駅",
+      id: "toyama-eki",
+    },
+    {
+      name: "新富町",
+      id: "shintomi-cho",
+    },
+    {
+      name: "県庁前",
+      id: "kencho-mae",
+    },
+    {
+      name: "丸の内",
+      id: "marunouchi",
+    },
+    {
+      name: "国際会議場前",
+      id: "kokusai-kaigijo-mae",
+    },
+    {
+      name: "大手モール",
+      id: "ote-mall",
+    },
+    {
+      name: "グランドプラザ前",
+      id: "grand-plaza-mae",
+    },
+    {
+      name: "中町（西町北）",
+      id: "nakamachi",
+    },
+    {
+      name: "荒町",
+      id: "aramachi",
+    },
+    {
+      name: "桜橋",
+      id: "sakura-bashi",
+    },
+    {
+      name: "電気ビル前",
+      id: "denki-biru-mae",
+    },
+    {
+      name: "地鉄ビル前",
+      id: "chitetsu-biru-mae",
+    },
+    {
+      name: "電鉄富山駅・エスタ前",
+      id: "dentetsu-toyama-eki-mae",
     },
   ],
 };

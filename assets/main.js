@@ -87,51 +87,110 @@ const flattenRailways = (railwaysList) => {
 };
 
 const getRandomStation = () => {
-  const stationNames = new Set();
-  const checkboxes = Array.from(
-    document.querySelectorAll("input[type=checkbox]:checked")
-  ).filter((checkbox) => !checkbox.id.includes("toggle"));
-  if (checkboxes.length === 0) {
-    alert("駅を選択してください");
-    return;
-  }
-  checkboxes.forEach((checkbox) => {
-    stationNames.add({
-      name: checkbox.parentElement.querySelector("label").textContent,
-      railway: checkbox.parentElement.parentElement.parentElement.id,
+  try {
+    const stationNames = new Set();
+    const checkboxes = Array.from(
+      document.querySelectorAll("input[type=checkbox]:checked")
+    ).filter((checkbox) => !checkbox.id.includes("toggle"));
+    if (checkboxes.length === 0) {
+      alert("駅を選択してください");
+      return;
+    }
+    checkboxes.forEach((checkbox) => {
+      stationNames.add({
+        name: checkbox.parentElement.querySelector("label").textContent,
+        railway: checkbox.parentElement.parentElement.parentElement.id,
+      });
     });
-  });
-  const allFlattenRailways = [
-    ...flattenRailways(hokkaidoRailwaysList),
-    ...flattenRailways(tohokuRailwaysList),
-    ...flattenRailways(kantoRailwaysList),
-    ...flattenRailways(chubuRailwaysList),
-    ...flattenRailways(kinkiRailwaysList),
-    ...flattenRailways(chugokuRailwaysList),
-    ...flattenRailways(shikokuRailwaysList),
-    ...flattenRailways(kyushuRailwaysList),
-  ];
-  const stationNamesArray = Array.from(stationNames);
-  const random = Math.floor(Math.random() * stationNamesArray.length);
-  const stationName = stationNamesArray[random].name + "駅";
-  const railwayName = allFlattenRailways.find(
-    (railway) => railway.id === stationNamesArray[random].railway
-  ).name;
-  document.getElementById("result-station").textContent = stationName;
-  document.getElementById("result-railway").textContent = railwayName;
-  document.getElementById(
-    "result-map"
-  ).src = `https://maps.google.co.jp/maps?output=embed&q=${railwayName.replace(
-    /（(.*)）/g,
-    ""
-  )}%20${stationName}`;
-  document.getElementById(
-    "result-tweet"
-  ).value = `今日の駅は${railwayName}の『${stationName}』です！\n#StationPicker\nhttps://dl.wmsci.com/station/`;
-  document.getElementById("result").classList.remove("hidden");
-  document
-    .getElementById("tweet")
-    .addEventListener("click", () => tweet(railwayName, stationName));
+    const allFlattenRailways = [
+      ...flattenRailways(hokkaidoRailwaysList),
+      ...flattenRailways(tohokuRailwaysList),
+      ...flattenRailways(kantoRailwaysList),
+      ...flattenRailways(chubuRailwaysList),
+      ...flattenRailways(kinkiRailwaysList),
+      ...flattenRailways(chugokuRailwaysList),
+      ...flattenRailways(shikokuRailwaysList),
+      ...flattenRailways(kyushuRailwaysList),
+    ];
+    const stationNamesArray = Array.from(stationNames);
+    const random = Math.floor(Math.random() * stationNamesArray.length);
+    const railwayName = allFlattenRailways.find(
+      (railway) => railway.id === stationNamesArray[random].railway
+    ).name;
+    const tramRailways = [
+      "札幌市電",
+      "函館市電-2系統",
+      "函館市電-5系統",
+      "宇都宮芳賀ライトレール線",
+      "東京さくらトラム",
+      "東急電鉄-世田谷線",
+      "富山地方鉄道-1系統",
+      "富山地方鉄道-2系統",
+      "富山地方鉄道-3系統",
+      "富山地方鉄道-4系統",
+      "富山地方鉄道-5系統",
+      "富山地方鉄道-6系統",
+      "万葉線",
+      "豊橋鉄道-東田本線",
+      "福井鉄道福武線",
+      "京阪電気鉄道-石山坂本線",
+      "京阪電気鉄道-京津線",
+      "阪堺電気軌道-阪堺線",
+      "阪堺電気軌道-上町線",
+      "とさでん交通-伊野線",
+      "とさでん交通-後免線",
+      "とさでん交通-桟橋線",
+      "伊予鉄道-1系統",
+      "伊予鉄道-2系統",
+      "伊予鉄道-3系統",
+      "伊予鉄道-5系統",
+      "伊予鉄道-6系統",
+      "長崎電気軌道-1系統",
+      "長崎電気軌道-3系統",
+      "長崎電気軌道-4系統",
+      "長崎電気軌道-5系統",
+      "熊本市交通局-A系統",
+      "熊本市交通局-B系統",
+      "鹿児島市交通局-1系統",
+      "鹿児島市交通局-2系統",
+    ];
+    let stationName = tramRailways.includes(railwayName)
+      ? stationNamesArray[random].name + "停留所"
+      : stationNamesArray[random].name + "駅";
+    if (railwayName === "福井鉄道福武線") {
+      // 鉄道線
+      const reigai = [
+        "商工会議所前",
+        "足羽山公園口",
+        "福井城址大名町",
+        "福井駅",
+        "仁愛女子高校",
+        "田原町",
+      ];
+      if (reigai.includes(stationNamesArray[random].name)) {
+        stationName = stationNamesArray[random].name + "駅";
+      }
+    }
+    document.getElementById("result-station").textContent = stationName;
+    document.getElementById("result-railway").textContent = railwayName;
+    document.getElementById("all").textContent =
+      "抽選駅数：" + stationNamesArray.length;
+    document.getElementById(
+      "result-map"
+    ).src = `https://maps.google.co.jp/maps?output=embed&q=${railwayName.replace(
+      /（(.*)）/g,
+      ""
+    )}%20${stationName}`;
+    document.getElementById(
+      "result-tweet"
+    ).value = `今日の駅は${railwayName}の『${stationName}』です！\n#StationPicker\nhttps://dl.wmsci.com/station/`;
+    document.getElementById("result").classList.remove("hidden");
+    document
+      .getElementById("tweet")
+      .addEventListener("click", () => tweet(railwayName, stationName));
+  } catch (e) {
+    alert(e);
+  }
 };
 
 const stationForm = document.getElementById("stations");
@@ -228,6 +287,6 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
   });
 };
 
-const appVersion = "1.5.0";
+const appVersion = "1.6.0";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;

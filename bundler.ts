@@ -28,7 +28,7 @@ const regions = [
   "chubu",
   "kinki",
   //"chugoku",
-  //"shikoku",
+  "shikoku",
   "kyushu",
 ];
 const files = regionfiles

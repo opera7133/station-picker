@@ -21,7 +21,7 @@ const fukuiStations = [
   { name: "商工会議所前", id: "shokokaigisho-mae" },
   { name: "足羽山公園口", id: "asuwayama-koen-guchi" },
   { name: "福井城址大名町", id: "fukuijoshi-daimyo-machi" },
-  { name: "福井", id: "fukui" },
+  { name: "福井駅", id: "fukui-eki" },
   { name: "仁愛女子高校", id: "jinai-joshi-koko" },
   { name: "田原町", id: "tawara-machi" },
 ];
