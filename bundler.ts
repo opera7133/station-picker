@@ -96,7 +96,15 @@ for (const region of regions) {
 const toggle = `${regionToggle}
 for (const toggler of toggleList) {
   setToggle(toggler);
-}`;
+}
+
+const allPrefectureCheckbox = document.getElementById("all-prefectures-toggle");
+allPrefectureCheckbox.addEventListener("click", () => {
+  const checkboxes = document.querySelectorAll("input[type='checkbox']");
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = allPrefectureCheckbox.checked;
+  });
+});`;
 
 const minified = UglifyJS.minify(content + toggle, { warnings: true });
 

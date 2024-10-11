@@ -29,7 +29,19 @@
       使い方：<br />1. 抽選に追加する駅を選択する<br />2. 抽選ボタンを押す<br />3.
       選択した駅の中からランダムで駅が選ばれる
     </p>
-    <form class="my-8 flex flex-col gap-3 w-full" id="stations"></form>
+    <form class="my-8 flex flex-col gap-3 w-full" id="stations">
+      <div
+        class="relative flex justify-between items-center border border-gray-200 rounded-md py-4 px-8"
+      >
+        <label for="all-prefectures-toggle">すべての路線を選択</label>
+        <input
+          type="checkbox"
+          class="mr-4"
+          id="all-prefectures-toggle"
+          name="all-prefectures-toggle"
+        />
+      </div>
+    </form>
     <button
       type="submit"
       form="stations"
