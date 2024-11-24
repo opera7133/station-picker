@@ -307,13 +307,13 @@ const yamagataRailways = {
   id: "yamagata",
   name: "山形",
   railways: {
-    yamagata: {
-      id: "yamagata",
+    flower: {
+      id: "flower",
       name: "山形鉄道フラワー長井線",
       icon: "assets/tohoku/yamagata/yamagata.svg",
       railway: [
         {
-          id: "yamagata",
+          id: "flower",
           name: "山形鉄道フラワー長井線",
           icon: "assets/tohoku/yamagata/yamagata.svg",
         },

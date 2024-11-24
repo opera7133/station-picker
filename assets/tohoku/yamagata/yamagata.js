@@ -18,4 +18,4 @@ const yamagataStations = [
   { name: "荒砥", id: "arato" },
 ];
 
-generateStations(yamagataStations, "yamagata", "yamagata");
+generateStations(yamagataStations, "flower", "yamagata");

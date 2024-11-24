@@ -185,6 +185,9 @@ const getRandomStation = () => {
     document.getElementById(
       "result-tweet"
     ).value = `今日の駅は${railwayName}の『${stationName}』です！\n#StationPicker\nhttps://dl.wmsci.com/station/`;
+    document.getElementById(
+      "result-url"
+    ).value = `https://dl.wmsci.com/station/?stations=${convertCheckboxesToString()}`;
     document.getElementById("result").classList.remove("hidden");
     document
       .getElementById("tweet")
@@ -288,6 +291,88 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
   });
 };
 
-const appVersion = "1.8.0";
+const convertCheckboxesToString = () => {
+  const checkboxes = document
+    .getElementById("stations")
+    .querySelectorAll('input[type="checkbox"]');
+  const binaryArray = Array.from(checkboxes)
+    .map((checkbox) => (checkbox.checked ? "1" : "0"))
+    .join("");
+
+  let encoded = "";
+  let currentChar = binaryArray[0];
+  let count = 0;
+
+  for (let char of binaryArray) {
+    if (char === currentChar) {
+      count++;
+    } else {
+      encoded += `${currentChar}${count},`;
+      currentChar = char;
+      count = 1;
+    }
+  }
+  encoded += `${currentChar}${count}`;
+  return LZString.compressToEncodedURIComponent(btoa(encoded));
+};
+
+const setCheckboxStateFromString = (encodedString) => {
+  const checkboxes = document
+    .getElementById("stations")
+    .querySelectorAll('input[type="checkbox"]');
+  const binaryArray = [];
+
+  if (!encodedString) {
+    return;
+  }
+  if (!encodedString.match(/^[A-Za-z0-9+/=]+$/)) {
+    alert("エンコード文字列が不正です");
+    return;
+  }
+  try {
+    const segments = atob(
+      LZString.decompressFromEncodedURIComponent(encodedString)
+    ).split(",");
+    for (let segment of segments) {
+      if (segment.length > 1) {
+        const char = segment[0];
+        const count = parseInt(segment.slice(1), 10);
+        binaryArray.push(char.repeat(count));
+      }
+    }
+    const binaryString = binaryArray.join("");
+    for (let i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked = binaryString[i] === "1";
+    }
+  } catch (e) {
+    console.error(e);
+    alert("エンコード文字列が不正です");
+    return;
+  }
+};
+
+const getUrlQueries = () => {
+  const queryStr = window.location.search.slice(1);
+  const queries = {};
+
+  if (!queryStr) {
+    return queries;
+  }
+
+  queryStr.split("&").forEach((queryStr) => {
+    const queryArr = queryStr.split("=");
+    queries[queryArr[0]] = queryArr[1];
+  });
+
+  return queries;
+};
+
+const copyResultUrlToClipboard = () => {
+  const resultUrl = document.getElementById("result-url");
+  resultUrl.select();
+  navigator.clipboard.writeText(resultUrl.value);
+};
+
+const appVersion = "1.8.1";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;

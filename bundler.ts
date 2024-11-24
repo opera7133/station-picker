@@ -105,7 +105,12 @@ allPrefectureCheckbox.addEventListener("click", () => {
   checkboxes.forEach((checkbox) => {
     checkbox.checked = allPrefectureCheckbox.checked;
   });
-});`;
+});
+
+const queryStations = getUrlQueries().stations;
+if (queryStations) {
+  setCheckboxStateFromString(queryStations);
+}`;
 
 const minified = UglifyJS.minify(content + toggle, { warnings: true });
 

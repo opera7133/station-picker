@@ -22,6 +22,15 @@ const allJRTickets = {
         stations: {},
       },
     },
+    "east-hokkaido": {
+      id: "east-hokkaido",
+      name: "北海道＆東日本パス",
+      selects: {
+        company: ["hokkaido-jr-hokkaido", "tohoku-jr-east", "kanto-jr-east"],
+        railway: ["aomori-aoimori", "iwate-igr-iwate", "niigata-hokuhoku"],
+        stations: {},
+      },
+    },
   },
 };
 
@@ -29,6 +38,70 @@ const kantoJRTickets = {
   id: "jr-kanto",
   name: "JR東日本 企画券",
   tickets: {
+    shuumatsu: {
+      id: "shuumatsu",
+      name: "週末パス",
+      selects: {
+        company: ["kanto-jr-east", "chubu-jr-east", "nagano-shinano"],
+        railway: [
+          "shinkansen-yamagata",
+          "shinkansen-joetsu",
+          "shinkansen-joetsu-shisen",
+          "tohoku-jr-east-rifu",
+          "tohoku-jr-east-joban",
+          "tohoku-jr-east-banetsu-west",
+          "tohoku-jr-east-senzan",
+          "tohoku-jr-east-senseki",
+          "tohoku-jr-east-suigun",
+          "tohoku-jr-east-suigun-hitachiota",
+          "tohoku-jr-east-yonesaka",
+          "tohoku-jr-east-tadami",
+          "tohoku-jr-east-banetsu-east",
+          "tohoku-jr-east-ishinomaki",
+          "tohoku-jr-east-rikuu-east",
+          "tohoku-jr-east-rikuu-west",
+          "tohoku-jr-east-aterazawa",
+          "yamagata-flower",
+          "fukushima-abukuma",
+          "fukushima-fukushima",
+          "ibaraki-kashima-rinkai",
+          "ibaraki-hitachinaka",
+          "niigata-tokimeki-myoko",
+          "niigata-hokuhoku",
+          "yamanashi-fujikyuko",
+          "nagano-alpico",
+          "nagano-ueda",
+          "nagano-nagaden",
+          "shizuoka-izukyu",
+        ],
+        stations: {
+          "shinkansen-tohoku": {
+            start: "東京",
+            end: "くりこま高原",
+          },
+          "shinkansen-hokuriku": {
+            start: "高崎",
+            end: "上越妙高",
+          },
+          "tohoku-jr-east-tohoku": {
+            start: "黒磯",
+            end: "小牛田",
+          },
+          "tohoku-jr-east-uetsu": {
+            start: "新津",
+            end: "酒田",
+          },
+          "tohoku-jr-east-ou": {
+            start: "福島",
+            end: "湯沢",
+          },
+          "fukushima-aizu": {
+            start: "西若松",
+            end: "会津田島",
+          },
+        },
+      },
+    },
     tokunai: {
       id: "tokunai",
       name: "都区内パス",
@@ -193,6 +266,16 @@ const kantoJRTickets = {
         },
       },
     },
+    "tokyo-free": {
+      id: "tokyo-free",
+      name: "東京フリーきっぷ",
+      append: "tokunai",
+      selects: {
+        company: ["kanto-tokyo-metro", "tokyo-toei"],
+        railway: ["tokyo-nt", "tokyo-tokyo-sakura"],
+        stations: {},
+      },
+    },
   },
 };
 
@@ -200,6 +283,91 @@ const tokaiJRTickets = {
   id: "jr-tokai",
   name: "JR東海 企画券",
   tickets: {
+    "jr-tokai-16": {
+      id: "jr-tokai-16",
+      name: "JR東海＆16私鉄 乗り鉄☆たびきっぷ",
+      selects: {
+        company: ["chubu-jr-central", "kinki-jr-central", "shiga-ohmi"],
+        railway: [
+          "shizuoka-shizutetsu",
+          "shizuoka-enshu",
+          "shizuoka-gakunan",
+          "shizuoka-izu-hakone",
+          "shizuoka-tenhama",
+          "gifu-aketetsu",
+          "gifu-yoro",
+          "gifu-tarutetsu",
+          "gifu-nagatetsu",
+          "aichi-aichi-kanjo",
+          "aichi-nagoya-rinkai",
+          "aichi-tkj",
+          "aichi-toyotetsu",
+          "mie-ise",
+          "mie-sangi-hokusei",
+        ],
+        stations: {},
+      },
+    },
+    fujisan: {
+      id: "fujisan",
+      name: "富士山満喫きっぷ",
+      selects: {
+        company: [],
+        railway: ["shizuoka-izu-hakone"],
+        stations: {
+          "chubu-jr-central-tokaido": {
+            start: "熱海",
+            end: "静岡",
+          },
+          "chubu-jr-central-gotemba": {
+            start: "駿河小山",
+            end: "沼津",
+          },
+          "chubu-jr-central-minobu": {
+            start: "富士",
+            end: "芝川",
+          },
+        },
+      },
+    },
+    "aozora-free": {
+      id: "aozora-free",
+      name: "青空フリーパス",
+      selects: {
+        company: [],
+        railway: [
+          "chubu-jr-central-tokaido-akasaka",
+          "chubu-jr-central-taketoyo",
+          "chubu-jr-central-taita",
+          "kinki-jr-central-kansai",
+          "kinki-jr-central-meisho",
+          "kinki-jr-central-sangu",
+          "mie-ise",
+        ],
+        stations: {
+          "chubu-jr-central-tokaido": {
+            start: "二川",
+            end: "米原",
+          },
+          "chubu-jr-central-iida": {
+            start: "豊橋",
+            end: "飯田",
+          },
+          "chubu-jr-central-chuo": {
+            start: "名古屋",
+            end: "木曽平沢",
+          },
+          "chubu-jr-central-takayama": {
+            start: "岐阜",
+            end: "下呂",
+          },
+          "kinki-jr-central-kisei": {
+            start: "亀山",
+            end: "紀伊長島",
+          },
+        },
+      },
+    },
     "kyujitsu-norihodai": {
       id: "kyujitsu-norihodai",
       name: "休日乗り放題きっぷ",
@@ -233,6 +401,7 @@ const ticketsPrefectureTemplate = (prefecture) => {
 };
 
 const allTickets = [allJRTickets, kantoJRTickets, tokaiJRTickets];
+const ticketsRailwaysList = [];
 
 for (const tickets of allTickets) {
   document.getElementById("tickets").innerHTML +=
