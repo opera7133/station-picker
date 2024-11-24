@@ -34,7 +34,7 @@ const kinkiRailways = {
         },
         {
           id: "sanyo",
-          name: "山陽線",
+          name: "山陽線（姫路〜上郡）",
           icon: "assets/kinki/jr-west/a.svg",
         },
         {

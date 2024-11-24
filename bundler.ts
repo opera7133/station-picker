@@ -28,7 +28,7 @@ const regions = [
   "kanto",
   "chubu",
   "kinki",
-  //"chugoku",
+  "chugoku",
   "shikoku",
   "kyushu",
   "tickets",

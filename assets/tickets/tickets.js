@@ -15,6 +15,7 @@ const allJRTickets = {
           "chubu-jr-east",
           "kinki-jr-west",
           "kinki-jr-central",
+          "chugoku-jr-west",
           "shikoku-jr-shikoku",
           "kyushu-jr-kyushu",
         ],

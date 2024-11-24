@@ -9,7 +9,7 @@ const shikokuRailways = {
       railway: [
         {
           id: "honshi-bisan",
-          name: "本四備讃線",
+          name: "瀬戸大橋線",
           icon: "assets/shikoku/jr-shikoku/shikoku.svg",
         },
         {

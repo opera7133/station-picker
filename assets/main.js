@@ -138,6 +138,16 @@ const getRandomStation = () => {
       "京阪電気鉄道-京津線",
       "阪堺電気軌道-阪堺線",
       "阪堺電気軌道-上町線",
+      "岡山電気軌道-東山本線",
+      "岡山電気軌道-清輝橋線",
+      "広島電鉄-1系統",
+      "広島電鉄-2系統",
+      "広島電鉄-3系統",
+      "広島電鉄-5系統",
+      "広島電鉄-6系統",
+      "広島電鉄-7系統",
+      "広島電鉄-8系統",
+      "広島電鉄-9系統",
       "とさでん交通-伊野線",
       "とさでん交通-後免線",
       "とさでん交通-桟橋線",
@@ -373,6 +383,6 @@ const copyResultUrlToClipboard = () => {
   navigator.clipboard.writeText(resultUrl.value);
 };
 
-const appVersion = "1.8.1";
+const appVersion = "2.0.0";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;
