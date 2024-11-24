@@ -397,6 +397,6 @@ const copyResultUrlToClipboard = () => {
   navigator.clipboard.writeText(resultUrl.value);
 };
 
-const appVersion = "2.0.0";
+const appVersion = "2.0.1";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;
