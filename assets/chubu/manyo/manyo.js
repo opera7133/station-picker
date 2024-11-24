@@ -76,8 +76,8 @@ const manyoStations = [
     id: "shogawa-guchi",
   },
   {
-    name: "西新湊",
-    id: "nishi-shimminato",
+    name: "第一イン新湊 クロスベイ前",
+    id: "daiichi-in-shimminato-cross-bay-mae",
   },
   {
     name: "新町口",

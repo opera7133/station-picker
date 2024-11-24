@@ -165,20 +165,34 @@ const getRandomStation = () => {
       "鹿児島市交通局-1系統",
       "鹿児島市交通局-2系統",
     ];
+    const tramReigaiRailways = [
+      "福井鉄道福武線",
+      "万葉線",
+      "伊予鉄道-1系統",
+      "伊予鉄道-2系統",
+    ];
+    const tramReigaiStations = [
+      "商工会議所前",
+      "足羽山公園口",
+      "福井城址大名町",
+      "福井駅",
+      "仁愛女子高校",
+      "田原町",
+      "六渡寺",
+      "庄川口",
+      "第一イン新湊 クロスベイ前",
+      "新町口",
+      "中新湊",
+      "東新湊",
+      "海王丸",
+      "越ノ潟",
+      "古町",
+    ];
     let stationName = tramRailways.includes(railwayName)
       ? stationNamesArray[random].name + "停留所"
       : stationNamesArray[random].name + "駅";
-    if (railwayName === "福井鉄道福武線") {
-      // 鉄道線
-      const reigai = [
-        "商工会議所前",
-        "足羽山公園口",
-        "福井城址大名町",
-        "福井駅",
-        "仁愛女子高校",
-        "田原町",
-      ];
-      if (reigai.includes(stationNamesArray[random].name)) {
+    if (tramReigaiRailways.includes(railwayName)) {
+      if (tramReigaiStations.includes(stationNamesArray[random].name)) {
         stationName = stationNamesArray[random].name + "駅";
       }
     }
