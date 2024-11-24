@@ -1,7 +1,14 @@
 const chugokuRailways = {
   id: "chugoku",
   name: "中国",
-  railways: {},
+  railways: {
+    "jr-west": {
+      id: "jr-west",
+      name: "JR西日本",
+      icon: "assets/chugoku/jr-west/jr.svg",
+      railway: [],
+    },
+  },
 };
 
 const tottoriRailways = {

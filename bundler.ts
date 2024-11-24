@@ -31,6 +31,7 @@ const regions = [
   //"chugoku",
   "shikoku",
   "kyushu",
+  "tickets",
 ];
 const files = regionfiles
   .map((f) => {

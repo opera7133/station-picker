@@ -288,6 +288,6 @@ const generateRailwayStations = (railwayStations, railway, prefecture) => {
   });
 };
 
-const appVersion = "1.7.0";
+const appVersion = "1.8.0";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;

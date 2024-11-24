@@ -29,7 +29,27 @@
       使い方：<br />1. 抽選に追加する駅を選択する<br />2. 抽選ボタンを押す<br />3.
       選択した駅の中からランダムで駅が選ばれる
     </p>
+    <hr class="my-4" />
+    <h4 class="text-xl">企画券</h4>
+    <form
+      class="mt-4 border border-gray-200 rounded-md py-4 px-8"
+      id="tickets-form"
+    >
+      <div class="relative flex justify-between items-center py-2">
+        <label for="no-select">選択なし</label>
+        <input
+          type="radio"
+          class="mr-4"
+          id="no-select"
+          name="tickets"
+          checked
+        />
+      </div>
+      <div class="flex flex-col w-full" id="tickets"></div>
+    </form>
+    <hr class="my-8" />
     <form class="my-8 flex flex-col gap-3 w-full" id="stations">
+      <h4 class="text-xl">路線・駅</h4>
       <div
         class="relative flex justify-between items-center border border-gray-200 rounded-md py-4 px-8"
       >
@@ -110,6 +130,6 @@
       >
       <p class="my-4" id="ver">バージョン：</p>
     </footer>
-    <script src="bundle.js?v=120"></script>
+    <script src="bundle.js?v=170"></script>
   </body>
 </html>
