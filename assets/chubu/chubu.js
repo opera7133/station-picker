@@ -807,6 +807,18 @@ const aichiRailways = {
         },
       ],
     },
+    guideway: {
+      id: "guideway",
+      name: "名古屋ガイドウェイバス",
+      icon: "assets/chubu/guideway/guideway.svg",
+      railway: [
+        {
+          name: "名古屋ガイドウェイバス",
+          id: "guideway",
+          icon: "assets/chubu/guideway/guideway.svg",
+        },
+      ],
+    },
     toyotetsu: {
       id: "toyotetsu",
       name: "豊橋鉄道",

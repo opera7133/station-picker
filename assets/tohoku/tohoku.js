@@ -83,8 +83,18 @@ const tohokuRailways = {
           icon: "assets/tohoku/jr-east/kesennuma.svg",
         },
         {
+          id: "kesennuma-brt",
+          name: "気仙沼線BRT",
+          icon: "assets/tohoku/jr-east/kesennuma.svg",
+        },
+        {
           id: "ofunato",
           name: "大船渡線",
+          icon: "assets/tohoku/jr-east/ofunato.svg",
+        },
+        {
+          id: "ofunato-brt",
+          name: "大船渡線BRT",
           icon: "assets/tohoku/jr-east/ofunato.svg",
         },
         {

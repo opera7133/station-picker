@@ -58,6 +58,11 @@ const kyushuRailways = {
           icon: "assets/kyushu/jr-kyushu/ji.svg",
         },
         {
+          id: "hitahikosan-brt",
+          name: "日田彦山線BRT",
+          icon: "assets/kyushu/jr-kyushu/ji.svg",
+        },
+        {
           id: "gotoji",
           name: "後藤寺線",
           icon: "assets/kyushu/jr-kyushu/jj.svg",

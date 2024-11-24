@@ -133,11 +133,6 @@ const kantoRailways = {
           icon: "assets/kanto/jr-east/co.svg",
         },
         {
-          name: "常磐線",
-          id: "joban",
-          icon: "assets/kanto/jr-east/joban.svg",
-        },
-        {
           name: "八高線",
           id: "hachiko",
           icon: "assets/kanto/jr-east/hachiko.svg",

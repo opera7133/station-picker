@@ -99,7 +99,6 @@ const jrEastIbarakiStations = {
       id: "toride",
     },
   ],
-  "jr-east-joban": [],
   "jr-east-mito": [
     {
       name: "小山",
