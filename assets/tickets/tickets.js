@@ -129,7 +129,7 @@ const kantoJRTickets = {
             start: "東京",
             end: "西荻窪",
           },
-          "kanto-jr-east-keihin-tohoku": {
+          "kanto-jr-east-keihin-tohoku-negishi": {
             start: "蒲田",
             end: "赤羽",
           },
@@ -173,7 +173,7 @@ const kantoJRTickets = {
         company: [],
         railway: [
           "kanto-jr-east-yamanote",
-          "kanto-jr-east-keihin-tohoku",
+          "kanto-jr-east-keihin-tohoku-negishi",
           "kanto-jr-east-saikyo",
           "kanto-jr-east-yokosuka",
           "kanto-jr-east-yokohama",
