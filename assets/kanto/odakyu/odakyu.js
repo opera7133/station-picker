@@ -285,6 +285,19 @@ const odakyuStations = {
       id: "karakida",
     },
   ],
+  "odakyu-hakone": [
+    { name: "小田原", id: "odawara" },
+    { name: "箱根板橋", id: "hakone-itabashi" },
+    { name: "風祭", id: "kazamatsuri" },
+    { name: "入生田", id: "iriuda" },
+    { name: "箱根湯本", id: "hakone-yumoto" },
+    { name: "塔ノ沢", id: "tonosawa" },
+    { name: "大平台", id: "ohiradai" },
+    { name: "宮ノ下", id: "miyanoshita" },
+    { name: "小涌谷", id: "kowakidani" },
+    { name: "彫刻の森", id: "chokoku-no-mori" },
+    { name: "強羅", id: "gora" },
+  ],
 };
 
 generateRailwayStations(odakyuStations, "odakyu", "kanto");

@@ -445,6 +445,11 @@ const kantoRailways = {
           id: "tama",
           icon: "assets/kanto/odakyu/ot.svg",
         },
+        {
+          name: "箱根鉄道線",
+          id: "hakone",
+          icon: "assets/kanto/odakyu/oh_.svg",
+        },
       ],
     },
     tokyu: {
