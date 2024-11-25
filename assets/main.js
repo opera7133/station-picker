@@ -15,6 +15,7 @@ const railwayCompanyTemplate = (railwayCompany, prefecture) => `
   <details id="${prefecture}-${railwayCompany.id}">
             <summary class="relative py-4 text-lg cursor-pointer">
               <img
+                loading="lazy"
                 src="${railwayCompany.icon}"
                 alt="${railwayCompany.name}"
                 class="inline ml-2 w-8 object-contain h-8"
@@ -31,7 +32,7 @@ const railwayCompanyTemplate = (railwayCompany, prefecture) => `
 const railwayTemplate = (railway, key) => `
   <details class="ml-4" id="${key}-${railway.id}">
           <summary class="relative py-4 text-lg cursor-pointer">
-            <img src="${railway.icon}" alt="${railway.name}" class="inline object-contain ml-2 w-8 h-8">
+            <img src="${railway.icon}" loading="lazy" alt="${railway.name}" class="inline object-contain ml-2 w-8 h-8">
             <span class="ml-2">${railway.name}</span>
             <input type="checkbox" class="absolute top-1/2 -translate-y-1/2 right-0 mr-4" id="${key}-${railway.id}-toggle">
           </summary>
@@ -414,6 +415,6 @@ const copyResultUrlToClipboard = () => {
   navigator.clipboard.writeText(resultUrl.value);
 };
 
-const appVersion = "2.0.3";
+const appVersion = "2.0.5";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;
