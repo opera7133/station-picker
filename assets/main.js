@@ -98,6 +98,9 @@ const getRandomStation = () => {
       return;
     }
     // show loading
+    if (!document.getElementById("result").classList.contains("hidden")) {
+      document.getElementById("result").classList.add("hidden");
+    }
     document.getElementById("loading").classList.remove("hidden");
     document.getElementById("loading").scrollIntoView({
       behavior: "smooth",
