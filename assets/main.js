@@ -218,10 +218,10 @@ const getRandomStation = () => {
     )}%20${stationName}`;
     document.getElementById(
       "result-tweet"
-    ).value = `今日の駅は${railwayName}の『${stationName}』です！\n#StationPicker\nhttps://dl.wmsci.com/station/`;
+    ).value = `今日の駅は${railwayName}の『${stationName}』です！\n#StationPicker\nhttps://station-picker.pages.dev/`;
     document.getElementById(
       "result-url"
-    ).value = `https://dl.wmsci.com/station/?stations=${convertCheckboxesToString()}`;
+    ).value = `https://station-picker.pages.dev/?stations=${convertCheckboxesToString()}`;
     document
       .getElementById("tweet")
       .addEventListener("click", () => tweet(railwayName, stationName));
@@ -245,7 +245,7 @@ stationForm.addEventListener("submit", (event) => {
 
 function tweet(railway, station) {
   window.open(
-    `https://x.com/intent/tweet?text=今日の駅は${railway}の『${station}』です！&hashtags=StationPicker&url=https://dl.wmsci.com/station/`
+    `https://x.com/intent/tweet?text=今日の駅は${railway}の『${station}』です！&hashtags=StationPicker&url=https://station-picker.pages.dev/`
   );
 }
 
@@ -415,6 +415,6 @@ const copyResultUrlToClipboard = () => {
   navigator.clipboard.writeText(resultUrl.value);
 };
 
-const appVersion = "2.0.5";
+const appVersion = "2.0.6";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;
