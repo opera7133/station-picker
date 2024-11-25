@@ -90,6 +90,7 @@ const flattenRailways = (railwaysList) => {
 const getRandomStation = () => {
   try {
     const waitTime = document.getElementById("wait-time").value * 1000 ?? 3000;
+    const usingCrypto = document.getElementById("crypto").checked ?? false;
     const stationNames = new Set();
     const checkboxes = Array.from(
       document.querySelectorAll("input[type=checkbox]:checked")
@@ -124,7 +125,13 @@ const getRandomStation = () => {
       ...flattenRailways(kyushuRailwaysList),
     ];
     const stationNamesArray = Array.from(stationNames);
-    const random = Math.floor(Math.random() * stationNamesArray.length);
+    const random = usingCrypto
+      ? (() => {
+          const array = new Uint32Array(1);
+          crypto.getRandomValues(array);
+          return array[0] % stationNamesArray.length;
+        })()
+      : Math.floor(Math.random() * stationNamesArray.length);
     const railwayName = allFlattenRailways.find(
       (railway) => railway.id === stationNamesArray[random].railway
     ).name;
@@ -415,6 +422,6 @@ const copyResultUrlToClipboard = () => {
   navigator.clipboard.writeText(resultUrl.value);
 };
 
-const appVersion = "2.0.6";
+const appVersion = "2.0.7";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;
