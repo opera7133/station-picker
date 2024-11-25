@@ -88,6 +88,7 @@ const flattenRailways = (railwaysList) => {
 
 const getRandomStation = () => {
   try {
+    const waitTime = document.getElementById("wait-time").value * 1000 ?? 3000;
     const stationNames = new Set();
     const checkboxes = Array.from(
       document.querySelectorAll("input[type=checkbox]:checked")
@@ -96,6 +97,11 @@ const getRandomStation = () => {
       alert("駅を選択してください");
       return;
     }
+    // show loading
+    document.getElementById("loading").classList.remove("hidden");
+    document.getElementById("loading").scrollIntoView({
+      behavior: "smooth",
+    });
     checkboxes.forEach((checkbox) => {
       stationNames.add({
         name: checkbox.parentElement.querySelector("label").textContent,
@@ -212,10 +218,16 @@ const getRandomStation = () => {
     document.getElementById(
       "result-url"
     ).value = `https://dl.wmsci.com/station/?stations=${convertCheckboxesToString()}`;
-    document.getElementById("result").classList.remove("hidden");
     document
       .getElementById("tweet")
       .addEventListener("click", () => tweet(railwayName, stationName));
+    setTimeout(() => {
+      document.getElementById("loading").classList.add("hidden");
+      document.getElementById("result").classList.remove("hidden");
+      document.getElementById("result").scrollIntoView({
+        behavior: "smooth",
+      });
+    }, waitTime);
   } catch (e) {
     alert(e);
   }
@@ -234,6 +246,8 @@ function tweet(railway, station) {
 }
 
 document.getElementById("retry-same").addEventListener("click", () => {
+  document.getElementById("result").classList.add("hidden");
+  document.getElementById("loading").classList.remove("hidden");
   getRandomStation();
 });
 
@@ -397,6 +411,6 @@ const copyResultUrlToClipboard = () => {
   navigator.clipboard.writeText(resultUrl.value);
 };
 
-const appVersion = "2.0.2";
+const appVersion = "2.0.3";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;

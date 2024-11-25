@@ -63,6 +63,28 @@
         />
       </div>
     </form>
+    <hr class="my-4" />
+    <details>
+      <summary class="text-xl inline-block cursor-pointer">高度な設定</summary>
+      <form
+        class="mt-4 border border-gray-200 rounded-md py-4 px-8"
+        id="advanced-form"
+      >
+        <label for="wait-time">抽選時間</label>
+        <div class="flex justify-between items-center gap-3 py-2">
+          <input
+            type="number"
+            id="wait-time"
+            class="w-full px-4 py-2 text-black rounded-md"
+            placeholder="秒"
+            min="0"
+            max="60"
+            value="3"
+          />
+          <span>秒</span>
+        </div>
+      </form>
+    </details>
     <button
       type="submit"
       form="stations"
@@ -71,6 +93,10 @@
     >
       抽選
     </button>
+    <div id="loading" class="text-center mt-8 hidden">
+      <img src="assets/loading.gif" alt="loading" class="mx-auto w-40" />
+      <p class="text-2xl">抽選中...</p>
+    </div>
     <div
       id="result"
       class="text-center border border-gray-200 rounded-md mt-8 py-4 px-8 hidden"
@@ -150,6 +176,6 @@
       >
       <p class="my-4" id="ver">バージョン：</p>
     </footer>
-    <script src="bundle.js?v=202"></script>
+    <script src="bundle.js?v=203"></script>
   </body>
 </html>
