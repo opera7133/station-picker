@@ -101,7 +101,7 @@ for (const toggler of toggleList) {
 
 const allPrefectureCheckbox = document.getElementById("all-prefectures-toggle");
 allPrefectureCheckbox.addEventListener("click", () => {
-  const checkboxes = document.querySelectorAll("input[type='checkbox']");
+  const checkboxes = document.getElementById("stations").querySelectorAll("input[type='checkbox']");
   checkboxes.forEach((checkbox) => {
     checkbox.checked = allPrefectureCheckbox.checked;
   });
