@@ -35,8 +35,8 @@ const allJRTickets = {
   },
 };
 
-const kantoJRTickets = {
-  id: "jr-kanto",
+const eastJRTickets = {
+  id: "jr-east",
   name: "JR東日本 企画券",
   tickets: {
     shuumatsu: {
@@ -280,7 +280,7 @@ const kantoJRTickets = {
   },
 };
 
-const tokaiJRTickets = {
+const centralJRTickets = {
   id: "jr-tokai",
   name: "JR東海 企画券",
   tickets: {
@@ -386,6 +386,48 @@ const tokaiJRTickets = {
   },
 };
 
+const westJRTickets = {
+  id: "jr-west",
+  name: "JR西日本 企画券",
+  tickets: {
+    "hokuriku-tabiwa": {
+      id: "hokuriku-tabiwa",
+      name: "北陸おでかけ tabiwaパス",
+      selects: {
+        railway: [
+          "fukui-hapiline",
+          "ishikawa-ir-ishikawa",
+          "toyama-ainokaze",
+          "niigata-tokimeki-nihonkai",
+          "chubu-jr-west-nanao",
+          "chubu-jr-west-himi",
+          "chubu-jr-west-johana",
+          "chubu-jr-west-etsumi-north",
+          "chubu-jr-west-takayama",
+        ],
+        stations: {
+          "ishikawa-nototetsu": {
+            start: "七尾",
+            end: "和倉温泉",
+          },
+          "niigata-tokimeki-myoko": {
+            start: "上越妙高",
+            end: "直江津",
+          },
+          "chubu-jr-west-oito": {
+            start: "中土",
+            end: "糸魚川",
+          },
+          "chubu-jr-west-obama": {
+            start: "敦賀",
+            end: "青郷",
+          },
+        },
+      },
+    },
+  },
+};
+
 const ticketsTemplate = (ticket) => {
   return `<div class="relative flex justify-between items-center py-2">
         <label for="${`${ticket.id}`}">${ticket.name}</label>
@@ -401,7 +443,12 @@ const ticketsPrefectureTemplate = (prefecture) => {
         </details>`;
 };
 
-const allTickets = [allJRTickets, kantoJRTickets, tokaiJRTickets];
+const allTickets = [
+  allJRTickets,
+  eastJRTickets,
+  centralJRTickets,
+  westJRTickets,
+];
 const ticketsRailwaysList = [];
 
 for (const tickets of allTickets) {
