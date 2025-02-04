@@ -62,6 +62,12 @@ const tobuGunmaStations = {
       name: "西小泉",
       id: "nishi-koizumi",
     },
+  ],
+  "tb-koizumi-ota": [
+    {
+      name: "東小泉",
+      id: "higashi-koizumi",
+    },
     {
       name: "竜舞",
       id: "ryumai",

@@ -459,6 +459,11 @@ const kinkiRailways = {
           name: "高野線",
           icon: "assets/kinki/nankai/t.svg",
         },
+        {
+          id: "koya-shiomibashi",
+          name: "高野線（汐見橋線）",
+          icon: "assets/kinki/nankai/t.svg",
+        },
       ],
     },
   },

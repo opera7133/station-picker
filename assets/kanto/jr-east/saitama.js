@@ -138,10 +138,6 @@ const jrEastSaitamaStations = {
       name: "倉賀野",
       id: "kuragano",
     },
-    {
-      name: "高崎",
-      id: "takasaki",
-    },
   ],
   "jr-east-saikyo": [
     {

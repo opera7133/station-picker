@@ -394,8 +394,13 @@ const kantoRailways = {
           icon: "assets/kanto/tobu/ti.svg",
         },
         {
-          name: "小泉線",
+          name: "小泉線（本線）",
           id: "koizumi",
+          icon: "assets/kanto/tobu/ti.svg",
+        },
+        {
+          name: "小泉線（支線）",
+          id: "koizumi-ota",
           icon: "assets/kanto/tobu/ti.svg",
         },
         {

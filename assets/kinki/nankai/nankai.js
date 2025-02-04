@@ -74,11 +74,6 @@ const nankaiStations = {
     { name: "関西空港", id: "kansai-airport" },
   ],
   "nankai-koya": [
-    { name: "難波", id: "namba" },
-    { name: "今宮戎", id: "imamiyaebisu" },
-    { name: "新今宮", id: "shin-imamiya" },
-    { name: "萩ノ茶屋", id: "haginochaya" },
-    { name: "天下茶屋", id: "tengachaya" },
     { name: "岸里玉出", id: "kishinosato-tamade" },
     { name: "帝塚山", id: "tezukayama" },
     { name: "住吉東", id: "sumiyoshi-higashi" },
@@ -116,6 +111,14 @@ const nankaiStations = {
     { name: "紀伊細川", id: "kii-hosokawa" },
     { name: "紀伊神谷", id: "kii-kamiya" },
     { name: "極楽橋", id: "gokuraku-bashi" },
+  ],
+  "nankai-koya-shiomibashi": [
+    { name: "汐見橋", id: "shiomibashi" },
+    { name: "芦原町", id: "ashihara-cho" },
+    { name: "木津川", id: "kizugawa" },
+    { name: "津守", id: "tsumori" },
+    { name: "西天下茶屋", id: "nishi-tengachaya" },
+    { name: "岸里玉出", id: "kishinosato-tamade" },
   ],
 };
 

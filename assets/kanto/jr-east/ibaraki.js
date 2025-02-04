@@ -164,26 +164,6 @@ const jrEastIbarakiStations = {
       name: "友部",
       id: "tomobe",
     },
-    {
-      name: "内原",
-      id: "uchihara",
-    },
-    {
-      name: "赤塚",
-      id: "akatsuka",
-    },
-    {
-      name: "偕楽園",
-      id: "kairakuen",
-    },
-    {
-      name: "水戸",
-      id: "mito",
-    },
-    {
-      name: "勝田",
-      id: "katsuta",
-    },
   ],
 };
 

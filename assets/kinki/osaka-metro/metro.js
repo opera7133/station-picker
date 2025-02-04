@@ -63,6 +63,7 @@ const osakaMetroStations = {
     { name: "住之江公園", id: "suminoekoen" },
   ],
   "osaka-metro-chuo": [
+    { name: "夢洲", id: "yumeshima" },
     { name: "コスモスクエア", id: "cosmosquare" },
     { name: "大阪港", id: "osakako" },
     { name: "朝潮橋", id: "asashiobashi" },

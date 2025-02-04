@@ -277,6 +277,145 @@ const eastJRTickets = {
         stations: {},
       },
     },
+    tokiwa: {
+      id: "tokiwa",
+      name: "ときわ路パス",
+      selects: {
+        company: ["ibaraki-kantetsu"],
+        railway: [
+          "ibaraki-hitachinaka",
+          "ibaraki-kashima-rinkai",
+          "tochigi-mooka",
+          "tohoku-jr-east-suigun-hitachiota",
+        ],
+        stations: {
+          "kanto-jr-east-kashima": {
+            start: "潮来",
+            end: "鹿島神宮",
+          },
+          "tohoku-jr-east-joban": {
+            start: "取手",
+            end: "大津港",
+          },
+          "kanto-jr-east-mito": {
+            start: "小田林",
+            end: "友部",
+          },
+          "tohoku-jr-east-suigun": {
+            start: "水戸",
+            end: "下野宮",
+          },
+        },
+      },
+    },
+    "thankyou-chiba": {
+      id: "thankyou-chiba",
+      name: "サンキュー♥ちばフリーパス",
+      selects: {
+        company: [],
+        railway: [
+          "chiba-ryutetsu",
+          "chiba-km",
+          "chiba-is",
+          "chiba-cd",
+          "kanto-ks-shin-keisei",
+          "kanto-ks-chiba",
+          "kanto-ks-chihara",
+          "kanto-ks-higashi-narita",
+          "kanto-ks-shibayama",
+          "kanto-jr-east-soubu-honsen",
+          "kanto-jr-east-narita",
+          "kanto-jr-east-narita-kuko",
+          "kanto-jr-east-narita-abiko",
+          "kanto-jr-east-uchibo",
+          "kanto-jr-east-togane",
+          "kanto-jr-east-sotobo",
+          "kanto-jr-east-kururi",
+        ],
+        stations: {
+          "chiba-hs": {
+            start: "矢切",
+            end: "印旛日本医大",
+          },
+          "kanto-ks-narita-skyaccess": {
+            start: "東松戸",
+            end: "成田空港（成田第1ターミナル）",
+          },
+          "kanto-ks-honsen": {
+            start: "国府台",
+            end: "成田空港",
+          },
+          "kanto-jr-east-keiyo": {
+            start: "舞浜",
+            end: "蘇我",
+          },
+          "kanto-jr-east-kashima": {
+            start: "香取",
+            end: "十二橋",
+          },
+          "kanto-jr-east-joban-rapid": {
+            start: "松戸",
+            end: "天王台",
+          },
+          "kanto-jr-east-joban-local": {
+            start: "松戸",
+            end: "天王台",
+          },
+          "kanto-jr-east-musashino": {
+            start: "南船橋",
+            end: "南流山",
+          },
+          "kanto-jr-east-soubu": {
+            start: "市川",
+            end: "千葉",
+          },
+          "kanto-jr-east-soubu-rapid": {
+            start: "市川",
+            end: "千葉",
+          },
+        },
+      },
+    },
+    "gunma-oneday": {
+      id: "gunma-oneday",
+      name: "ぐんまワンデーローカルパス",
+      selects: {
+        company: [],
+        railway: [
+          "gunma-joshin",
+          "gunma-jomo",
+          "gunma-watarase",
+          "kanto-jr-east-shinetsu-ty",
+          "kanto-jr-east-ryomo",
+          "kanto-jr-east-agatsuma",
+          "kanto-tb-koizumi",
+          "kanto-tb-koizumi-ota",
+          "kanto-tb-kiryu",
+        ],
+        stations: {
+          "kanto-jr-east-takasaki": {
+            start: "深谷",
+            end: "高崎",
+          },
+          "kanto-jr-east-hachiko": {
+            start: "群馬藤岡",
+            end: "倉賀野",
+          },
+          "chubu-jr-east-joetsu": {
+            start: "高崎",
+            end: "土合",
+          },
+          "kanto-tb-isesaki": {
+            start: "川俣",
+            end: "伊勢崎",
+          },
+          "kanto-tb-sano": {
+            start: "館林",
+            end: "佐野",
+          },
+        },
+      },
+    },
   },
 };
 
@@ -390,10 +529,67 @@ const westJRTickets = {
   id: "jr-west",
   name: "JR西日本 企画券",
   tickets: {
+    "kansai-maas": {
+      id: "kansai-maas",
+      name: "KANSAI MaaSワンデーパス",
+      selects: {
+        company: ["osaka-osaka-metro", "kinki-hankyu"],
+        railway: [
+          "kinki-jr-west-osaka-loop",
+          "kinki-jr-west-yumesaki",
+          "kinki-kintetsu-namba",
+          "kinki-kintetsu-nara",
+          "kinki-kintetsu-kyoto",
+          "kinki-kintetsu-kashihara",
+          "kinki-kintetsu-keihanna",
+          "kinki-kintetsu-minami-osaka",
+          "kinki-kintetsu-ikoma",
+          "kinki-kintetsu-tenri",
+          "kinki-kintetsu-shigi",
+          "kinki-kintetsu-nagano",
+          "kinki-kintetsu-gose",
+          "kinki-hanshin-honsen",
+          "kinki-hanshin-namba",
+          "kinki-hanshin-mukogawa",
+          "kinki-keihan-honsen",
+          "kinki-keihan-nakanoshima",
+          "kinki-keihan-oto",
+          "kinki-keihan-uji",
+          "kinki-keihan-katano",
+        ],
+        stations: {
+          "kinki-jr-west-kyoto": {
+            start: "新大阪",
+            end: "大阪",
+          },
+          "kinki-kintetsu-osaka": {
+            start: "大阪上本町",
+            end: "三本松",
+          },
+          "kinki-kintetsu-yoshino": {
+            start: "橿原神宮前",
+            end: "壺阪山",
+          },
+          "kinki-hanshin-kobe-kosoku": {
+            start: "元町",
+            end: "高速長田",
+          },
+          "kinki-nankai-nankai": {
+            start: "難波",
+            end: "堺",
+          },
+          "kinki-nankai-koya": {
+            start: "岸里玉出",
+            end: "中百舌鳥",
+          },
+        },
+      },
+    },
     "hokuriku-tabiwa": {
       id: "hokuriku-tabiwa",
       name: "北陸おでかけ tabiwaパス",
       selects: {
+        company: [],
         railway: [
           "fukui-hapiline",
           "ishikawa-ir-ishikawa",
