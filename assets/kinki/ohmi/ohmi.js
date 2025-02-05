@@ -1,5 +1,5 @@
 const ohmiStations = {
-  "ohmi-hikone-taga-taisha": [
+  "ohmi-honsen": [
     { name: "米原", id: "maibara" },
     { name: "フジテック前", id: "fujitec-mae" },
     { name: "鳥居本", id: "toriimoto" },
@@ -7,19 +7,11 @@ const ohmiStations = {
     { name: "ひこね芹川", id: "hikone-serikawa" },
     { name: "彦根口", id: "hikone-guchi" },
     { name: "高宮", id: "takamiya" },
-    { name: "スクリーン", id: "screen" },
-    { name: "多賀大社前", id: "tagataisha-mae" },
-  ],
-  "ohmi-koto-omiji": [
-    { name: "高宮", id: "takamiya" },
     { name: "尼子", id: "amago" },
     { name: "豊郷", id: "toyosato" },
     { name: "愛知川", id: "echigawa" },
     { name: "五個荘", id: "gokasho" },
     { name: "河辺の森", id: "kawabenomori" },
-    { name: "八日市", id: "yokaichi" },
-  ],
-  "ohmi-minakuchi-gamono": [
     { name: "八日市", id: "yokaichi" },
     { name: "長谷野", id: "nagatanino" },
     { name: "大学前", id: "daigaku-mae" },
@@ -34,14 +26,19 @@ const ohmiStations = {
     { name: "水口城南", id: "minakuchi-jonan" },
     { name: "貴生川", id: "kibukawa" },
   ],
-  "ohmi-manyo-akane": [
+  "ohmi-yokaichi": [
     { name: "八日市", id: "yokaichi" },
     { name: "新八日市", id: "shin-yokaichi" },
     { name: "太郎坊宮前", id: "tarobogu-mae" },
     { name: "市辺", id: "ichinobe" },
     { name: "平田", id: "hirata" },
     { name: "武佐", id: "musa" },
-    { name: "近江八幡", id: "omi-hachiman" },
+    { name: "近江八幡", id: "ohmi-hachiman" },
+  ],
+  "ohmi-taga": [
+    { name: "高宮", id: "takamiya" },
+    { name: "スクリーン", id: "screen" },
+    { name: "多賀大社前", id: "tagataisha-mae" },
   ],
 };
 

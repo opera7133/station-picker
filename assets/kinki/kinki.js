@@ -544,23 +544,18 @@ const shigaRailways = {
       icon: "assets/kinki/ohmi/ohmi.svg",
       railway: [
         {
-          id: "hikone-taga-taisha",
-          name: "彦根・多賀大社線",
+          id: "honsen",
+          name: "本線",
           icon: "assets/kinki/ohmi/ohmi.svg",
         },
         {
-          id: "koto-omiji",
-          name: "湖東・近江路線",
+          id: "yokaichi",
+          name: "八日市線",
           icon: "assets/kinki/ohmi/ohmi.svg",
         },
         {
-          id: "minakuchi-gamono",
-          name: "水口・蒲生野線",
-          icon: "assets/kinki/ohmi/ohmi.svg",
-        },
-        {
-          id: "manyo-akane",
-          name: "万葉あかね線",
+          id: "taga",
+          name: "多賀線",
           icon: "assets/kinki/ohmi/ohmi.svg",
         },
       ],
