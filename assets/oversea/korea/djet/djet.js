@@ -1,0 +1,56 @@
+const djetStations = [
+  { name: "板岩", en: "Panam", orig: "판암역", id: "panam" },
+  { name: "新興", en: "Sinheung", orig: "신흥역", id: "sinheung" },
+  { name: "大洞", en: "Dae-dong", orig: "대동역", id: "dae-dong" },
+  { name: "大田", en: "Daejeon", orig: "대전역", id: "daejeon" },
+  { name: "中央路", en: "Jungangno", orig: "중앙로역", id: "jungangno" },
+  {
+    name: "中区庁",
+    en: "Jung-gu Office",
+    orig: "중구청역",
+    id: "jung-gu-office",
+  },
+  {
+    name: "西大田ネゴリ",
+    en: "Seodaejeon Nego-ri",
+    orig: "서대전네거리역",
+    id: "seodaejeon-nego-ri",
+  },
+  { name: "五龍", en: "Oryong", orig: "오룡역", id: "oryong" },
+  { name: "龍汶", en: "Yongmun", orig: "용문역", id: "yongmun" },
+  { name: "炭坊", en: "Tanbang", orig: "탄방역", id: "tanbang" },
+  { name: "市庁", en: "City Hall", orig: "시청역", id: "city-hall" },
+  {
+    name: "政府庁舎",
+    en: "Government Complex",
+    orig: "정부청사역",
+    id: "government-complex",
+  },
+  { name: "葛馬", en: "Galma", orig: "갈마역", id: "galma" },
+  { name: "月坪", en: "Wolpyeong", orig: "월평역", id: "wolpyeong" },
+  { name: "甲川", en: "Gapcheon", orig: "갑천역", id: "gapcheon" },
+  {
+    name: "儒城温泉",
+    en: "Yuseong Oncheon",
+    orig: "유성온천역",
+    id: "yuseong-oncheon",
+  },
+  { name: "九岩", en: "Guam", orig: "구암역", id: "guam" },
+  {
+    name: "顕忠院",
+    en: "Hyeonchungwon",
+    orig: "현충원역",
+    id: "hyeonchungwon",
+  },
+  {
+    name: "ワールドカップ競技場",
+    en: "World Cup Stadium",
+    orig: "월드컵경기장역",
+    id: "world-cup-stadium",
+  },
+  { name: "老隠", en: "Noeun", orig: "노은역", id: "noeun" },
+  { name: "智足", en: "Jijok", orig: "지족역", id: "jijok" },
+  { name: "盤石", en: "Banseok", orig: "반석역", id: "banseok" },
+];
+
+generateStations(djetStations, "djet", "daejeon");

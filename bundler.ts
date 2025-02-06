@@ -16,6 +16,18 @@ const regionfiles = parent
   .map((file) => {
     const filePath = path.join(assetsDir, file);
     if (fs.lstatSync(filePath).isDirectory()) {
+      if (file === "oversea") {
+        return fs
+          .readdirSync(filePath)
+          .map((f) => path.join(file, f))
+          .map((f) => {
+            const filePath = path.join(assetsDir, f);
+            if (fs.lstatSync(filePath).isDirectory()) {
+              return fs.readdirSync(filePath).map((ff) => path.join(f, ff));
+            }
+          })
+          .flat() as string[];
+      }
       return fs.readdirSync(filePath).map((f) => path.join(file, f));
     }
     return file;
@@ -33,6 +45,7 @@ const regions = [
   "kyushu",
   "tickets",
 ];
+const overseaRegions = ["korea"];
 const files = regionfiles
   .map((f) => {
     const filePath = path.join(assetsDir, f);
@@ -57,6 +70,15 @@ const files = regionfiles
     const aIndex = regions.findIndex((r) => a.includes(r));
     const bIndex = regions.findIndex((r) => b.includes(r));
     return aIndex - bIndex;
+  })
+  .sort((a, b) => {
+    if (a === "main.js") {
+      return -1;
+    }
+    if (b === "main.js") {
+      return 1;
+    }
+    return 0;
   });
 
 const content = files
@@ -80,6 +102,23 @@ const content = files
   });
 }`
       );
+    } else if (overseaRegions.includes(fileName)) {
+      const overseaRegion = fileName;
+      return (
+        fn +
+        `for (const prefecture of ${overseaRegion}RailwaysList) {
+  if (prefecture.id === "${overseaRegion}") {
+    generatePrefecture(prefecture, "oversea-stations", true);
+  } else {
+    generatePrefecture(prefecture, "${overseaRegion}");
+  }
+  Object.keys(prefecture.railways).forEach((key) => {
+    const railway = prefecture.railways[key];
+    generateRailwayCompany(railway, prefecture.id);
+    generateRailway(railway, prefecture.id);
+  });
+}`
+      );
     } else {
       return fn;
     }
@@ -89,6 +128,11 @@ const content = files
 let regionToggle = "";
 
 for (const region of regions) {
+  regionToggle += `for (const prefecture of ${region}RailwaysList) {
+    setToggle(prefecture.id);
+  }`;
+}
+for (const region of overseaRegions) {
   regionToggle += `for (const prefecture of ${region}RailwaysList) {
     setToggle(prefecture.id);
   }`;

@@ -63,6 +63,13 @@
         />
       </div>
     </form>
+    <details>
+      <summary class="text-xl cursor-pointer">海外の路線・駅</summary>
+      <form
+        class="my-8 flex flex-col gap-3 w-full"
+        id="oversea-stations"
+      ></form>
+    </details>
     <hr class="my-4" />
     <details>
       <summary class="text-xl cursor-pointer">高度な設定</summary>
@@ -114,7 +121,9 @@
         id="result-map"
         class="w-full h-80"
       ></iframe>
-      <p id="result-station" class="py-4 text-4xl">駅</p>
+      <p id="result-station" class="pt-4 text-4xl">駅</p>
+      <p id="result-station-en" class="py-1 text-xl hidden">Station</p>
+      <p id="result-station-orig" class="pb-4 text-xl hidden">駅</p>
       <p id="result-railway" class="py-4 text-xl">線</p>
       <label for="result-tweet" class="block py-2 text-lg text-left"
         >共有テキスト</label
@@ -183,6 +192,6 @@
       >
       <p class="my-4" id="ver">バージョン：</p>
     </footer>
-    <script src="bundle.js?v=210"></script>
+    <script src="bundle.js?v=212"></script>
   </body>
 </html>
