@@ -144,6 +144,7 @@ const getRandomStation = () => {
       ...flattenRailways(kyushuRailwaysList),
 
       ...flattenRailways(koreaRailwaysList),
+      ...flattenRailways(taiwanRailwaysList),
       ...flattenRailways(chinaRailwaysList),
     ];
     const stationNamesArray = Array.from(stationNames);
@@ -248,9 +249,18 @@ const getRandomStation = () => {
       origStationNameElem.classList.remove("hidden");
       enStationNameElem.textContent = stationNamesArray[random].en + " Station";
       origStationNameElem.textContent = stationNamesArray[random].orig;
-      document.getElementById(
-        "result-map"
-      ).src = `https://maps.google.co.jp/maps?output=embed&q=${stationNamesArray[random].orig}`;
+      if (stationNamesArray[random].orig.endsWith("역")) {
+        document.getElementById(
+          "result-map"
+        ).src = `https://maps.google.co.jp/maps?output=embed&q=${stationNamesArray[random].orig}`;
+      } else {
+        document.getElementById(
+          "result-map"
+        ).src = `https://maps.google.co.jp/maps?output=embed&q=${railwayName.replace(
+          /（(.*)）/g,
+          ""
+        )}%20${stationNamesArray[random].orig}`;
+      }
     } else {
       document.getElementById(
         "result-map"
@@ -462,6 +472,6 @@ const copyResultUrlToClipboard = () => {
   navigator.clipboard.writeText(resultUrl.value);
 };
 
-const appVersion = "2.1.2";
+const appVersion = "2.1.3";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;

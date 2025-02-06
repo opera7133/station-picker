@@ -1,0 +1,76 @@
+const taoyuanMetroStations = [
+  { name: "台北", en: "Taipei Main", orig: "台北車站", id: "taipei-main" },
+  { name: "三重", en: "Sanchong", orig: "三重站", id: "sanchong" },
+  {
+    name: "新北産業園区",
+    en: "New Taipei Industrial Park",
+    orig: "新北產業園區站",
+    id: "new-taipei-industrial-park",
+  },
+  {
+    name: "新荘副都心",
+    en: "Xinzhuang Fuduxin",
+    orig: "新莊副都心站",
+    id: "xinzhuang-fuduxin",
+  },
+  { name: "泰山", en: "Taishan", orig: "泰山站", id: "taishan" },
+  {
+    name: "泰山貴和",
+    en: "Taishan Guihe",
+    orig: "泰山貴和站",
+    id: "taishan-guihe",
+  },
+  {
+    name: "体育大学",
+    en: "National Taiwan Sport University",
+    orig: "體育大學站",
+    id: "national-taiwan-sport-university",
+  },
+  {
+    name: "長庚病院",
+    en: "Chang Gung Memorial Hospital",
+    orig: "長庚醫院站",
+    id: "chang-gung-memorial-hospital",
+  },
+  { name: "林口", en: "Linkou", orig: "林口站", id: "linkou" },
+  { name: "山鼻", en: "Shanbi", orig: "山鼻站", id: "shanbi" },
+  { name: "坑口", en: "Kengkou", orig: "坑口站", id: "kengkou" },
+  {
+    name: "機場第一航廈",
+    en: "Airport Terminal 1",
+    orig: "機場第一航廈站",
+    id: "airport-terminal-1",
+  },
+  {
+    name: "機場第二航廈",
+    en: "Airport Terminal 2",
+    orig: "機場第二航廈站",
+    id: "airport-terminal-2",
+  },
+  {
+    name: "機場旅館",
+    en: "Airport Hotel",
+    orig: "機場旅館站",
+    id: "airport-hotel",
+  },
+  { name: "大園", en: "Dayuan", orig: "大園站", id: "dayuan" },
+  { name: "横山", en: "Hengshan", orig: "橫山站", id: "hengshan" },
+  { name: "領航", en: "Linghang", orig: "領航站", id: "linghang" },
+  {
+    name: "高鉄桃園",
+    en: "Taoyuan HSR",
+    orig: "高鐵桃園站",
+    id: "taoyuan-hsr",
+  },
+  {
+    name: "桃園体育園区",
+    en: "Taoyuan Sports Park",
+    orig: "桃園體育園區站",
+    id: "taoyuan-sports-park",
+  },
+  { name: "興南", en: "Xingnan", orig: "興南站", id: "xingnan" },
+  { name: "環北", en: "Huanbei", orig: "環北站", id: "huanbei" },
+  { name: "老街渓", en: "Laojie River", orig: "老街溪站", id: "laojie-river" },
+];
+
+generateStations(taoyuanMetroStations, "taoyuan-metro", "taipei");

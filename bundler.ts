@@ -45,7 +45,7 @@ const regions = [
   "kyushu",
   "tickets",
 ];
-const overseaRegions = ["korea"];
+const overseaRegions = ["korea", "taiwan"];
 const files = regionfiles
   .map((f) => {
     const filePath = path.join(assetsDir, f);
