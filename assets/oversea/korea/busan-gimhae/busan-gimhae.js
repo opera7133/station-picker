@@ -1,0 +1,70 @@
+const busanGimhaeStations = [
+  { name: "沙上", en: "Sasang", orig: "사상역", id: "sasang" },
+  {
+    name: "掛法ルネシテ",
+    en: "Gwaebeop Renecite",
+    orig: "괘법르네시떼역",
+    id: "gwaebeop-renecite",
+  },
+  {
+    name: "西釜山流通地区",
+    en: "Seobusan Yutongjigu",
+    orig: "서부산유통지구역",
+    id: "seobusan-yutongjigu",
+  },
+  {
+    name: "空港",
+    en: "Gimhae Int'l Airport",
+    orig: "공항역",
+    id: "gimhae-intl-airport",
+  },
+  { name: "徳斗", en: "Deokdu", orig: "덕두역", id: "deokdu" },
+  { name: "登亀", en: "Deunggu", orig: "등구역", id: "deunggu" },
+  { name: "大渚", en: "Daejeo", orig: "대저역", id: "daejeo" },
+  { name: "平江", en: "Pyeonggang", orig: "평강역", id: "pyeonggang" },
+  { name: "大沙", en: "Daesa", orig: "대사역", id: "daesa" },
+  { name: "仏岩", en: "Buram", orig: "불암역", id: "buram" },
+  { name: "池内", en: "Jinae", orig: "지내역", id: "jinae" },
+  {
+    name: "金海大学",
+    en: "Gimhae College",
+    orig: "김해대학역",
+    id: "gimhae-college",
+  },
+  { name: "仁済大", en: "Inje Univ.", orig: "인제대역", id: "inje-univ" },
+  {
+    name: "金海市庁",
+    en: "Gimhae City Hall",
+    orig: "김해시청역",
+    id: "gimhae-city-hall",
+  },
+  { name: "府院", en: "Buwon", orig: "부원역", id: "buwon" },
+  { name: "鳳凰", en: "Bonghwang", orig: "봉황역", id: "bonghwang" },
+  {
+    name: "首露王陵",
+    en: "Royal Tomb of King Suro",
+    orig: "수로왕릉역",
+    id: "royal-tomb-of-king-suro",
+  },
+  {
+    name: "博物館",
+    en: "Gimhae National Museum",
+    orig: "박물관역",
+    id: "gimhae-national-museum",
+  },
+  {
+    name: "蓮池公園",
+    en: "Yeonji Park",
+    orig: "연지공원역",
+    id: "yeonji-park",
+  },
+  {
+    name: "長神大",
+    en: "Presbyterian Univ.",
+    orig: "장신대역",
+    id: "presbyterian-univ",
+  },
+  { name: "加耶大", en: "Kaya Univ.", orig: "가야대역", id: "kaya-univ" },
+];
+
+generateStations(busanGimhaeStations, "busan-gimhae", "busan");

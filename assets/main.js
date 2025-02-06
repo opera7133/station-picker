@@ -41,7 +41,9 @@ const railwayTemplate = (railway, key) => `
 
 const stationTemplate = (station, key) => `
       <div class="relative flex justify-between py-2">
-        <label for="${`${key}-${station.id}`}">${station.name}</label>
+        <label for="${`${key}-${station.id}`}" data-en="${
+  station.en || ""
+}" data-orig="${station.orig || ""}">${station.name}</label>
         <input type="checkbox" class="mr-4" id="${`${key}-${station.id}`}" name="${`${key}-${station.id}`}">
       </div>
     `;
@@ -103,6 +105,17 @@ const getRandomStation = () => {
     if (!document.getElementById("result").classList.contains("hidden")) {
       document.getElementById("result").classList.add("hidden");
     }
+    if (
+      !document
+        .getElementById("result-station-en")
+        .classList.contains("hidden") &&
+      !document
+        .getElementById("result-station-orig")
+        .classList.contains("hidden")
+    ) {
+      document.getElementById("result-station-en").classList.add("hidden");
+      document.getElementById("result-station-orig").classList.add("hidden");
+    }
     document.getElementById("loading").classList.remove("hidden");
     document.getElementById("loading").scrollIntoView({
       behavior: "smooth",
@@ -111,6 +124,12 @@ const getRandomStation = () => {
       stationNames.add({
         name: checkbox.parentElement.querySelector("label").textContent,
         railway: checkbox.parentElement.parentElement.parentElement.id,
+        en: checkbox.parentElement
+          .querySelector("label")
+          .getAttribute("data-en"),
+        orig: checkbox.parentElement
+          .querySelector("label")
+          .getAttribute("data-orig"),
       });
     });
     const allFlattenRailways = [
@@ -123,6 +142,9 @@ const getRandomStation = () => {
       ...flattenRailways(chugokuRailwaysList),
       ...flattenRailways(shikokuRailwaysList),
       ...flattenRailways(kyushuRailwaysList),
+
+      ...flattenRailways(koreaRailwaysList),
+      ...flattenRailways(chinaRailwaysList),
     ];
     const stationNamesArray = Array.from(stationNames);
     const random = usingCrypto
@@ -132,7 +154,7 @@ const getRandomStation = () => {
           return array[0] % stationNamesArray.length;
         })()
       : Math.floor(Math.random() * stationNamesArray.length);
-    const railwayName = allFlattenRailways.find(
+    let railwayName = allFlattenRailways.find(
       (railway) => railway.id === stationNamesArray[random].railway
     ).name;
     const tramRailways = [
@@ -214,15 +236,33 @@ const getRandomStation = () => {
       }
     }
     document.getElementById("result-station").textContent = stationName;
+    if (railwayName === "ソウル交通公社-9号線") {
+      railwayName = "ソウル市メトロ-9号線";
+    }
+    if (stationNamesArray[random].en && stationNamesArray[random].orig) {
+      const enStationNameElem = document.getElementById("result-station-en");
+      const origStationNameElem = document.getElementById(
+        "result-station-orig"
+      );
+      enStationNameElem.classList.remove("hidden");
+      origStationNameElem.classList.remove("hidden");
+      enStationNameElem.textContent = stationNamesArray[random].en + " Station";
+      origStationNameElem.textContent = stationNamesArray[random].orig;
+      document.getElementById(
+        "result-map"
+      ).src = `https://maps.google.co.jp/maps?output=embed&q=${stationNamesArray[random].orig}`;
+    } else {
+      document.getElementById(
+        "result-map"
+      ).src = `https://maps.google.co.jp/maps?output=embed&q=${railwayName.replace(
+        /（(.*)）/g,
+        ""
+      )}%20${stationName}`;
+    }
+
     document.getElementById("result-railway").textContent = railwayName;
     document.getElementById("all").textContent =
       "抽選駅数：" + stationNamesArray.length;
-    document.getElementById(
-      "result-map"
-    ).src = `https://maps.google.co.jp/maps?output=embed&q=${railwayName.replace(
-      /（(.*)）/g,
-      ""
-    )}%20${stationName}`;
     document.getElementById(
       "result-tweet"
     ).value = `今日の駅は${railwayName}の『${stationName}』です！\n#StationPicker\nhttps://station-picker.pages.dev/`;
@@ -422,6 +462,6 @@ const copyResultUrlToClipboard = () => {
   navigator.clipboard.writeText(resultUrl.value);
 };
 
-const appVersion = "2.1.0";
+const appVersion = "2.1.2";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;
