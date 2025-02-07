@@ -106,14 +106,15 @@ const getRandomStation = () => {
       document.getElementById("result").classList.add("hidden");
     }
     if (
-      !document
-        .getElementById("result-station-en")
-        .classList.contains("hidden") &&
+      !document.getElementById("result-station-en").classList.contains("hidden")
+    ) {
+      document.getElementById("result-station-en").classList.add("hidden");
+    }
+    if (
       !document
         .getElementById("result-station-orig")
         .classList.contains("hidden")
     ) {
-      document.getElementById("result-station-en").classList.add("hidden");
       document.getElementById("result-station-orig").classList.add("hidden");
     }
     document.getElementById("loading").classList.remove("hidden");
@@ -145,7 +146,7 @@ const getRandomStation = () => {
 
       ...flattenRailways(koreaRailwaysList),
       ...flattenRailways(taiwanRailwaysList),
-      ...flattenRailways(chinaRailwaysList),
+      ...flattenRailways(singaporeRailwaysList),
     ];
     const stationNamesArray = Array.from(stationNames);
     const random = usingCrypto
@@ -240,14 +241,17 @@ const getRandomStation = () => {
     if (railwayName === "ソウル交通公社-9号線") {
       railwayName = "ソウル市メトロ-9号線";
     }
-    if (stationNamesArray[random].en && stationNamesArray[random].orig) {
+    if (stationNamesArray[random].orig) {
       const enStationNameElem = document.getElementById("result-station-en");
       const origStationNameElem = document.getElementById(
         "result-station-orig"
       );
-      enStationNameElem.classList.remove("hidden");
+      if (stationNamesArray[random].en) {
+        enStationNameElem.classList.remove("hidden");
+        enStationNameElem.textContent =
+          stationNamesArray[random].en + " Station";
+      }
       origStationNameElem.classList.remove("hidden");
-      enStationNameElem.textContent = stationNamesArray[random].en + " Station";
       origStationNameElem.textContent = stationNamesArray[random].orig;
       if (stationNamesArray[random].orig.endsWith("역")) {
         document.getElementById(
@@ -472,6 +476,6 @@ const copyResultUrlToClipboard = () => {
   navigator.clipboard.writeText(resultUrl.value);
 };
 
-const appVersion = "2.1.3";
+const appVersion = "2.1.4";
 
 document.getElementById("ver").textContent = "バージョン：" + appVersion;

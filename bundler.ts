@@ -45,16 +45,21 @@ const regions = [
   "kyushu",
   "tickets",
 ];
-const overseaRegions = ["korea", "taiwan"];
+const overseaRegions = ["korea", "taiwan", "singapore"];
 const files = regionfiles
   .map((f) => {
-    const filePath = path.join(assetsDir, f);
-    if (fs.lstatSync(filePath).isDirectory()) {
-      return fs.readdirSync(filePath).map((ff) => path.join(f, ff));
+    if (f) {
+      const filePath = path.join(assetsDir, f);
+      if (fs.lstatSync(filePath).isDirectory()) {
+        return fs.readdirSync(filePath).map((ff) => path.join(f, ff));
+      }
+      return f;
+    } else {
+      return "";
     }
-    return f;
   })
   .flat()
+  .filter((f) => f !== "")
   .filter((f) => f.endsWith(".js"))
   .sort((a, b) => {
     if (!a.includes("/") || !b.includes("/")) {
