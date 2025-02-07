@@ -10,9 +10,24 @@ const __dirname = path.dirname(__filename);
 
 const assetsDir = path.join(__dirname, "assets");
 const bundleFile = path.join(__dirname, "bundle.js");
+const overseaBundleFile = path.join(__dirname, "oversea-bundle.js");
 
 const parent = fs.readdirSync(assetsDir);
 const regionfiles = parent
+  .map((file) => {
+    const filePath = path.join(assetsDir, file);
+    if (fs.lstatSync(filePath).isDirectory()) {
+      if (file !== "oversea") {
+        return fs.readdirSync(filePath).map((f) => path.join(file, f));
+      }
+    }
+    return file;
+  })
+  .flat()
+  .filter((f) => f !== "")
+  .filter((f) => f);
+
+const overseaRegionFiles = parent
   .map((file) => {
     const filePath = path.join(assetsDir, file);
     if (fs.lstatSync(filePath).isDirectory()) {
@@ -28,11 +43,13 @@ const regionfiles = parent
           })
           .flat() as string[];
       }
-      return fs.readdirSync(filePath).map((f) => path.join(file, f));
     }
-    return file;
+    return "";
   })
-  .flat();
+  .flat()
+  .filter((f) => f !== "")
+  .filter((f) => f);
+
 const regions = [
   "shinkansen",
   "hokkaido",
@@ -85,6 +102,36 @@ const files = regionfiles
     }
     return 0;
   });
+const overseaFiles = overseaRegionFiles
+  .map((f) => {
+    if (f) {
+      const filePath = path.join(assetsDir, f);
+      if (fs.lstatSync(filePath).isDirectory()) {
+        return fs.readdirSync(filePath).map((ff) => path.join(f, ff));
+      }
+      return f;
+    } else {
+      return "";
+    }
+  })
+  .flat()
+  .filter((f) => f !== "")
+  .filter((f) => f.endsWith(".js"))
+  .sort((a, b) => {
+    if (!a.includes("/") || !b.includes("/")) {
+      return 1;
+    }
+    if (a.match(/\//g)?.length === b.match(/\//g)?.length) {
+      return a.localeCompare(b);
+    } else {
+      return a.match(/\//g)?.length! - b.match(/\//g)?.length!;
+    }
+  })
+  .sort((a, b) => {
+    const aIndex = overseaRegions.findIndex((r) => a.includes(r));
+    const bIndex = overseaRegions.findIndex((r) => b.includes(r));
+    return aIndex - bIndex;
+  });
 
 const content = files
   .map((file, i) => {
@@ -107,7 +154,16 @@ const content = files
   });
 }`
       );
-    } else if (overseaRegions.includes(fileName)) {
+    } else {
+      return fn;
+    }
+  })
+  .join("\n");
+const overseaContent = overseaFiles
+  .map((file, i) => {
+    const fn = fs.readFileSync(path.join(assetsDir, file), "utf8");
+    const fileName = path.basename(file, ".js");
+    if (overseaRegions.includes(fileName)) {
       const overseaRegion = fileName;
       return (
         fn +
@@ -161,7 +217,21 @@ if (queryStations) {
   setCheckboxStateFromString(queryStations);
 }`;
 
-const minified = UglifyJS.minify(content + toggle, { warnings: true });
+const minified = UglifyJS.minify(content, {
+  warnings: true,
+  compress: {
+    passes: 2,
+  },
+  mangle: true,
+});
+
+const overseaMinified = UglifyJS.minify(overseaContent + toggle, {
+  warnings: true,
+  compress: {
+    passes: 2,
+  },
+  mangle: true,
+});
 
 if (minified.error) {
   console.error(minified.error);
@@ -173,3 +243,4 @@ if (minified.warnings) {
 }
 
 fs.writeFileSync(bundleFile, minified.code);
+fs.writeFileSync(overseaBundleFile, overseaMinified.code);
