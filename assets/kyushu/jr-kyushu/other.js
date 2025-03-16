@@ -144,6 +144,7 @@ const jrKyushuOtherStations = {
     { name: "姶良", id: "aira" },
     { name: "重富", id: "shigetomi" },
     { name: "竜ヶ水", id: "ryugamizu" },
+    { name: "仙巌園", id: "sengan-en" },
     { name: "鹿児島", id: "kagoshima" },
   ],
   "jr-kyushu-chikuhi-saga": [

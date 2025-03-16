@@ -95,7 +95,6 @@ const jrHokkaidoKansenStations = {
   ],
   "jr-hokkaido-nemuro": [
     { name: "滝川", id: "takikawa" },
-    { name: "東滝川", id: "higashi-takikawa" },
     { name: "赤平", id: "akabira" },
     { name: "茂尻", id: "moshiri" },
     { name: "平岸", id: "hiragishi" },
@@ -145,7 +144,6 @@ const jrHokkaidoKansenStations = {
     { name: "落石", id: "ochiishi" },
     { name: "昆布盛", id: "kombumori" },
     { name: "西和田", id: "nishi-wada" },
-    { name: "東根室", id: "higashi-nemuro" },
     { name: "根室", id: "nemuro" },
   ],
   "jr-hokkaido-chitose": [

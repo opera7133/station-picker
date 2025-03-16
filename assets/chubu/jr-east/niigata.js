@@ -187,6 +187,7 @@ const jrEastNiigataStations = {
     { name: "青山", id: "aoyama" },
     { name: "関屋", id: "sekiya" },
     { name: "白山", id: "hakusan" },
+    { name: "上所", id: "kamitokoro" },
     { name: "新潟", id: "niigata" },
   ],
 };
