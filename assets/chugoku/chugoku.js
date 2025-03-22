@@ -59,7 +59,7 @@ const chugokuRailways = {
         },
         {
           id: "ako",
-          name: "赤穂線",
+          name: "赤穂線（播州赤穂〜東岡山）",
           icon: "assets/chugoku/jr-west/n.svg",
         },
         {

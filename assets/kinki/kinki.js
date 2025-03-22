@@ -39,7 +39,7 @@ const kinkiRailways = {
         },
         {
           id: "ako",
-          name: "赤穂線",
+          name: "赤穂線（相生〜播州赤穂）",
           icon: "assets/kinki/jr-west/a.svg",
         },
         {

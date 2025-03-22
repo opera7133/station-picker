@@ -201,9 +201,29 @@ const kochiRailways = {
   },
 };
 
+const tokushimaRailways = {
+  id: "tokushima",
+  name: "徳島",
+  railways: {
+    asa: {
+      id: "asa",
+      name: "阿佐海岸鉄道阿佐東線",
+      icon: "assets/shikoku/asa/asa.jpg",
+      railway: [
+        {
+          id: "asa",
+          name: "阿佐海岸鉄道阿佐東線",
+          icon: "assets/shikoku/asa/asa.jpg",
+        },
+      ],
+    },
+  },
+};
+
 const shikokuRailwaysList = [
   shikokuRailways,
   kagawaRailways,
   ehimeRailways,
   kochiRailways,
+  tokushimaRailways,
 ];

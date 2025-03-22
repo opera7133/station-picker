@@ -69,9 +69,6 @@ const jrWestOkayamaStations = {
     { name: "児島", id: "kojima" },
   ],
   "jr-west-ako": [
-    { name: "相生", id: "aioi" },
-    { name: "西相生", id: "nishi-aioi" },
-    { name: "坂越", id: "sakoshi" },
     { name: "播州赤穂", id: "banshu-ako" },
     { name: "天和", id: "tenwa" },
     { name: "備前福河", id: "bizen-fukukawa" },
