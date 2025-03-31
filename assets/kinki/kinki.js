@@ -464,6 +464,11 @@ const kinkiRailways = {
           name: "高野線（汐見橋線）",
           icon: "assets/kinki/nankai/t.svg",
         },
+        {
+          id: "senboku",
+          name: "泉北線",
+          icon: "assets/kinki/nankai/sb.svg",
+        },
       ],
     },
   },
@@ -754,18 +759,6 @@ const osakaRailways = {
           id: "namboku",
           name: "北大阪急行電鉄南北線",
           icon: "assets/kinki/kita-osaka/kita-osaka.svg",
-        },
-      ],
-    },
-    senboku: {
-      id: "senboku",
-      name: "泉北高速鉄道線",
-      icon: "assets/kinki/senboku/senboku.svg",
-      railway: [
-        {
-          id: "senboku",
-          name: "泉北高速鉄道線",
-          icon: "assets/kinki/senboku/sb.svg",
         },
       ],
     },

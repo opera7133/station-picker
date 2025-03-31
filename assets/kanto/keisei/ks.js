@@ -41,7 +41,7 @@ const keiseiStations = {
       furigana: "なりたくうこう",
     },
   ],
-  "ks-shin-keisei": [
+  "ks-matsudo": [
     {
       name: "京成津田沼",
       id: "keisei-tsudanuma",

@@ -547,9 +547,9 @@ const kantoRailways = {
           icon: "assets/kanto/keisei/ks_narita.svg",
         },
         {
-          name: "新京成線",
-          id: "shin-keisei",
-          icon: "assets/kanto/keisei/sl.svg",
+          name: "松戸線",
+          id: "matsudo",
+          icon: "assets/kanto/keisei/ks.svg",
         },
         {
           name: "本線",
