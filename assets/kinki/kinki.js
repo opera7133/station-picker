@@ -353,7 +353,7 @@ const kinkiRailways = {
     hanshin: {
       id: "hanshin",
       name: "阪神電気鉄道",
-      icon: "assets/kinki/hanshin/hanshin.jpg",
+      icon: "assets/kinki/hanshin/hanshin.svg",
       railway: [
         {
           id: "honsen",
@@ -385,37 +385,37 @@ const kinkiRailways = {
         {
           id: "honsen",
           name: "京阪本線",
-          icon: "assets/kinki/keihan/kh.png",
+          icon: "assets/kinki/keihan/kh.svg",
         },
         {
           id: "oto",
           name: "鴨東線",
-          icon: "assets/kinki/keihan/kh.png",
+          icon: "assets/kinki/keihan/kh.svg",
         },
         {
           id: "nakanoshima",
           name: "中之島線",
-          icon: "assets/kinki/keihan/kh.png",
+          icon: "assets/kinki/keihan/kh.svg",
         },
         {
           id: "katano",
           name: "交野線",
-          icon: "assets/kinki/keihan/kh.png",
+          icon: "assets/kinki/keihan/kh.svg",
         },
         {
           id: "uji",
           name: "宇治線",
-          icon: "assets/kinki/keihan/kh.png",
+          icon: "assets/kinki/keihan/kh.svg",
         },
         {
           id: "ishiyama-sakamoto",
           name: "石山坂本線",
-          icon: "assets/kinki/keihan/ot.png",
+          icon: "assets/kinki/keihan/ot.svg",
         },
         {
           id: "keishin",
           name: "京津線",
-          icon: "assets/kinki/keihan/ot.png",
+          icon: "assets/kinki/keihan/ot.svg",
         },
       ],
     },
@@ -510,17 +510,17 @@ const mieRailways = {
     asunarou: {
       id: "asunarou",
       name: "四日市あすなろう鉄道",
-      icon: "assets/kinki/asunarou/asunarou.jpg",
+      icon: "assets/kinki/asunarou/asunarou.svg",
       railway: [
         {
           id: "utsube",
           name: "内部線",
-          icon: "assets/kinki/asunarou/asunarou.jpg",
+          icon: "assets/kinki/asunarou/asunarou.svg",
         },
         {
           id: "hachioji",
           name: "八王子線",
-          icon: "assets/kinki/asunarou/asunarou.jpg",
+          icon: "assets/kinki/asunarou/asunarou.svg",
         },
       ],
     },
@@ -568,12 +568,12 @@ const shigaRailways = {
     skr: {
       id: "skr",
       name: "信楽高原鐵道信楽線",
-      icon: "assets/kinki/skr/skr.png",
+      icon: "assets/kinki/skr/skr.svg",
       railway: [
         {
           id: "skr",
           name: "信楽高原鐵道信楽線",
-          icon: "assets/kinki/skr/skr.png",
+          icon: "assets/kinki/skr/skr.svg",
         },
       ],
     },
@@ -889,12 +889,12 @@ const hyogoRailways = {
     hojo: {
       id: "hojo",
       name: "北条鉄道北条線",
-      icon: "assets/kinki/hojo/hojo.png",
+      icon: "assets/kinki/hojo/hojo.svg",
       railway: [
         {
           id: "honsen",
           name: "北条鉄道北条線",
-          icon: "assets/kinki/hojo/hojo.png",
+          icon: "assets/kinki/hojo/hojo.svg",
         },
       ],
     },
