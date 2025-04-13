@@ -88,6 +88,12 @@ const sbsStations = {
       id: "hillview",
     },
     {
+      name: "ヒューム",
+      en: "Hume",
+      orig: "谦道站",
+      id: "hume",
+    },
+    {
       name: "ビューティー・ワールド",
       en: "Beauty World",
       orig: "美世界站",
