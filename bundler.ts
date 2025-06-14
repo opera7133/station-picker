@@ -212,9 +212,14 @@ allPrefectureCheckbox.addEventListener("click", () => {
   });
 });
 
-const queryStations = getUrlQueries().stations;
-if (queryStations) {
-  setCheckboxStateFromString(queryStations);
+const queries = getUrlQueries();
+
+if (queries.stations) {
+  if (queries.version === getVersion()) {
+    setCheckboxStateFromString(queries.stations);
+  } else {
+    alert("古いバージョンのデータは使用できません。")
+  }
 }`;
 
 const minified = UglifyJS.minify(content, {

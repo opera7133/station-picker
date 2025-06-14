@@ -108,6 +108,11 @@ const kantoRailways = {
           icon: "assets/kanto/jr-east/jl.svg",
         },
         {
+          name: "常磐線（取手〜いわき）",
+          id: "joban",
+          icon: "assets/kanto/jr-east/joban.svg",
+        },
+        {
           name: "鶴見線",
           id: "tsurumi",
           icon: "assets/kanto/jr-east/ji.svg",
@@ -123,16 +128,6 @@ const kantoRailways = {
           icon: "assets/kanto/jr-east/ji.svg",
         },
         {
-          name: "中央本線",
-          id: "chuo-honsen",
-          icon: "assets/kanto/jr-east/co.svg",
-        },
-        {
-          name: "中央本線（辰野支線）",
-          id: "chuo-tatsuno",
-          icon: "assets/kanto/jr-east/co.svg",
-        },
-        {
           name: "八高線",
           id: "hachiko",
           icon: "assets/kanto/jr-east/hachiko.svg",
@@ -141,6 +136,11 @@ const kantoRailways = {
           name: "川越線",
           id: "kawagoe",
           icon: "assets/kanto/jr-east/kawagoe.svg",
+        },
+        {
+          name: "上越線（高崎〜水上）",
+          id: "joetsu",
+          icon: "assets/chubu/jr-east/joetsu.svg",
         },
         {
           name: "吾妻線",

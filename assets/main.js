@@ -282,7 +282,7 @@ const getRandomStation = () => {
     ).value = `今日の駅は${railwayName}の『${stationName}』です！\n#StationPicker\nhttps://station-picker.pages.dev/`;
     document.getElementById(
       "result-url"
-    ).value = `https://station-picker.pages.dev/?stations=${convertCheckboxesToString()}`;
+    ).value = `https://station-picker.pages.dev/?stations=${convertCheckboxesToString()}&version=${getVersion()}`;
     document
       .getElementById("tweet")
       .addEventListener("click", () => tweet(railwayName, stationName));
@@ -474,4 +474,10 @@ const copyResultUrlToClipboard = () => {
   const resultUrl = document.getElementById("result-url");
   resultUrl.select();
   navigator.clipboard.writeText(resultUrl.value);
+};
+
+const getVersion = () => {
+  const versionEl = document.getElementById("ver");
+  const version = versionEl.textContent.split("：")[1];
+  return version ?? "0.0.0";
 };

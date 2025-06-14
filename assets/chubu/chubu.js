@@ -102,19 +102,29 @@ const chubuRailways = {
       icon: "assets/chubu/jr-east/jr.svg",
       railway: [
         {
+          name: "中央本線",
+          id: "chuo-honsen",
+          icon: "assets/kanto/jr-east/co.svg",
+        },
+        {
+          name: "中央本線（辰野支線）",
+          id: "chuo-tatsuno",
+          icon: "assets/kanto/jr-east/co.svg",
+        },
+        {
           name: "篠ノ井線",
           id: "shinonoi",
-          icon: "assets/chubu/jr-east/shinonoi.svg",
+          icon: "assets/chubu/jr-east/sn.svg",
         },
         {
           name: "信越本線（篠ノ井〜長野）",
           id: "shinetsu-sn",
-          icon: "assets/chubu/jr-east/shinetsu.svg",
+          icon: "assets/chubu/jr-east/se.svg",
         },
         {
           name: "信越本線（直江津〜新潟）",
           id: "shinetsu-nn",
-          icon: "assets/chubu/jr-east/shinetsu.svg",
+          icon: "assets/chubu/jr-east/se.svg",
         },
         {
           name: "白新線",
@@ -137,7 +147,7 @@ const chubuRailways = {
           icon: "assets/chubu/jr-east/iiyama.svg",
         },
         {
-          name: "上越線",
+          name: "上越線（水上〜長岡）",
           id: "joetsu",
           icon: "assets/chubu/jr-east/joetsu.svg",
         },

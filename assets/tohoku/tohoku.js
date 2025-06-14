@@ -19,7 +19,7 @@ const tohokuRailways = {
         },
         {
           id: "joban",
-          name: "常磐線",
+          name: "常磐線（いわき〜岩沼）",
           icon: "assets/tohoku/jr-east/joban.svg",
         },
         {

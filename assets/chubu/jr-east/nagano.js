@@ -1,4 +1,176 @@
 const jrEastNaganoStations = {
+  "jr-east-chuo-honsen": [
+    {
+      name: "高尾",
+      id: "takao",
+    },
+    {
+      name: "相模湖",
+      id: "sagamiko",
+    },
+    {
+      name: "藤野",
+      id: "fujino",
+    },
+    {
+      name: "上野原",
+      id: "uenohara",
+    },
+    {
+      name: "四方津",
+      id: "shimotsu",
+    },
+    {
+      name: "梁川",
+      id: "yanagawa",
+    },
+    {
+      name: "鳥沢",
+      id: "torisawa",
+    },
+    {
+      name: "猿橋",
+      id: "saruhashi",
+    },
+    {
+      name: "大月",
+      id: "otsuki",
+    },
+    {
+      name: "初狩",
+      id: "hatsukari",
+    },
+    {
+      name: "笹子",
+      id: "sasago",
+    },
+    {
+      name: "甲斐大和",
+      id: "kaiyamato",
+    },
+    {
+      name: "勝沼ぶどう郷",
+      id: "katsunumabudokyo",
+    },
+    {
+      name: "塩山",
+      id: "enzan",
+    },
+    {
+      name: "東山梨",
+      id: "higashi-yamanashi",
+    },
+    {
+      name: "山梨市",
+      id: "yamanashi-shi",
+    },
+    {
+      name: "春日居町",
+      id: "kasugaicho",
+    },
+    {
+      name: "石和温泉",
+      id: "isawaonsen",
+    },
+    {
+      name: "酒折",
+      id: "sakaori",
+    },
+    {
+      name: "甲府",
+      id: "kofu",
+    },
+    {
+      name: "竜王",
+      id: "ryuo",
+    },
+    {
+      name: "塩崎",
+      id: "shiozaki",
+    },
+    {
+      name: "韮崎",
+      id: "nirasaki",
+    },
+    {
+      name: "新府",
+      id: "shimpu",
+    },
+    {
+      name: "穴山",
+      id: "anayama",
+    },
+    {
+      name: "日野春",
+      id: "hinoharu",
+    },
+    {
+      name: "長坂",
+      id: "nagasaka",
+    },
+    {
+      name: "小淵沢",
+      id: "kobuchizawa",
+    },
+    {
+      name: "信濃境",
+      id: "shinano-sakai",
+    },
+    {
+      name: "富士見",
+      id: "fujimi",
+    },
+    {
+      name: "すずらんの里",
+      id: "suzuran-no-sato",
+    },
+    {
+      name: "青柳",
+      id: "aoyagi",
+    },
+    {
+      name: "茅野",
+      id: "chino",
+    },
+    {
+      name: "上諏訪",
+      id: "kamisuwa",
+    },
+    {
+      name: "下諏訪",
+      id: "shimosuwa",
+    },
+    {
+      name: "岡谷",
+      id: "okaya",
+    },
+    {
+      name: "みどり湖",
+      id: "midoriko",
+    },
+    {
+      name: "塩尻",
+      id: "shiojiri",
+    },
+  ],
+  "jr-east-chuo-tatsuno": [
+    {
+      name: "川岸",
+      id: "kawagishi",
+    },
+    {
+      name: "辰野",
+      id: "tatsuno",
+    },
+    {
+      name: "信濃川島",
+      id: "shinano-kawashima",
+    },
+    {
+      name: "小野",
+      id: "ono",
+    },
+  ],
   "jr-east-oito": [
     { name: "島内", id: "shimachi" },
     { name: "島高松", id: "shimatakamatsu" },
