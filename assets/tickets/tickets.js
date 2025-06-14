@@ -103,6 +103,15 @@ const eastJRTickets = {
         },
       },
     },
+    "nonbiri-tabi": {
+      id: "nonbiri-tabi",
+      name: "東日本のんびり旅パス",
+      selects: {
+        company: ["kanto-jr-east", "chubu-jr-east", "tohoku-jr-east"],
+        railway: [],
+        stations: {},
+      },
+    },
     tokunai: {
       id: "tokunai",
       name: "都区内パス",
@@ -245,6 +254,10 @@ const eastJRTickets = {
             start: "千葉",
             end: "茂原",
           },
+          "kanto-jr-east-joban": {
+            start: "取手",
+            end: "土浦",
+          },
         },
       },
     },
@@ -293,7 +306,7 @@ const eastJRTickets = {
             start: "潮来",
             end: "鹿島神宮",
           },
-          "tohoku-jr-east-joban": {
+          "kanto-jr-east-joban": {
             start: "取手",
             end: "大津港",
           },
@@ -401,8 +414,12 @@ const eastJRTickets = {
             start: "群馬藤岡",
             end: "倉賀野",
           },
-          "chubu-jr-east-joetsu": {
+          "kanto-jr-east-joetsu": {
             start: "高崎",
+            end: "水上",
+          },
+          "chubu-jr-east-joetsu": {
+            start: "水上",
             end: "土合",
           },
           "kanto-tb-isesaki": {
