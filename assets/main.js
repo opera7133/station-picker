@@ -94,9 +94,12 @@ const getRandomStation = () => {
     const waitTime = document.getElementById("wait-time").value * 1000 ?? 3000;
     const usingCrypto = document.getElementById("crypto").checked ?? false;
     const stationNames = new Set();
+    const ignoreList = ["crypto"];
     const checkboxes = Array.from(
       document.querySelectorAll("input[type=checkbox]:checked")
-    ).filter((checkbox) => !checkbox.id.includes("toggle"));
+    )
+      .filter((checkbox) => !checkbox.id.includes("toggle"))
+      .filter((checkbox) => !ignoreList.includes(checkbox.id));
     if (checkboxes.length === 0) {
       alert("駅を選択してください");
       return;
