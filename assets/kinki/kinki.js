@@ -498,12 +498,12 @@ const mieRailways = {
         {
           id: "sangi",
           name: "三岐線",
-          icon: "assets/kinki/sangi/sangi.svg",
+          icon: "assets/kinki/sangi/s.svg",
         },
         {
           id: "hokusei",
           name: "北勢線",
-          icon: "assets/kinki/sangi/sangi.svg",
+          icon: "assets/kinki/sangi/h.svg",
         },
       ],
     },
