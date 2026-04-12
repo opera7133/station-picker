@@ -19,13 +19,13 @@ const jrHokkaidoChihoStations = {
     { name: "学田", id: "gakuden" },
     { name: "富良野", id: "furano" },
   ],
-  "jr-hokkaido-rumoi": [
-    { name: "深川", id: "fukagawa" },
-    { name: "北一已", id: "kita-ichiyan" },
-    { name: "秩父別", id: "chippubetsu" },
-    { name: "北秩父別", id: "kita-chippubetsu" },
-    { name: "石狩沼田", id: "ishikari-numata" },
-  ],
+  // "jr-hokkaido-rumoi": [
+  //   { name: "深川", id: "fukagawa" },
+  //   { name: "北一已", id: "kita-ichiyan" },
+  //   { name: "秩父別", id: "chippubetsu" },
+  //   { name: "北秩父別", id: "kita-chippubetsu" },
+  //   { name: "石狩沼田", id: "ishikari-numata" },
+  // ],
   "jr-hokkaido-soya": [
     { name: "旭川", id: "asahikawa" },
     { name: "旭川四条", id: "asahikawa-yojo" },
