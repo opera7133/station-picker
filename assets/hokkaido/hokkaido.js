@@ -72,11 +72,11 @@ const hokkaidoRailways = {
           name: "富良野線",
           icon: "assets/hokkaido/jr-hokkaido/purple.svg",
         },
-        {
-          id: "rumoi",
-          name: "留萌本線",
-          icon: "assets/hokkaido/jr-hokkaido/hokkaido.svg",
-        },
+        // {
+        //   id: "rumoi",
+        //   name: "留萌本線",
+        //   icon: "assets/hokkaido/jr-hokkaido/hokkaido.svg",
+        // },
         {
           id: "soya",
           name: "宗谷本線",

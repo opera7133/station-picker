@@ -120,6 +120,7 @@ const jrWestHyogoStations = {
   ],
   "jr-west-sanyo": [
     { name: "姫路", id: "himeji" },
+    { name: "手柄山平和公園", id: "tegarayama-heiwa-koen" },
     { name: "英賀保", id: "agaho" },
     { name: "はりま勝原", id: "harima-katsuhara" },
     { name: "網干", id: "aboshi" },

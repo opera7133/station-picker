@@ -275,6 +275,11 @@ const hiroshimaRailways = {
       icon: "assets/chugoku/hiroshima/hiroshima.svg",
       railway: [
         {
+          id: "l",
+          name: "循環線",
+          icon: "assets/chugoku/hiroshima/l.svg",
+        },
+        {
           id: "1",
           name: "1系統",
           icon: "assets/chugoku/hiroshima/1.svg",

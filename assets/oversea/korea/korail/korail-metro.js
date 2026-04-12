@@ -98,6 +98,7 @@ const korailMetroStations = {
     { name: "牙浦", en: "Apo", orig: "아포역", id: "apo" },
     { name: "亀尾", en: "Gumi", orig: "구미역", id: "gumi" },
     { name: "沙谷", en: "Sagok", orig: "사곡역", id: "sagok" },
+    { name: "北三", en: "Buksam", orig: "북삼역", id: "buksam" },
     { name: "若木", en: "Yangmok", orig: "약목역", id: "yangmok" },
     { name: "倭館", en: "Waegwan", orig: "왜관역", id: "waegwan" },
     { name: "蓮花", en: "Yeonhwa", orig: "연화역", id: "yeonhwa" },

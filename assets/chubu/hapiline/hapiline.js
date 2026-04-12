@@ -24,6 +24,10 @@ const hapilineStations = [
     id: "oshio",
   },
   {
+    name: "しきぶ",
+    id: "shikibu",
+  },
+  {
     name: "武生",
     id: "takefu",
   },
