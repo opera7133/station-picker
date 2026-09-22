@@ -189,6 +189,11 @@ const taipeiRailways = {
           icon: "assets/oversea/taiwan/new-taipei-metro/k.svg",
         },
         {
+          id: "lb",
+          name: "三鶯線",
+          icon: "assets/oversea/taiwan/new-taipei-metro/lb.svg",
+        },
+        {
           id: "y",
           name: "環状線",
           icon: "assets/oversea/taiwan/taipei-metro/y.svg",

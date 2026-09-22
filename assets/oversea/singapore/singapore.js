@@ -28,11 +28,6 @@ const sigaporeRailways = {
           icon: "assets/oversea/singapore/smrt/circle.svg",
         },
         {
-          id: "circle-ex",
-          name: "環状線（延伸）",
-          icon: "assets/oversea/singapore/smrt/circle-ex.svg",
-        },
-        {
           id: "thomson-east-coast",
           name: "トムソン・イーストコースト線",
           icon: "assets/oversea/singapore/smrt/thomson-east-coast.svg",

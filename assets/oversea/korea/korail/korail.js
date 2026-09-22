@@ -325,6 +325,20 @@ const korailStations = {
     { name: "松湫", en: "Songchu", orig: "송추역", id: "songchu" },
     { name: "議政府", en: "Uijeongbu", orig: "의정부역", id: "uijeongbu" },
   ],
+  "korail-mokpo-boseong": [
+    { name: "新宝城", en: "Sinboseong", orig: "신보성역", id: "sinboseong" },
+    { name: "長東", en: "Jangdong", orig: "장동역", id: "jangdong" },
+    {
+      name: "全南長興",
+      en: "Jeonnamjangheung",
+      orig: "전남장흥역",
+      id: "jeonnamjangheung",
+    },
+    { name: "康津", en: "Gangjin", orig: "강진역", id: "gangjin" },
+    { name: "海南", en: "Haenam", orig: "해남역", id: "haenam" },
+    { name: "霊岩", en: "Yeongam", orig: "영암역", id: "yeongam" },
+    { name: "任城里", en: "Imseong-ri", orig: "임성리역", id: "imseong-ri" },
+  ],
 };
 
 generateRailwayStations(korailStations, "korail", "korea");

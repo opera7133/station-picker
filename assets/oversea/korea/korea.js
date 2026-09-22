@@ -194,6 +194,11 @@ const koreaRailways = {
           name: "郊外線",
           icon: "assets/oversea/korea/korail/korail.svg",
         },
+        {
+          id: "mokpo-boseong",
+          name: "木浦宝城線",
+          icon: "assets/oversea/korea/korail/korail.svg",
+        },
       ],
     },
     gtx: {

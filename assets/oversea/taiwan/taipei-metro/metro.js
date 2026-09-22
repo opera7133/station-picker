@@ -76,6 +76,12 @@ const taipeiMetroStations = {
     },
   ],
   "taipei-metro-r": [
+    {
+      name: "広慈/奉天宮",
+      en: "Guangci/Fengtian Temple",
+      orig: "廣慈/奉天宮站",
+      id: "guangci-fengtian-temple",
+    },
     { name: "象山", en: "Xiangshan", orig: "象山站", id: "xiangshan" },
     {
       name: "台北101／世界貿易センター",
