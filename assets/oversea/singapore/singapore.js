@@ -57,22 +57,22 @@ const singaporeRailways = {
         {
           id: "sengkang-east",
           name: "LRTセンカン東環状線",
-          icon: "assets/oversea/singapore/sbs/sengkang.svg",
+          icon: "assets/oversea/singapore/sbs/sengkang-east.svg",
         },
         {
           id: "sengkang-west",
           name: "LRTセンカン西環状線",
-          icon: "assets/oversea/singapore/sbs/sengkang.svg",
+          icon: "assets/oversea/singapore/sbs/sengkang-west.svg",
         },
         {
           id: "punggol-east",
           name: "LRTプンゴル東環状線",
-          icon: "assets/oversea/singapore/sbs/punggol.svg",
+          icon: "assets/oversea/singapore/sbs/punggol-east.svg",
         },
         {
           id: "punggol-west",
           name: "LRTプンゴル西環状線",
-          icon: "assets/oversea/singapore/sbs/punggol.svg",
+          icon: "assets/oversea/singapore/sbs/punggol-west.svg",
         },
       ],
     },
