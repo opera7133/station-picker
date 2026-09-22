@@ -1,4 +1,4 @@
-const sigaporeRailways = {
+const singaporeRailways = {
   id: "singapore",
   name: "シンガポール",
   railways: {
@@ -35,7 +35,7 @@ const sigaporeRailways = {
         {
           id: "bukit-panjang",
           name: "LRTブキ・パンジャン線",
-          icon: "assets/oversea/singapore/smrt/smrt.svg",
+          icon: "assets/oversea/singapore/smrt/bukit-panjang.svg",
         },
       ],
     },
@@ -57,26 +57,26 @@ const sigaporeRailways = {
         {
           id: "sengkang-east",
           name: "LRTセンカン東環状線",
-          icon: "assets/oversea/singapore/sbs/sbs.svg",
+          icon: "assets/oversea/singapore/sbs/sengkang.svg",
         },
         {
           id: "sengkang-west",
           name: "LRTセンカン西環状線",
-          icon: "assets/oversea/singapore/sbs/sbs.svg",
+          icon: "assets/oversea/singapore/sbs/sengkang.svg",
         },
         {
           id: "punggol-east",
           name: "LRTプンゴル東環状線",
-          icon: "assets/oversea/singapore/sbs/sbs.svg",
+          icon: "assets/oversea/singapore/sbs/punggol.svg",
         },
         {
           id: "punggol-west",
           name: "LRTプンゴル西環状線",
-          icon: "assets/oversea/singapore/sbs/sbs.svg",
+          icon: "assets/oversea/singapore/sbs/punggol.svg",
         },
       ],
     },
   },
 };
 
-const singaporeRailwaysList = [sigaporeRailways];
+const singaporeRailwaysList = [singaporeRailways];

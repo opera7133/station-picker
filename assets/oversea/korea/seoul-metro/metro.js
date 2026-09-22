@@ -609,6 +609,26 @@ const seoulMetroStations = {
       id: "hanam-geomdansan",
     },
   ],
+  "seoul-metro-line-5-macheon": [
+    { name: "江東", en: "Gangdong", orig: "강동역", id: "gangdong" },
+    {
+      name: "遁村洞",
+      en: "Dunchon-dong",
+      orig: "둔촌동역",
+      id: "dunchon-dong",
+    },
+    {
+      name: "オリンピック公園",
+      en: "Olympic Park",
+      orig: "올림픽공원역",
+      id: "olympic-park",
+    },
+    { name: "芳荑", en: "Bangi", orig: "방이역", id: "bangi" },
+    { name: "梧琴", en: "Ogeum", orig: "오금역", id: "ogeum" },
+    { name: "開籠", en: "Gaerong", orig: "개롱역", id: "gaerong" },
+    { name: "巨余", en: "Geoyeo", orig: "거여역", id: "geoyeo" },
+    { name: "馬川", en: "Macheon", orig: "마천역", id: "macheon" },
+  ],
   "seoul-metro-line-6": [
     { name: "鷹岩", en: "Eungam", orig: "응암역", id: "eungam" },
     { name: "駅村", en: "Yeokchon", orig: "역촌역", id: "yeokchon" },

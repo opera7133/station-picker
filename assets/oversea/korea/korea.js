@@ -30,108 +30,8 @@ const koreaRailways = {
       icon: "assets/oversea/korea/korail/korail.svg",
       railway: [
         {
-          id: "gyeongbu-metro",
-          name: "京釜線（首都圏電鉄）",
-          icon: "assets/oversea/korea/seoul-metro/1.svg",
-        },
-        {
           id: "gyeongbu",
           name: "京釜線",
-          icon: "assets/oversea/korea/seoul-metro/1.svg",
-        },
-        {
-          id: "byeongjeom",
-          name: "餅店基地線",
-          icon: "assets/oversea/korea/seoul-metro/1.svg",
-        },
-        {
-          id: "janghang",
-          name: "長項線",
-          icon: "assets/oversea/korea/seoul-metro/1.svg",
-        },
-        {
-          id: "ilsan",
-          name: "一山線",
-          icon: "assets/oversea/korea/seoul-metro/3.svg",
-        },
-        {
-          id: "gwacheon",
-          name: "果川線",
-          icon: "assets/oversea/korea/seoul-metro/4.svg",
-        },
-        {
-          id: "ansan",
-          name: "安山線",
-          icon: "assets/oversea/korea/seoul-metro/4.svg",
-        },
-        {
-          id: "gyeongui",
-          name: "京義線",
-          icon: "assets/oversea/korea/korail/gyeongui.svg",
-        },
-        {
-          id: "yongsan",
-          name: "龍山線",
-          icon: "assets/oversea/korea/korail/gyeongui.svg",
-        },
-        {
-          id: "gyeongwon",
-          name: "京元線",
-          icon: "assets/oversea/korea/korail/gyeongui.svg",
-        },
-        {
-          id: "jungang",
-          name: "中央線",
-          icon: "assets/oversea/korea/korail/gyeongui.svg",
-        },
-        {
-          id: "gyeongchun",
-          name: "京春線",
-          icon: "assets/oversea/korea/korail/gyeongchun.svg",
-        },
-        {
-          id: "gyeongchun-mangwu",
-          name: "京春線（忘憂線）",
-          icon: "assets/oversea/korea/korail/gyeongchun.svg",
-        },
-        {
-          id: "bundang",
-          name: "盆唐線",
-          icon: "assets/oversea/korea/korail/bundang.svg",
-        },
-        {
-          id: "suin",
-          name: "水仁線",
-          icon: "assets/oversea/korea/korail/suin.svg",
-        },
-        {
-          id: "gyeonggang-metro",
-          name: "京江線（首都圏電鉄）",
-          icon: "assets/oversea/korea/korail/gyeonggang.svg",
-        },
-        {
-          id: "gyeonggang",
-          name: "京江線",
-          icon: "assets/oversea/korea/korail/gyeonggang.svg",
-        },
-        {
-          id: "seohae-metro",
-          name: "西海線（首都圏電鉄）",
-          icon: "assets/oversea/korea/korail/seohae.svg",
-        },
-        {
-          id: "seohae",
-          name: "西海線",
-          icon: "assets/oversea/korea/korail/seohae.svg",
-        },
-        {
-          id: "donghae",
-          name: "東海線",
-          icon: "assets/oversea/korea/korail/donghae.svg",
-        },
-        {
-          id: "chungbuk",
-          name: "忠北線",
           icon: "assets/oversea/korea/korail/korail.svg",
         },
         {
@@ -142,6 +42,21 @@ const koreaRailways = {
         {
           id: "jeolla",
           name: "全羅線",
+          icon: "assets/oversea/korea/korail/korail.svg",
+        },
+        {
+          id: "janghang",
+          name: "長項線",
+          icon: "assets/oversea/korea/korail/korail.svg",
+        },
+        {
+          id: "jungang",
+          name: "中央線",
+          icon: "assets/oversea/korea/korail/korail.svg",
+        },
+        {
+          id: "chungbuk",
+          name: "忠北線",
           icon: "assets/oversea/korea/korail/korail.svg",
         },
         {
@@ -162,6 +77,11 @@ const koreaRailways = {
         {
           id: "daegu",
           name: "大邱線",
+          icon: "assets/oversea/korea/korail/korail.svg",
+        },
+        {
+          id: "donghae",
+          name: "東海線",
           icon: "assets/oversea/korea/korail/korail.svg",
         },
         {
@@ -190,6 +110,16 @@ const koreaRailways = {
           icon: "assets/oversea/korea/korail/korail.svg",
         },
         {
+          id: "gyeonggang",
+          name: "京江線",
+          icon: "assets/oversea/korea/korail/korail.svg",
+        },
+        {
+          id: "seohae",
+          name: "西海線",
+          icon: "assets/oversea/korea/korail/korail.svg",
+        },
+        {
           id: "gyooe",
           name: "郊外線",
           icon: "assets/oversea/korea/korail/korail.svg",
@@ -201,24 +131,12 @@ const koreaRailways = {
         },
       ],
     },
-    gtx: {
-      id: "gtx",
-      name: "首都圏広域急行鉄道A路線",
-      icon: "assets/oversea/korea/gtx/a.svg",
-      railway: [
-        {
-          id: "gtx-a",
-          name: "A路線",
-          icon: "assets/oversea/korea/gtx/a.svg",
-        },
-      ],
-    },
   },
 };
 
 const seoulRailways = {
   id: "seoul",
-  name: "ソウル・仁川",
+  name: "ソウル・首都圏",
   railways: {
     "seoul-metro": {
       id: "seoul-metro",
@@ -271,6 +189,11 @@ const seoulRailways = {
           icon: "assets/oversea/korea/seoul-metro/5.svg",
         },
         {
+          id: "line-5-macheon",
+          name: "5号線(馬川支線)",
+          icon: "assets/oversea/korea/seoul-metro/5.svg",
+        },
+        {
           id: "line-6",
           name: "6号線",
           icon: "assets/oversea/korea/seoul-metro/6.svg",
@@ -289,6 +212,83 @@ const seoulRailways = {
           id: "line-9",
           name: "9号線",
           icon: "assets/oversea/korea/seoul-metro/9.svg",
+        },
+      ],
+    },
+    "korail-metro": {
+      id: "korail-metro",
+      name: "韓国鉄道公社（広域電鉄）",
+      icon: "assets/oversea/korea/korail/korail.svg",
+      railway: [
+        {
+          id: "gyeongbu",
+          name: "1号線（京釜線）",
+          icon: "assets/oversea/korea/seoul-metro/1.svg",
+        },
+        {
+          id: "gyeongin",
+          name: "1号線（京仁線）",
+          icon: "assets/oversea/korea/seoul-metro/1.svg",
+        },
+        {
+          id: "byeongjeom",
+          name: "1号線（餅店基地線）",
+          icon: "assets/oversea/korea/seoul-metro/1.svg",
+        },
+        {
+          id: "janghang",
+          name: "1号線（長項線）",
+          icon: "assets/oversea/korea/seoul-metro/1.svg",
+        },
+        {
+          id: "gyeongwon",
+          name: "1号線（京元線）",
+          icon: "assets/oversea/korea/seoul-metro/1.svg",
+        },
+        {
+          id: "ilsan",
+          name: "3号線（一山線）",
+          icon: "assets/oversea/korea/seoul-metro/3.svg",
+        },
+        {
+          id: "gwacheon",
+          name: "4号線（果川線）",
+          icon: "assets/oversea/korea/seoul-metro/4.svg",
+        },
+        {
+          id: "ansan",
+          name: "4号線（安山線）",
+          icon: "assets/oversea/korea/seoul-metro/4.svg",
+        },
+        {
+          id: "gyeongui-jungang",
+          name: "京義・中央線",
+          icon: "assets/oversea/korea/korail/gyeongui.svg",
+        },
+        {
+          id: "gyeongchun",
+          name: "京春線",
+          icon: "assets/oversea/korea/korail/gyeongchun.svg",
+        },
+        {
+          id: "gyeongchun-mangwu",
+          name: "京春線（忘憂線）",
+          icon: "assets/oversea/korea/korail/gyeongchun.svg",
+        },
+        {
+          id: "suin-bundang",
+          name: "水仁・盆唐線",
+          icon: "assets/oversea/korea/korail/bundang.svg",
+        },
+        {
+          id: "gyeonggang",
+          name: "京江線",
+          icon: "assets/oversea/korea/korail/gyeonggang.svg",
+        },
+        {
+          id: "seohae",
+          name: "西海線",
+          icon: "assets/oversea/korea/korail/seohae.svg",
         },
       ],
     },
@@ -330,6 +330,18 @@ const seoulRailways = {
           id: "shinbundang",
           name: "新盆唐線",
           icon: "assets/oversea/korea/shinbundang/shinbundang.svg",
+        },
+      ],
+    },
+    gtx: {
+      id: "gtx",
+      name: "首都圏広域急行鉄道",
+      icon: "assets/oversea/korea/gtx/a.svg",
+      railway: [
+        {
+          id: "gtx-a",
+          name: "GTX-A線",
+          icon: "assets/oversea/korea/gtx/a.svg",
         },
       ],
     },
@@ -448,6 +460,18 @@ const busanRailways = {
           id: "busan-gimhae",
           name: "釜山-金海軽電鉄",
           icon: "assets/oversea/korea/busan-gimhae/busan-gimhae.svg",
+        },
+      ],
+    },
+    "korail-donghae": {
+      id: "korail-donghae",
+      name: "東海線（広域電鉄）",
+      icon: "assets/oversea/korea/korail/donghae.svg",
+      railway: [
+        {
+          id: "donghae",
+          name: "東海線",
+          icon: "assets/oversea/korea/korail/donghae.svg",
         },
       ],
     },

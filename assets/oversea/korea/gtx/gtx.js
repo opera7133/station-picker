@@ -15,4 +15,4 @@ const gtxAStations = [
   { name: "東灘", en: "Dongtan", orig: "동탄역", id: "dongtan" },
 ];
 
-generateStations(gtxAStations, "gtx", "korea");
+generateStations(gtxAStations, "gtx", "seoul");

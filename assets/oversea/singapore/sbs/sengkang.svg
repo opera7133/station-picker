@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-  <circle cx="250" cy="250" r="250" fill="#d42e12" />
+  <circle cx="250" cy="250" r="250" fill="#748477" />
   <text x="250" y="260" text-anchor="middle" dominant-baseline="central"
     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
-    font-weight="bold" font-size="210" fill="#ffffff" letter-spacing="-3px">NS</text>
+    font-weight="bold" font-size="210" fill="#ffffff" letter-spacing="-3px">SK</text>
 </svg>

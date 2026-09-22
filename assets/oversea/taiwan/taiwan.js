@@ -4,7 +4,7 @@ const taiwanRailways = {
   railways: {
     tra: {
       id: "tra",
-      name: "台湾鉄路管理局",
+      name: "台湾鉄路",
       icon: "assets/oversea/taiwan/tra/tra.svg",
       railway: [
         {
